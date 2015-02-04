@@ -1,0 +1,32 @@
+h1, h2, h3, h4, h5, h6{
+    &.special{
+        font-family: "Oswald";
+    }
+    &.brand{
+        color: @brand-primary;
+    }
+    &.all-caps {
+        text-transform: uppercase;
+    }
+    &.white{
+        color: @white;
+    }
+    &.thin{
+        font-weight: 500;
+    }
+}
+
+.title-block{
+    background: @brand-primary;
+    color: @white;
+    padding: 5px 0 5px 20px;
+    margin: 0;
+    
+    h4, .h4, h5, .h5, h6, .h6{
+        margin: 10px 0;
+    }
+    
+    .btn{
+        // color: @white;
+    }
+}

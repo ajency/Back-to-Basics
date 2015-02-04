@@ -1,0 +1,26 @@
+
+.sm-vertical{
+	border-right: 1px solid @gray-light;
+	margin-bottom: -5000px;
+	padding-bottom: 5000px;
+	li{
+		padding: 5px 0;
+		a{
+			.h6;
+			font-weight: 500;
+			margin: 0;
+			padding: 20px 0;
+			.ease;
+
+			&:hover{
+				box-shadow: inset -4px 0 0 @brand-primary;
+				text-decoration: none;
+			}
+
+			&.current{
+				box-shadow: inset -4px 0 0 @brand-primary;
+				font-weight: 700;
+			}
+		}
+	}
+}

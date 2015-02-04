@@ -1,0 +1,83 @@
+.form-field{
+	input[type="text"],
+	input[type="email"],
+	select,
+	textarea{
+		.form-control;
+		width: 100% !important;
+	}
+	input[type="checkbox"],
+	input[type="radio"]{
+		opacity: 1;
+		position: relative;
+		height: 13px;
+	}
+	textarea{
+		height: auto;
+	}
+}
+
+.frm_submit{
+	input[type="submit"]{
+		.btn;
+		.btn-primary;
+	}
+}
+/* Basic Checkbox styles */
+input[type=checkbox]::before,input[type=radio]::before {
+	font-family: fontAwesome;
+	font-weight: normal;
+	font-size: 11px;
+	color: @brand-primary;
+	content: "\a0";
+	background-color: @gray-lighter;
+	border: 1px solid @gray-light;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+	border-radius: 0;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	height: 16px;
+	line-height: 13px;
+	min-width: 16px;
+	margin-right: 1px;
+	margin-top: -5px;
+}
+
+/* Checked state styles */
+input[type=checkbox]:checked::before,input[type=radio]:checked::before {
+	display: inline-block;
+	content: '\f00c';
+	background-color: @white;
+	border-color: @gray-light;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05),inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+}
+
+/* Hover state styles */
+input[type=checkbox]:hover::before,input[type=radio]:hover::before,input[type=checkbox]:hover::before,input[type=radio]:hover::before {
+	border-color: @gray;
+}
+
+/* Shadow when checked or Active */
+input[type=checkbox]:active::before,input[type=radio]:active::before,input[type=checkbox]:checked:active::before,input[type=radio]:checked:active::before {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Disabled state styles */
+input[type=checkbox]:disabled::before,input[type=radio]:disabled::before,input[type=checkbox][disabled]::before,input[type=radio][disabled]::before,input[type=checkbox].disabled::before,input[type=radio].disabled::before {
+	background-color: #DDD !important;
+	border-color: #CCC !important;
+	box-shadow: none !important;
+	color: #BBB;
+}
+
+/* Styles for Radio button */
+input[type=radio]::before {
+	border-radius: 100%;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 36px;
+}
+
+input[type=radio]:checked::before {
+	content: "\2022";
+}

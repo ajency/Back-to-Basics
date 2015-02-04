@@ -1,0 +1,109 @@
+.dynaTable{
+    margin-top: 10px;
+    thead{
+        color: @white;        
+        tr{
+            background: @gray;
+            th{
+                padding: 15px 10px;
+                border-bottom: none;
+                // text-transform: uppercase;
+                text-align: center;
+                &:first-child{
+                    text-align: left;
+                    padding-left: 20px;
+                }
+                a{
+                    color: @white;
+                }
+                .dynatable-arrow{
+                    display: none;
+                }
+            }
+            .form-group{
+                margin-bottom: 0;
+                .fa{
+                    color: @gray-light;
+                }
+            }
+            
+            &.secondary{
+                background: @gray-lighter;
+                th{
+                    padding: 10px;
+                    font-weight: 500;
+                }                
+            }
+        }
+    }
+
+    &.condensed{
+        tbody{
+            tr{
+                td{
+                    padding: 6px 10px;
+                }
+            }
+        }
+    }
+    
+    tbody{
+        // background: @gray-lighter;
+        // font-size: (@font-size-base)-1;
+        tr{
+            td{
+                border-bottom: 1px solid @gray-lighter;
+                padding: 15px 10px;
+                text-transform: capitalize;
+                &:first-child{
+                    padding-left: 20px;
+                    color: @brand-primary;
+                    cursor: pointer;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                &:last-child{
+                    cursor: pointer;
+                }
+
+                .last-login{
+                    font-size: (@font-size-base)-2;
+                    color: @gray;
+                    text-decoration: none;
+                }
+            }
+        }        
+    }
+
+    .popover-content{
+        padding: 10px 6px;
+    }
+
+    span.number{
+        display: block;
+        font-weight: bold;
+        color: @gray-dark;
+    }
+}
+
+.dynatable-pagination-links{
+    font-size: (@font-size-base)-1;
+    .dynatable-active-page{
+        background: @gray;
+        border-radius: 0;
+    }
+    
+    .dynatable-page-link, .dynatable-page-break{
+        padding: 1px 8px;
+    }
+}
+
+.dynatable-record-count{
+    font-size: (@font-size-base)-1;
+}
+
+
+.dynatable-search, .dynatable-per-page{
+    // display: none;
+}

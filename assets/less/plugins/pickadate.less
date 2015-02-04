@@ -1,0 +1,60 @@
+.picker{
+	.picker__frame{
+		max-width: 450px;
+		.picker__box{
+			font-size: @font-size-base+1;
+		}
+	}
+
+	@media (min-height: 33.875em){
+		.picker__frame{
+			margin-bottom: 20%;
+		}
+	}
+
+	@media (min-height: 40.125em){
+		.picker__frame{
+			margin-bottom: 15%;
+		}
+	}
+
+	.picker__nav--prev:before{
+		content: "\f053";
+		font-family: FontAwesome;
+		border: none;
+	}
+
+	.picker__nav--next:before{
+		content: "\f054";
+		font-family: FontAwesome;
+		border: none;
+	}
+
+	.picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected{
+		background-color: @brand-primary;
+	}
+
+	.picker__day--highlighted{
+		border-color: @brand-primary;
+		background: @brand-primary;
+		&:hover{
+			background: @brand-primary-light;
+		}
+	}
+
+	.picker__day--infocus, .picker__day--outfocus{
+		&:hover{
+			background: @brand-primary-light;
+		}
+	}
+
+	.picker__day--today, .picker__button--today{
+		&:before{
+			border-top-color: @brand-primary-dark;
+		}
+	}
+
+	.picker__select--month, .picker__select--year{
+		padding: 0 .5em;
+	}
+}

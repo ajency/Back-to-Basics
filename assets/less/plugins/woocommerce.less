@@ -1,0 +1,291 @@
+/* Woocommerce Custom Styles */
+
+/*---Single Product---*/
+.single-product {
+	.summary, .images {
+		float: none !important;
+		width: 100% !important;
+	}
+	.summary, .product {
+		.product_title {			
+			// font-size: 2em;
+			text-transform: capitalize;
+		}
+		.price-container {
+			.price {
+				margin-top: 0;
+			}
+		}
+		.order-expire {
+			h3 {
+				margin-top: 0;
+				text-align: right;
+			}
+		}
+		.size-variation {
+			h5 {
+				// margin: 5px 0 0;
+			}
+			.size-guide {
+				a {
+					// color: @gray-light;
+					// font-size: 1.2em;
+					// text-transform: uppercase;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.order-count {
+			span {
+				color: @gray;
+			}
+		}
+	}
+}
+
+/*---Archive Page---*/
+.archive {
+	.product {
+		// border-top: 1px solid @gray-light;
+		.BoxShadowHelper(1);
+		margin: 15px 0 0;
+		padding: 1px 15px;
+		.product-link {
+			color: @gray-dark;
+			&:hover {
+				text-decoration: none;
+				color: @gray-darker;
+			}
+		}
+	}
+}
+
+/* Quantity Spinner */
+.woocommerce #content .quantity .plus, .woocommerce .quantity .plus, .woocommerce-page #content .quantity .plus, .woocommerce-page .quantity .plus, .woocommerce #content .quantity .minus, .woocommerce .quantity .minus, .woocommerce-page #content .quantity .minus, .woocommerce-page .quantity .minus {
+	float: right;
+	height: 38px;
+	width: 30px;
+	position: relative;
+	right: auto;
+	top: auto;
+	background: @gray;
+	color: @white;
+	border: none;
+	font-weight: normal;
+	margin-left: 2px;
+	text-shadow: none;
+	.btn;
+	&:hover{
+		background: @brand-primary-dark;
+	}
+}
+
+.woocommerce #content .quantity .minus, .woocommerce .quantity .minus, .woocommerce-page #content .quantity .minus, .woocommerce-page .quantity .minus{
+	float: left;
+	margin-right: 2px;
+}
+
+.woocommerce #content .quantity input.qty, .woocommerce .quantity input.qty, .woocommerce-page #content .quantity input.qty, .woocommerce-page .quantity input.qty{
+	.form-control;
+	height: 38px;
+	width: 70px;
+}
+
+.woocommerce #content div.product form.cart div.quantity, .woocommerce .quantity, .woocommerce-page #content .quantity, .woocommerce-page .quantity{
+	width: 136px;
+	float: none;
+	margin-bottom: 20px;
+}
+
+/* Size Selection */
+.woocommerce{
+	.nm-productmeta-box{
+		& > p, & > div{
+			margin-bottom: 0;
+		}
+		select{
+			.form-control;
+		}
+	}
+}
+
+
+/* Buy Actions */
+.size-variation{
+	padding: 10px 15px 20px;
+	background: @gray-lighter;
+}
+
+/* Checkout page */
+.woocommerce table.cart input, .woocommerce-page #content table.cart input, .woocommerce-page table.cart input{
+	line-height: inherit;
+}
+
+/* Form Elements */
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea, .woocommerce-page form .form-row input.input-text, .woocommerce-page form .form-row textarea, .woocommerce form .form-row select, .woocommerce-page form .form-row select{
+	.form-control;
+}
+.woocommerce form .form-row textarea{
+	height: auto;
+}
+
+.woocommerce form .form-row label, .woocommerce-page form .form-row label{
+	line-height: inherit;
+}
+
+/* Remove Item */
+.woocommerce table.cart a.remove, .woocommerce #content table.cart a.remove, .woocommerce-page table.cart a.remove, .woocommerce-page #content table.cart a.remove{
+	color: @brand-danger;
+	border-radius: 0;
+	&:hover{
+		background-color: @brand-danger;
+	}
+}
+
+/* Proceed to Pay Button */
+.woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.alt, .woocommerce #content input.button.alt, .woocommerce-page a.button.alt, .woocommerce-page button.button.alt, .woocommerce-page input.button.alt, .woocommerce-page #respond input#submit.alt, .woocommerce-page #content input.button.alt{
+	.btn;
+	.btn-primary;
+	.btn-lg;
+	.raised;
+	text-shadow: none;
+	&:hover{
+		background: @brand-primary-dark;
+		text-shadow: none;
+	}
+}
+
+/* Woocommerce Messages */
+.woocommerce, .woocommerce-page {
+	.woocommerce-message, .woocommerce-error, .woocommerce-info {
+		.alert;
+		background: @white;
+		padding: 10px !important;
+		&:before{
+			display: none;
+		}
+	}
+	.woocommerce-message{
+		.alert-success;
+	}
+	.woocommerce-error{
+		.alert-danger;
+	}
+	.woocommerce-info{
+		.alert-info;
+	}
+}
+
+/* Stash List */
+.woocommerce #content div.product div.images{
+	margin-bottom: 0;
+}
+
+.product-images{
+	overflow: hidden;
+	padding: 0 0.5em;
+	.img-wrap {
+		position: relative;
+		width: 25%;
+		padding-bottom: 25%;
+		margin-bottom: 25px;
+		float: left;
+		color: @gray-light;
+		transition: all 250ms;
+		&:hover{
+			.BoxShadowHelper(3);
+			transform: translateY(-2px);
+			.stash-img-title{
+				opacity: 1;
+				bottom: 0;
+				background-color: @brand-primary;
+			}
+		}
+		.img-inner {
+			position: absolute;
+			left: 5px;
+			right: 5px;
+			top: 5px;
+			bottom: 5px;
+			overflow: hidden;
+			img {
+				width: 100%;
+			}
+		}
+		@media only screen and (max-width : 480px) {
+			width: 100%;
+			padding-bottom: 100%;
+		}
+		@media only screen and (max-width : 650px) and (min-width : 481px) {
+			width: 50%;
+			padding-bottom: 50%;
+		}
+		@media only screen and (max-width : 1050px) and (min-width : 651px) {
+			width: 33.3%;
+			padding-bottom: 33.3%;
+		}
+	}
+
+	.stash-img-title{
+		position: absolute;
+		bottom: -50px;
+		left: 0;
+		.h6;
+		color: @white;
+		padding: 10px;
+		margin: 0;
+		width: 100%;
+		opacity: 0;
+		transition: all 300ms;
+	}
+}
+
+/* Stash Status */
+.products{
+	.status-bg{
+		background: @brand-success;
+		// border-left: 30px solid transparent;
+		width: 90px;
+		// position: absolute;
+		bottom: 0;
+		right: 0;
+		// z-index: 2;
+		&.failed{
+			border-bottom: 40px solid @gray;
+			width: 155px;
+		}
+	}
+	.order-expire{
+		position: initial;
+	}
+
+	.order-status{
+		// position: absolute;
+		bottom: 0;
+		right: 10px;
+		.h6;
+		margin-bottom: 10px;
+		z-index: 3;
+		color: @white;
+	}
+	.price{
+		.label{
+			font-size: 50%;
+			font-weight: normal;
+		}
+	}
+}
+
+.count-container, .days-container{
+	text-align: right;
+	h3{
+		line-height: .9;
+		margin-right: 5px;
+	}
+	h5{
+		line-height: .8;
+		text-align: left;
+	}
+}

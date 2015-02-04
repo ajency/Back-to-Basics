@@ -1,0 +1,70 @@
+/* Backend */
+.org-info-box{
+	min-height: 100px;
+	margin-bottom: 20px;
+	.org-img{
+		width: 150px;
+		height: 100px;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 10px;
+		.BoxShadowHelper(1);
+		img{
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			overflow: hidden;
+		}
+	}
+
+	.org-name{
+		margin: 0;
+		margin-left: 10px;
+		padding-bottom: 10px;
+		border-bottom: 2px solid @gray-lighter;
+		h4{
+			display: inline-block;
+			margin-bottom: 0;
+		}
+	}
+
+	.org-descrptn{
+		margin-left: 10px;
+		padding-top: 10px;
+	}
+	.org-label{
+		font-size: @font-size-base - 2;
+		color: @gray;
+	}
+}
+
+/* Frontend */
+.org-info-box-vertical{
+	.org-img{
+		img{
+			width: 100%;
+		}
+	}
+	.org-label{
+		color: @gray;
+	}
+	.count-box{
+		padding: 10px 0;
+		border-top: 1px solid @gray-light;
+		border-bottom: 1px solid @gray-light;
+	}
+
+	.contact-org-toggle{
+		cursor: pointer;
+	}
+	.org-action{
+		display: none;
+	}
+}
+
+.categories, .members{
+	border-bottom: 1px solid @gray-light;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}

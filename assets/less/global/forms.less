@@ -1,0 +1,293 @@
+
+
+//== Forms
+//
+//##
+
+//** `<input>` background color
+@input-bg:                       @white;
+//** `<input disabled>` background color
+@input-bg-disabled:              @gray-lighter;
+
+//** Text color for `<input>`s
+@input-color:                    @gray;
+//** `<input>` border color
+@input-border:                   lighten(@gray-light, 8%);
+
+// TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
+//** Default `.form-control` border radius
+@input-border-radius:            @border-radius-base;
+//** Large `.form-control` border radius
+@input-border-radius-large:      @border-radius-large;
+//** Small `.form-control` border radius
+@input-border-radius-small:      @border-radius-small;
+
+//** Border color for inputs on focus
+@input-border-focus:             @brand-primary;
+
+//** Placeholder text color
+@input-color-placeholder:        @gray-light;
+
+//** Default `.form-control` height
+@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
+//** Large `.form-control` height
+@input-height-large:             (ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
+//** Small `.form-control` height
+@input-height-small:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
+
+@legend-color:                   @gray-dark;
+@legend-border-color:            #e5e5e5;
+
+//** Background color for textual input addons
+@input-group-addon-bg:           @gray-lighter;
+//** Border color for textual input addons
+@input-group-addon-border-color: @input-border;
+
+//** Disabled cursor for form controls and buttons.
+@cursor-disabled:                not-allowed;
+
+
+
+.form-control {
+  display: block;
+  width: 100%;
+  color: @input-color;
+  background-color: @input-bg;
+  background-image: none;
+  // border: none;
+  // border-bottom: 1px solid @input-border;
+  border-radius: @input-border-radius;
+  box-shadow: none;
+  .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
+
+  // Customize the `:focus` state to imitate native WebKit styles.
+  .form-control-focus();
+
+  // Placeholder
+  .placeholder();
+
+  // Disabled and read-only inputs
+
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    cursor: @cursor-disabled;
+    background-color: @input-bg-disabled;
+    opacity: 1; // iOS fix for unreadable disabled content
+  }
+
+  // Reset height for `textarea`s
+  textarea {
+    height: auto;
+  }
+}
+
+/* Custom styles for select boxes */
+select{
+  .form-control;
+}
+select.form-control{
+  display: inline-block;
+  height: @input-height-base - 10; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  padding: @padding-base-vertical - 4;
+  &.w-auto{
+    width: auto;    
+  }
+
+  &.center{
+    margin: auto;
+  }
+}
+
+
+.form-control-focus(@color: @input-border-focus) {
+  @color-rgba: rgba(red(@color), green(@color), blue(@color), .6);
+  &:focus {
+    outline: 0;
+    box-shadow:none;
+  }
+}
+
+// Form control feedback states
+.has-feedback {
+  // Ensure icons don't overlap text
+  .form-control {
+    padding-right: (@input-height-base * 0.75);
+  }
+}
+
+// Feedback icon (requires .glyphicon classes)
+.form-control-feedback {
+  line-height: @input-height-base;
+}
+
+// Form Label
+label{
+    font-weight: normal;
+}
+
+/* Checkbox Radio Label Styling */
+.checkbox, .checkbox-inline, .radio, .radio-inline {
+  padding-left: 0;
+  label {
+    padding-left: 0;
+  }
+}
+/* Hiding default checkbox and Radio button design */
+input[type=checkbox],input[type=radio] {
+    opacity: 0;
+    position: absolute;
+    z-index: 12;
+    width: 18px;
+    height: 18px;
+}
+
+/* Disable outline when clicked*/
+input[type=checkbox]:checked,input[type=radio]:checked,input[type=checkbox]:focus,input[type=radio]:focus {
+    outline: none !important;
+}
+
+input[type=checkbox]+.lbl,input[type=radio]+.lbl {
+    position: relative;
+    z-index: 11;
+    display: inline-block;
+    margin: 0;
+    line-height: 20px;
+    min-height: 14px;
+    min-width: 14px;
+    font-weight: normal;
+}
+
+input[type=checkbox]+.lbl.padding-16::before,input[type=radio]+.lbl.padding-16::before {
+    margin-right: 16px;
+}
+
+input[type=checkbox]+.lbl.padding-12::before,input[type=radio]+.lbl.padding-12::before {
+    margin-right: 12px;
+}
+
+input[type=checkbox]+.lbl.padding-8::before,input[type=radio]+.lbl.padding-8::before {
+    margin-right: 8px;
+}
+
+input[type=checkbox]+.lbl.padding-4::before,input[type=radio]+.lbl.padding-4::before {
+    margin-right: 4px;
+}
+
+input[type=checkbox]+.lbl.padding-0::before,input[type=radio]+.lbl.padding-0::before {
+    margin-right: 0px;
+}
+
+/* Basic Checkbox styles */
+input[type=checkbox]+.lbl::before,input[type=radio]+.lbl::before {
+  font-family: fontAwesome;
+  font-weight: normal;
+  font-size: 11px;
+  color: @brand-primary;
+  content: "\a0";
+  background-color: @gray-lighter;
+  border: 1px solid @gray-light;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 0;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  height: 14px;
+  line-height: 13px;
+  min-width: 14px;
+  margin-right: 1px;
+  margin-top: -5px;
+}
+
+/* Checked state styles */
+input[type=checkbox]:checked+.lbl::before,input[type=radio]:checked+.lbl::before {
+  display: inline-block;
+  content: '\f00c';
+  background-color: @white;
+  border-color: @gray-light;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05),inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+}
+
+/* Hover state styles */
+input[type=checkbox]:hover+.lbl::before,input[type=radio]:hover+.lbl::before,input[type=checkbox]+.lbl:hover::before,input[type=radio]+.lbl:hover::before {
+  border-color: @gray;
+}
+
+/* Shadow when checked or Active */
+input[type=checkbox]:active+.lbl::before,input[type=radio]:active+.lbl::before,input[type=checkbox]:checked:active+.lbl::before,input[type=radio]:checked:active+.lbl::before {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Disabled state styles */
+input[type=checkbox]:disabled+.lbl::before,input[type=radio]:disabled+.lbl::before,input[type=checkbox][disabled]+.lbl::before,input[type=radio][disabled]+.lbl::before,input[type=checkbox].disabled+.lbl::before,input[type=radio].disabled+.lbl::before {
+  background-color: #DDD !important;
+  border-color: #CCC !important;
+  box-shadow: none !important;
+  color: #BBB;
+}
+
+/* Styles for Radio button */
+input[type=radio]+.lbl::before {
+  border-radius: 100%;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 36px;
+}
+
+input[type=radio]:checked+.lbl::before {
+  content: "\2022";
+}
+
+
+/* Floating Label Styles */
+.fly-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.fly-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  position: absolute;
+  transition: all .2s ease;
+  top: 1em;
+  display: inline-block;
+}
+
+.fly-label.has-focus {
+  color: @brand-primary;
+}
+
+.classic {
+  opacity: 0;
+  top: 0;
+  left: 1px;
+  z-index: -1;
+}
+.classic.is-active {
+  opacity: 1;
+  top: -18px;
+  z-index: 1;
+}
+
+.fly-group-custom{
+  position: relative;
+  margin-bottom: 30px;
+}
+
+
+/* Validation Styles */
+
+input, textarea, select{
+  &.form-control.parsley-error{
+    border-color: lighten(@alert-danger-text, 30%);
+  }
+}
+
+.parsley-errors-list{
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+  text-align: right;
+  font-size: (@font-size-base)-2;
+  color: lighten(@alert-danger-text, 10%);
+}

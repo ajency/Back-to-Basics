@@ -1,0 +1,64 @@
+/* Stashes Table in Backend */
+.stash-list{
+	[data-dynatable-column='title']{
+		width: 20%;
+	}
+	[data-dynatable-column='min_order_count']{
+		width: 20%;
+	}
+	[data-dynatable-column='created_at']{
+		width: 10%;
+	}
+	[data-dynatable-column='expires_on']{
+		width: 10%;
+	}
+	[data-dynatable-column='total_sales']{
+		width: 10%;
+	}
+	[data-dynatable-column='stash_status']{
+		width: 20%;
+	}
+	[data-dynatable-column='action']{
+		width: 10%;
+	}
+	.dateFilter{
+		input[type="text"]{
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	&.allOrganizations{
+		[data-dynatable-column='title']{
+			width: 20%;
+		}
+		[data-dynatable-column='organization_name']{
+			width: 20%;
+		}
+		[data-dynatable-column='min_order_count']{
+			width: 10%;
+		}
+		[data-dynatable-column='created_at']{
+			width: 10%;
+		}
+		[data-dynatable-column='expires_on']{
+			width: 10%;
+		}
+		[data-dynatable-column='total_sales']{
+			width: 10%;
+		}
+		[data-dynatable-column='stash_status']{
+			width: 15%;
+		}
+		[data-dynatable-column='action']{
+			width: 5%;
+		}
+		.dateFilter{
+			input[type="text"]{
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+}
+
