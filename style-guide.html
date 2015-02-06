@@ -186,6 +186,26 @@
 
                     </ul><!-- end nav navbar-nav -->
 
+                    <div class="social nav-social pull-right">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook fa-fw fa-2x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter fa-fw fa-2x"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram fa-fw fa-2x"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
 
                 </div><!-- end #navbar-collapse-1 -->
 
@@ -371,7 +391,6 @@
                           <button type="button" class="btn btn-default raised ripple-effect">DEFAULT</button>
                         </p>
                     </div>
-
                 </div>
 
                 <div class="row">
@@ -635,10 +654,43 @@
                     </div>                    
                 </div>
 
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3>Full Width Slider</h3>
+                        <hr>
+                    </div>
+                </div>
+
             </div>
 
         </div>
-        <!-- /container -->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="full-slider">
+                  <div><img src="https://placeimg.com/960/538/tech" class="img-responsive"></div>
+                  <div><img src="https://placeimg.com/960/538/nature" class="img-responsive"></div>
+                  <div><img src="https://placeimg.com/960/538/people" class="img-responsive"></div>
+                  <div><img src="https://placeimg.com/960/538/nature" class="img-responsive"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Regular Slider</h3>
+                    <hr>
+                    <div class="slider1 regular-slider">
+                      <div><img src="https://placeimg.com/960/338/tech" class="img-responsive"></div>
+                      <div><img src="https://placeimg.com/960/338/nature" class="img-responsive"></div>
+                      <div><img src="https://placeimg.com/960/338/people" class="img-responsive"></div>
+                      <div><img src="https://placeimg.com/960/338/nature" class="img-responsive"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Content -->
         <div class="footer-push"></div>
     </div><!-- /wrapper -->
     
@@ -677,58 +729,10 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/flyLabel/flyLabel.min.js"></script>
     <script src="assets/js/modernizr/modernizr.js"></script>
+    <script src="assets/js/megamenu/fhmm.js"></script>
+    <script src="assets/js/slick/slick.min.js"></script>
 
-    <script type="text/javascript">
-      if (Modernizr.input.placeholder) {
-        $('body').flyLabels();
-      }
-    </script>
-
-    <script type="text/javascript">
-        // Ripple-effect animation
-        (function($) {
-            $(".ripple-effect").click(function(e){
-                var rippler = $(this);
-
-                // create .ink element if it doesn't exist
-                if(rippler.find(".ink").length == 0) {
-                    rippler.append("<span class='ink'></span>");
-                }
-
-                var ink = rippler.find(".ink");
-
-                // prevent quick double clicks
-                ink.removeClass("animate");
-
-                // set .ink diametr
-                if(!ink.height() && !ink.width())
-                {
-                    var d = Math.max(rippler.outerWidth(), rippler.outerHeight());
-                    ink.css({height: d, width: d});
-                }
-
-                // get click coordinates
-                var x = e.pageX - rippler.offset().left - ink.width()/2;
-                var y = e.pageY - rippler.offset().top - ink.height()/2;
-
-                // set .ink position and add class .animate
-                ink.css({
-                  top: y+'px',
-                  left:x+'px'
-                }).addClass("animate");
-            })
-        })(jQuery);
-    </script>
-
-    <!-- MegaMenu -->
-    <script src="assets/js/megamenu/fhmm.js"></script>    
-    <script>
-        // Menu drop down effect
-        $('.dropdown-toggle').dropdownHover().dropdown();
-        $(document).on('click', '.fhmm .dropdown-menu', function(e) {
-            e.stopPropagation()
-        })
-    </script>
+    <script src="assets/js/custom.js"></script>
     
 </body>
 

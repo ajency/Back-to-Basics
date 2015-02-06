@@ -1,6 +1,9 @@
 @import "../css/plugins/megamenu/fhmm.css";
+@import "../css/plugins/slick/slick.css";
+@import "../css/plugins/slick/slick-theme.css";
 @import url(http://fonts.googleapis.com/css?family=PT+Sans|Montserrat:400,700|Open+Sans:400,700);
 /*---- CSS Imports ----*/
+/*---- LESS Imports ----*/
 /* Bootstrap Defaults */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
@@ -104948,21 +104951,6 @@ body {
   color: #cccccc;
 }
 /* Site Elements */
-/*@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Oswald Light'), local('Oswald-Light'), url(../fonts/Oswald-Light.woff) format('woff'), url(../fonts/Oswald-Light.woff2) format('woff2'), url(../fonts/Oswald-Light.ttf) format('truetype');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Oswald Regular'), local('Oswald-Regular'), url(../fonts/Oswald-Regular.woff) format('woff'), url(../fonts/Oswald-Regular.woff2) format('woff2'), url(../fonts/Oswald-Regular.ttf) format('truetype');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}*/
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -106635,6 +106623,21 @@ body {
 .fa-meanpath:before {
   content: "\f20c";
 }
+/*@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Oswald Light'), local('Oswald-Light'), url(../fonts/Oswald-Light.woff) format('woff'), url(../fonts/Oswald-Light.woff2) format('woff2'), url(../fonts/Oswald-Light.ttf) format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(../fonts/Oswald-Regular.woff) format('woff'), url(../fonts/Oswald-Regular.woff2) format('woff2'), url(../fonts/Oswald-Regular.ttf) format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}*/
 .form-control {
   display: block;
   width: 100%;
@@ -107540,6 +107543,58 @@ a.small .fa {
 }
 /* Sections */
 /* Woocommerce Styles */
+/* Slick Slider */
+.slick-loading .slick-list {
+  background: #ffffff url('../img/ajax-loader.gif') center center no-repeat;
+}
+/* Icons */
+@font-face {
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/slick.eot');
+  src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
+}
+.slick-prev,
+.slick-next {
+  height: auto;
+  width: auto;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'FontAwesome';
+  font-size: 50px;
+  color: #4d4d4d;
+}
+.slick-prev {
+  left: -15px;
+}
+.slick-prev:before {
+  content: '\f104';
+}
+.slick-next {
+  right: -15px;
+}
+.slick-next:before {
+  content: '\f105';
+}
+.full-slider .slick-prev:before,
+.full-slider .slick-next:before {
+  font-size: 100px;
+}
+.full-slider .slick-prev {
+  left: 25px;
+}
+.full-slider .slick-next {
+  right: 25px;
+}
+.slick-slider img {
+  width: 100%;
+  height: auto;
+}
+.regular-slider .slick-slide {
+  margin: 10px;
+}
 /* Ninja Kick Form */
 #ncf_sidebar.ncf_minimalistic input[type=text],
 #ncf_sidebar.ncf_minimalistic input[type=email],

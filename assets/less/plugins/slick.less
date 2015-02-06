@@ -1,0 +1,67 @@
+.slick-loading .slick-list
+{
+    background: #fff url('../img/ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/slick.eot');
+    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
+}
+
+.slick-prev, .slick-next{
+	height: auto;
+	width: auto;
+	&:before{
+		font-family: 'FontAwesome';
+    	font-size: 50px;
+    	color: @gray-darker;
+	}    
+}
+
+.slick-prev{
+	left: -15px;
+	&:before{
+		content: '\f104';
+	}
+}
+
+.slick-next{
+	right: -15px;
+	&:before{
+		content: '\f105';
+	}
+}
+
+.full-slider{
+	.slick-prev, .slick-next{
+		&:before{
+	    	font-size: 100px;
+		}    
+	}
+	.slick-prev{
+		left: 25px;
+	}
+
+	.slick-next{
+		right: 25px;
+	}
+}
+
+.slick-slider{
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+
+.regular-slider{
+	.slick-slide{
+		margin: 10px;
+	}
+}
