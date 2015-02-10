@@ -13,11 +13,11 @@ body{
 
 .wrapper{
 	min-height: 100%;
-	margin-bottom: -275px; 
+	margin-bottom: -250px; 
 }
 
 .footer-push{
-	height: 275px
+	height: 250px
 }
 
 .content-wrapper{
@@ -27,5 +27,17 @@ body{
 }
 
 .row{
-    margin-top: 25px;
+    // margin-top: 25px;
+}
+
+hr{
+    &.brand{
+        border-color: @brand-primary;        
+    }
+    &.dashed{
+        border-style: dashed;
+    }
+    &.dotted{
+        border-style: dotted;
+    }
 }

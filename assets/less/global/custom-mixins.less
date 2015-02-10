@@ -27,8 +27,7 @@
     }
 }
 
-
-/* Margin classes */
+/* Margin, Padding, Spacer classes */
 @from : 0;
 @to : 50;
  
@@ -45,15 +44,6 @@
   .m-l-@{index} {
     margin-left: unit(@index, px);
   }
-  .loop(@index + 5);
-}
-.loop(@from);
-
-/* Padding classes */
-@from : 0;
-@to : 50;
- 
-.loop(@index) when(@index =< @to) {
   .p-t-@{index} {
     padding-top: unit(@index, px);
   }
@@ -66,11 +56,14 @@
   .p-l-@{index} {
     padding-left: unit(@index, px);
   }
+  .spacer-@{index} {
+    padding-top: unit(@index, px);
+  }
   .loop(@index + 5);
 }
 .loop(@from);
 
-// Transitions
+/* Transitions */
 .ease {
     .transition(all 0.3s ease-in 0s);
 }
