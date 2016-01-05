@@ -1,0 +1,95 @@
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.wrapper{
+    a{
+      text-decoration: underline;
+    }
+}
+
+/* Custom page header */////////////////////////////////////////
+.header {
+  padding-bottom: 20px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer *////////////////////////////////////////
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container *////////////////////////////////////////
+
+@media (max-width: 1024px){
+  .container {
+      width: 100%;
+  }
+}
+
+.divider{
+    margin: 20px 0px;
+}
+
+.cover-promotion{
+        background: url(../img/banner.jpg) no-repeat;
+        background-size: cover;
+        position: relative;
+        .cover-content{
+            background: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            width: 90%;
+            margin: 20px auto;
+            left: 0%;
+            right: 0%;
+            padding: 20px;
+            h2{
+                line-height: 1.2em
+            }
+        }
+        .cover-info{
+            margin-top: 30px;
+            .cover-icon{
+                  display: inline-block;
+                  color: #ff0052;
+                  font-weight: 400;
+                  margin: 0 5px 0 0;
+                  width: 40px;  
+
+            }
+            .cover-label{
+                  display: inline-block;
+                  width: 70%;
+                  vertical-align: top;
+                  line-height: 1.2;
+            }
+        }
+}
+
+//* Blog/News Container *///////////////////////////////////////
+
+.blog-section{
+  .divider{
+    margin: 0px;
+    @media (max-width:767px){
+        margin: 20px 0px;
+    }
+  }
+}

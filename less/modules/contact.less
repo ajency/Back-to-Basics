@@ -1,0 +1,57 @@
+// Contact Section///////////////////////////////////////
+.contact-info{
+	h1{
+		    font-size: 48px;
+	}
+		.contact-number{
+		span{
+			display: block;
+			 @media(max-width:767px){
+		    	    display: inline-block;
+		    }
+		}
+	}
+	 @media(max-width:767px){
+		    	    .xs-hr{
+		    	    	margin-bottom:0px;
+
+		    	    }
+		    	    margin-bottom: 30px;
+		    }
+}
+
+//Contact Form //////////////////////////////
+.contact-form{
+	margin-top: 40px;
+	.form-group{
+		margin: 0px;
+		input, textarea{
+			border-bottom: 1px solid #ccc !important;
+			border:0px;
+			border-radius: 0px;
+			box-shadow: none;
+			margin-bottom: 20px;
+		    padding: 0px;
+		}
+		label{
+			height: 34px;
+			  padding: 0px;
+   		   line-height: 33px;
+   		   font-weight: 400;
+		    border-bottom: 2px solid @color-primary;
+		    text-align: left !important;
+		    @media(max-width:767px){
+		    	    width: 20%;
+		    }
+		}
+		.btn{
+			background: @color-primary;
+		}
+	}
+	 @media(max-width:767px){
+		    	    .form-input{
+		    	    	padding: 0px;
+		    	    }
+		    	    margin-top: 0px;
+		    }
+}
