@@ -1,0 +1,55 @@
+.ourOffers
+{
+	p
+	{
+		line-height: 1.8;
+	}
+	ul
+	{	   
+	    li
+	    {	    	
+	        &:before
+	        {
+	            content: "• ";
+	            color: #ff7f00;
+	            font-size: 22px;
+	            vertical-align: middle;
+	        }
+	    }
+	}
+}
+.counter-container
+{
+	.counter
+	{
+		font-size: 48px;
+	}
+}
+.team-container
+{
+	img.desaturate
+	{
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);		
+	}
+}
+@media(max-width:767px) {
+    .team-member
+    {
+    	width: 50%;
+    	float: left;
+    }
+    img.desaturate{
+        height:100px;
+    }
+    .team-container, .accordion-outer
+    {
+    	padding: 0;
+    }
+}
+@media(max-width:384px) {
+    .team-member
+    {
+    	width: 100%;    	
+    }       
+}

@@ -363,10 +363,10 @@ blockquote.pull-right small:after {
   background-color: #0aa699 !important;
 }
 .bg-purple {
-  color: #735f87 !important;
+  background-color: #735f87 !important;
 }
 .bg-grey {
-  color: #8b91a0 !important;
+  background-color: #8b91a0 !important;
 }
 .text-black {
   color: #1b1e24 !important;
@@ -488,6 +488,9 @@ hr {
 .m-t-40 {
   margin-top: 40px;
 }
+.m-b-0 {
+  margin-bottom: 0;
+}
 .m-b-10 {
   margin-bottom: 10px;
 }
@@ -502,6 +505,9 @@ hr {
 }
 .m-b-60 {
   margin-bottom: 60px;
+}
+.padding-none {
+  padding: 0;
 }
 .spacer {
   margin: 20px 0px 20px 0px;
@@ -770,5 +776,50 @@ footer .footer-section .main-link a:hover {
   min-height: 250px;
   background-position: center center;
   margin-top: 30px;
+}
+.panel-group .panel {
+  border-radius: 0;
+  border: none;
+}
+.panel-group .panel-heading {
+  padding: 0;
+  border-radius: 0;
+}
+.panel-group .panel-heading h3 {
+  padding: 10px;
+  position: relative;
+}
+.panel-group .panel-heading h3 a {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  right: 0;
+  background-color: #ff7f00;
+  height: 100%;
+}
+.panel-group .panel-heading h3 a i.arrow {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#ffffff" viewBox="0 0 64 64"> <path d="m22.118 44.236c-12.196 0-22.118-9.922-22.118-22.118s9.922-22.118 22.118-22.118 22.118 9.922 22.118 22.118-9.922 22.118-22.118 22.118zm0-42.736c-11.368 0-20.618 9.249-20.618 20.618 0 11.368 9.25 20.618 20.618 20.618 11.37 0 20.618-9.25 20.618-20.618 0-11.369-9.248-20.618-20.618-20.618z"/>		<path d="m19.341 29.884c-0.192 0-0.384-0.073-0.53-0.22-0.293-0.292-0.293-0.768 0-1.061l6.796-6.804-6.796-6.803c-0.292-0.293-0.292-0.769 0-1.061 0.293-0.293 0.768-0.293 1.061 0l7.325 7.333c0.293 0.293 0.293 0.768 0 1.061l-7.325 7.333c-0.147 0.149-0.339 0.222-0.531 0.222z"/> </svg>');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  display: block;
+  margin-left: 15px;
+  margin-top: 15px;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.panel-group .panel.activePanel i.arrow {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-left: 8px !important;
+}
+.panel-group .panel.activePanel .panel-heading {
+  background-color: #ff7f00;
+}
+.panel-group .panel.activePanel .panel-heading h3 {
+  color: #ffffff;
 }
 /*# sourceMappingURL=custom.css.map */

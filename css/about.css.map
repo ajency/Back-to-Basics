@@ -1,0 +1,1 @@
+{"version":3,"file":"about.css","sources":["about.less"],"names":[],"mappings":"AAAA,UAEC;EAEC,gBAAA;;AAMO,UAJR,GAEI,GAEK;EAEG,SAAS,IAAT;EACA,cAAA;EACA,eAAA;EACA,sBAAA;;AAKb,kBAEC;EAEC,eAAA;;AAGF,eAEC,IAAG;EAEF,gBAAgB,eAAhB;EACA,QAAQ,eAAR;;AAiBF,QAdwB;EACpB;IAEC,UAAA;IACA,WAAA;;EAED,GAAG;IACC,aAAA;;EAEJ;EAAiB;IAEhB,UAAA;;;AAQJ,QALuB;EACpB;IAEC,WAAA","sourceRoot":"..\\less"}

@@ -1,0 +1,17 @@
+.breadcrumb {
+  background: none;
+  padding: 0px;
+}
+.breadcrumb a {
+  text-decoration: none;
+}
+@media (max-width: 992px) {
+  .breadcrub-container {
+    text-align: left !important;
+    font-size: 80%;
+  }
+  .breadcrub-container .breadcrumb {
+    text-align: left !important;
+  }
+}
+/*# sourceMappingURL=breadcrumb.css.map */
