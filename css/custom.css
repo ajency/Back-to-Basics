@@ -561,16 +561,22 @@ hr {
   margin: 10px 0px;
 }
 /* line 250, modules\typo.less */
+.lg-hr-grey {
+  width: 100%;
+  border: 2px solid #333;
+  margin: 10px 0px;
+}
+/* line 256, modules\typo.less */
 .lg-icon {
   width: 50px;
   height: 50px;
 }
-/* line 254, modules\typo.less */
+/* line 260, modules\typo.less */
 .sm-icon {
   width: 30px;
   height: 30px;
 }
-/* line 259, modules\typo.less */
+/* line 265, modules\typo.less */
 .gray-logo {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
@@ -580,63 +586,67 @@ hr {
           transition-duration: 1s;
   opacity: .4;
 }
-/* line 265, modules\typo.less */
+/* line 271, modules\typo.less */
 .b-l {
   border-left: 1px solid #e6e6e6;
 }
-/* line 268, modules\typo.less */
+/* line 274, modules\typo.less */
 .b-r {
   border-right: 1px solid #e6e6e6;
 }
-/* line 272, modules\typo.less */
+/* line 278, modules\typo.less */
 .margin-none {
   margin: 0px;
 }
-/* line 275, modules\typo.less */
+/* line 281, modules\typo.less */
+.m-t-0 {
+  margin-top: 0;
+}
+/* line 284, modules\typo.less */
 .m-t-10 {
   margin-top: 10px;
 }
-/* line 278, modules\typo.less */
+/* line 287, modules\typo.less */
 .m-t-20 {
   margin-top: 20px;
 }
-/* line 281, modules\typo.less */
+/* line 290, modules\typo.less */
 .m-t-40 {
   margin-top: 40px;
 }
-/* line 284, modules\typo.less */
+/* line 293, modules\typo.less */
 .m-b-0 {
   margin-bottom: 0;
 }
-/* line 287, modules\typo.less */
+/* line 296, modules\typo.less */
 .m-b-10 {
   margin-bottom: 10px;
 }
-/* line 290, modules\typo.less */
+/* line 299, modules\typo.less */
 .m-b-20 {
   margin-bottom: 20px;
 }
-/* line 293, modules\typo.less */
+/* line 302, modules\typo.less */
 .m-b-30 {
   margin-bottom: 30px;
 }
-/* line 296, modules\typo.less */
+/* line 305, modules\typo.less */
 .m-b-40 {
   margin-bottom: 40px;
 }
-/* line 299, modules\typo.less */
+/* line 308, modules\typo.less */
 .m-b-60 {
   margin-bottom: 60px;
 }
-/* line 304, modules\typo.less */
+/* line 313, modules\typo.less */
 .padding-none {
   padding: 0;
 }
-/* line 308, modules\typo.less */
+/* line 317, modules\typo.less */
 .spacer {
   margin: 20px 0px 20px 0px;
 }
-/* line 314, modules\typo.less */
+/* line 323, modules\typo.less */
 .alert-default {
   color: #ffffff;
   background-color: #ff7f00;
@@ -647,7 +657,7 @@ hr {
   line-height: 33px;
 }
 @media (max-width: 962px) {
-  /* line 323, modules\typo.less */
+  /* line 332, modules\typo.less */
   .alert-default .btn {
     float: none !important;
     display: block;
@@ -821,6 +831,26 @@ footer .footer-section .main-link a:hover {
     margin: 10px auto;
     width: 50%;
   }
+}
+/* line 1, modules\buttons.less */
+.btn {
+  border-radius: 2px;
+  padding: 10px 20px;
+}
+/* line 6, modules\buttons.less */
+.btn-primary {
+  background: #ff7f00;
+  color: #ffffff;
+  border: 1px solid #ff7f00;
+  -webkit-transition: all 1s ease;
+          transition: all 1s ease;
+}
+/* line 12, modules\buttons.less */
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #cc6600;
+  color: #ffffff;
+  border: 1px solid #cc6600;
 }
 /* line 3, modules\contact.less */
 .contact-info h1 {
@@ -1012,5 +1042,97 @@ footer .footer-section .main-link a:hover {
 /* line 53, modules\accordion.less */
 .panel-group .panel.activePanel .panel-heading h3 {
   color: #ffffff;
+}
+/* line 1, modules\team.less */
+.social-sharing {
+  text-align: center;
+}
+/* line 4, modules\team.less */
+.social-sharing img {
+  display: inline-block;
+}
+/* line 9, modules\team.less */
+.image-container {
+  position: relative;
+  display: table;
+}
+/* line 14, modules\team.less */
+.image-container img.profile {
+  height: 100px;
+}
+/* line 18, modules\team.less */
+.image-container .social-sharing-overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 30px 0px;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+          transition: all 1s ease;
+}
+/* line 30, modules\team.less */
+.image-container .social-sharing-overlay img {
+  display: inline-block;
+}
+/* line 38, modules\team.less */
+.single-member h5 {
+  -webkit-transition: color 1s ease;
+          transition: color 1s ease;
+}
+/* line 45, modules\team.less */
+.single-member:hover .social-sharing-overlay {
+  opacity: 1;
+}
+/* line 49, modules\team.less */
+.single-member:hover h5 {
+  color: #ff7f00;
+}
+/* line 54, modules\team.less */
+.work-with-us {
+  background-color: #e9ecee;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+/* line 59, modules\team.less */
+.work-with-us .container {
+  padding: 30px;
+}
+/* line 68, modules\team.less */
+.intern-member h6:first-child {
+  margin-top: 30px;
+}
+@media (max-width: 414px) {
+  /* line 75, modules\team.less */
+  .top-container {
+    text-align: center;
+  }
+  /* line 79, modules\team.less */
+  .founder-profile {
+    margin: auto;
+  }
+  /* line 83, modules\team.less */
+  .single-member,
+  .intern-member,
+  .founder {
+    width: 100%;
+    text-align: center;
+  }
+  /* line 87, modules\team.less */
+  .single-member .image-container {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+  }
+  /* line 97, modules\team.less */
+  .intern-member h6:first-child {
+    margin-top: 0px;
+  }
+  /* line 104, modules\team.less */
+  .intern-member h3:last-child {
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=custom.css.map */
