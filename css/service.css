@@ -1,0 +1,40 @@
+.clients-container {
+  background: url('../img/greyLines.jpg');
+  padding: 20px;
+}
+.clients-logo .helper {
+  display: inline-block
+  /*height: 100%;
+	    vertical-align: middle;*/
+}
+.clients-logo img {
+  vertical-align: middle;
+  max-height: 50px;
+  max-width: 100%
+  /*display: inline-block;*/
+}
+.service-container img.image {
+  height: 100px;
+}
+.service-middle-section {
+  text-align: center;
+}
+.service-middle-section .logo {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+@media (max-width: 767px) {
+  .service-middle-section {
+    text-align: left;
+  }
+  .clients-logo {
+    width: 50%;
+    float: left;
+  }
+}
+@media (max-width: 414px) {
+  .clients-logo {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=service.css.map */
