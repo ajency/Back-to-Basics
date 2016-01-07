@@ -106,45 +106,54 @@
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
 }
-/* line 33, modules\navbar.less */
+/* line 31, modules\navbar.less */
+.navbar-inverse li a:hover {
+  background-color: #ff7f00 !important;
+  color: #ffffff !important;
+}
+/* line 34, modules\navbar.less */
+.navbar-inverse li a:hover span {
+  color: #f6f7f8;
+}
+/* line 40, modules\navbar.less */
 .navbar-inverse li:last-child a {
   border-right: 1px solid #ffffff;
 }
-/* line 41, modules\navbar.less */
+/* line 48, modules\navbar.less */
 .navbar-inverse .active a {
   background-color: #ff7f00 !important;
   color: #ffffff !important;
 }
-/* line 44, modules\navbar.less */
+/* line 51, modules\navbar.less */
 .navbar-inverse .active a span {
   color: #f6f7f8;
 }
-/* line 52, modules\navbar.less */
+/* line 59, modules\navbar.less */
 .navbar-inverse .open .dropdown-toggle {
   background-color: #ff7f00 !important;
   color: #ffffff !important;
   border-color: #ffffff !important;
 }
-/* line 56, modules\navbar.less */
+/* line 63, modules\navbar.less */
 .navbar-inverse .open .dropdown-toggle i {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-/* line 59, modules\navbar.less */
+/* line 66, modules\navbar.less */
 .navbar-inverse .open .dropdown-toggle span {
   color: #f6f7f8;
 }
-/* line 65, modules\navbar.less */
+/* line 72, modules\navbar.less */
 .navbar-inverse .open .dropdown-menu a {
   font-weight: 400;
 }
-/* line 70, modules\navbar.less */
+/* line 77, modules\navbar.less */
 .navbar-inverse .navbar-toggle {
   background-color: #032457 !important;
 }
 @media (max-width: 962px) {
-  /* line 74, modules\navbar.less */
+  /* line 81, modules\navbar.less */
   .navbar-inverse .navbar-header:before {
     content: "Menu";
     position: absolute;
@@ -153,37 +162,37 @@
     text-transform: uppercase;
   }
 }
-/* line 86, modules\navbar.less */
+/* line 93, modules\navbar.less */
 .navbar-form {
   margin-top: 11px;
   margin-bottom: 0px;
   border-color: #cfd6d9 !important;
 }
-/* line 91, modules\navbar.less */
+/* line 98, modules\navbar.less */
 .navbar-collapse {
   padding: 0px;
 }
 @media (max-width: 962px) {
-  /* line 93, modules\navbar.less */
+  /* line 100, modules\navbar.less */
   .navbar-collapse {
     padding-left: 15px;
     padding-right: 15px;
     border-color: #cfd6d9 !important;
   }
 }
-/* line 101, modules\navbar.less */
+/* line 108, modules\navbar.less */
 input[type=search] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
   font-family: inherit;
   font-size: 100%;
 }
-/* line 107, modules\navbar.less */
+/* line 114, modules\navbar.less */
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button {
   display: none;
 }
-/* line 111, modules\navbar.less */
+/* line 118, modules\navbar.less */
 input[type=search] {
   background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
   border: solid 1px #8b91a0;
@@ -194,23 +203,23 @@ input[type=search] {
   -webkit-transition: all .5s;
   transition: all .5s;
 }
-/* line 124, modules\navbar.less */
+/* line 131, modules\navbar.less */
 input[type=search]:focus {
   width: 130px;
   background-color: #fff;
   border-color: #ff7f00;
   box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
 }
-/* line 134, modules\navbar.less */
+/* line 141, modules\navbar.less */
 input:-moz-placeholder {
   color: #999;
 }
-/* line 137, modules\navbar.less */
+/* line 144, modules\navbar.less */
 input::-webkit-input-placeholder {
   color: #999;
 }
 /* Demo 2 */
-/* line 142, modules\navbar.less */
+/* line 149, modules\navbar.less */
 #demo-2 input[type=search] {
   width: 20px;
   height: 20px;
@@ -218,11 +227,11 @@ input::-webkit-input-placeholder {
   color: transparent;
   cursor: pointer;
 }
-/* line 149, modules\navbar.less */
+/* line 156, modules\navbar.less */
 #demo-2 input[type=search]:hover {
   background-color: #fff;
 }
-/* line 152, modules\navbar.less */
+/* line 159, modules\navbar.less */
 #demo-2 input[type=search]:focus {
   width: 130px;
   padding-left: 32px;
@@ -231,16 +240,16 @@ input::-webkit-input-placeholder {
   cursor: auto;
 }
 @media (max-width: 962px) {
-  /* line 158, modules\navbar.less */
+  /* line 165, modules\navbar.less */
   #demo-2 input[type=search]:focus {
     width: 90%;
   }
 }
-/* line 162, modules\navbar.less */
+/* line 169, modules\navbar.less */
 #demo-2 input:-moz-placeholder {
   color: transparent;
 }
-/* line 165, modules\navbar.less */
+/* line 172, modules\navbar.less */
 #demo-2 input::-webkit-input-placeholder {
   color: transparent;
 }
