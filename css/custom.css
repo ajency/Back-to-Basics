@@ -457,6 +457,11 @@ hr {
   border: 3px solid #ff7f00;
   margin: 10px 0px;
 }
+.lg-hr-grey {
+  width: 100%;
+  border: 2px solid #333;
+  margin: 10px 0px;
+}
 .lg-icon {
   width: 50px;
   height: 50px;
@@ -482,6 +487,9 @@ hr {
 }
 .margin-none {
   margin: 0px;
+}
+.m-t-0 {
+  margin-top: 0;
 }
 .m-t-10 {
   margin-top: 10px;
@@ -669,6 +677,23 @@ footer .footer-section .main-link a:hover {
     width: 50%;
   }
 }
+.btn {
+  border-radius: 2px;
+  padding: 10px 20px;
+}
+.btn-primary {
+  background: #ff7f00;
+  color: #ffffff;
+  border: 1px solid #ff7f00;
+  -webkit-transition: all 1s ease;
+          transition: all 1s ease;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #cc6600;
+  color: #ffffff;
+  border: 1px solid #cc6600;
+}
 .contact-info h1 {
   font-size: 48px;
 }
@@ -825,5 +850,79 @@ footer .footer-section .main-link a:hover {
 }
 .panel-group .panel.activePanel .panel-heading h3 {
   color: #ffffff;
+}
+.social-sharing {
+  text-align: center;
+}
+.social-sharing img {
+  display: inline-block;
+}
+.image-container {
+  position: relative;
+  display: table;
+}
+.image-container img.profile {
+  height: 100px;
+}
+.image-container .social-sharing-overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 30px 0px;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+          transition: all 1s ease;
+}
+.image-container .social-sharing-overlay img {
+  display: inline-block;
+}
+.single-member h5 {
+  -webkit-transition: color 1s ease;
+          transition: color 1s ease;
+}
+.single-member:hover .social-sharing-overlay {
+  opacity: 1;
+}
+.single-member:hover h5 {
+  color: #ff7f00;
+}
+.work-with-us {
+  background-color: #e9ecee;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+.work-with-us .container {
+  padding: 30px;
+}
+.intern-member h6:first-child {
+  margin-top: 30px;
+}
+@media (max-width: 414px) {
+  .top-container {
+    text-align: center;
+  }
+  .founder-profile {
+    margin: auto;
+  }
+  .single-member,
+  .intern-member,
+  .founder {
+    width: 100%;
+    text-align: center;
+  }
+  .single-member .image-container {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+  }
+  .intern-member h6:first-child {
+    margin-top: 0px;
+  }
+  .intern-member h3:last-child {
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=custom.css.map */
