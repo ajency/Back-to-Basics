@@ -226,32 +226,37 @@ input::-webkit-input-placeholder {
   padding-left: 10px;
   color: transparent;
   cursor: pointer;
+  text-indent: -100px;
 }
-/* line 156, modules\navbar.less */
+/* line 159, modules\navbar.less */
 #demo-2 input[type=search]:hover {
   background-color: #fff;
 }
-/* line 159, modules\navbar.less */
+/* line 164, modules\navbar.less */
 #demo-2 input[type=search]:focus {
   width: 130px;
   padding-left: 32px;
   color: #000;
   background-color: #fff;
   cursor: auto;
+  text-indent: inherit;
 }
 @media (max-width: 962px) {
-  /* line 165, modules\navbar.less */
+  /* line 171, modules\navbar.less */
   #demo-2 input[type=search]:focus {
     width: 90%;
   }
 }
-/* line 169, modules\navbar.less */
-#demo-2 input:-moz-placeholder {
-  color: transparent;
-}
-/* line 172, modules\navbar.less */
-#demo-2 input::-webkit-input-placeholder {
-  color: transparent;
+@-moz-document url-prefix() {
+  /* line 178, modules\navbar.less */
+  #demo-2 input[type=search] {
+    width: 38px;
+    height: 38px;
+  }
+  /* line 182, modules\navbar.less */
+  #demo-2 input[type=search]:focus {
+    width: 170px;
+  }
 }
 /* line 2, modules\typo.less */
 h1,

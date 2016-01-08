@@ -152,23 +152,34 @@ input::-webkit-input-placeholder {
 	padding-left: 10px;
 	color: transparent;
 	cursor: pointer;
+	text-indent: -100px;
 }
+
+
 #demo-2 input[type=search]:hover {
 	background-color: #fff;
 }
+
+
 #demo-2 input[type=search]:focus {
 	width: 130px;
 	padding-left: 32px;
 	color: #000;
 	background-color: #fff;
 	cursor: auto;
+	text-indent: inherit;
 	 @media (max-width:962px){
         width:90%;
     }
 }
-#demo-2 input:-moz-placeholder {
-	color: transparent;
-}
-#demo-2 input::-webkit-input-placeholder {
-	color: transparent;
+
+// Mozilla fix for search box ////////////////////////////////////////
+@-moz-document url-prefix() {
+    #demo-2 input[type=search]{
+		width: 38px;
+		height: 38px;
+    }
+    #demo-2 input[type=search]:focus {
+		width: 170px;
+	}
 }
