@@ -257,13 +257,19 @@ input::-webkit-input-placeholder {
     width: 90%;
   }
 }
+@media (max-width: 1024px) {
+  /* line 175, modules\navbar.less */
+  #demo-2 input[type=search]:focus {
+    width: 74px;
+  }
+}
 @-moz-document url-prefix() {
-  /* line 178, modules\navbar.less */
+  /* line 182, modules\navbar.less */
   #demo-2 input[type=search] {
     width: 38px;
     height: 38px;
   }
-  /* line 182, modules\navbar.less */
+  /* line 186, modules\navbar.less */
   #demo-2 input[type=search]:focus {
     width: 170px;
   }
