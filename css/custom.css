@@ -539,6 +539,10 @@ hr {
     display: block;
   }
 }
+body,
+html {
+  height: 100%;
+}
 .widget {
   height: 320px;
   margin-top: 20px;
@@ -924,5 +928,31 @@ footer .footer-section .main-link a:hover {
   .intern-member h3:last-child {
     margin-bottom: 20px;
   }
+}
+.error-container {
+  height: 100%;
+}
+.error-container .content {
+  display: table;
+  margin: 0px auto;
+  position: relative;
+  height: 100%;
+  width: 90%;
+}
+.error-container .content .inner-content {
+  display: table-cell;
+  vertical-align: middle;
+  border: 1px solid #e9ecee;
+}
+.error-container .error-header {
+  background: #e9ecee;
+}
+.error-container .error-message {
+  text-align: center;
+  padding: 50px 0;
+}
+.error-container .error-message h1 {
+  font-size: 120px;
+  color: #032457;
 }
 /*# sourceMappingURL=custom.css.map */
