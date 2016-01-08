@@ -37,6 +37,17 @@
 		filter: grayscale(100%);	
 	}
 }
+
+.service-para
+{
+	display: -webkit-box;
+    max-width: 100%;
+    max-height: 103px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+}
 @media(max-width:767px) {
     .service-middle-section
     {
@@ -92,5 +103,31 @@
 	   p{
 	   	margin: 5px 0px;
 	   }
+	}
+}
+@media(max-width:568px) {
+    .count-data
+    {
+    	padding-left: 7.5px;
+    	&:first-child
+    	{
+    		padding-left:15px;
+    	}
+    	h1
+    	{
+    		font-size: 30px;
+    	}
+    	h5
+    	{
+    		font-size: 11px;    		
+    	}
+    }   
+}
+@media(max-width:414px)
+{
+	.count-data
+	{
+		width: 100%;
+		margin-bottom: 10px;
 	}
 }
