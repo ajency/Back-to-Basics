@@ -257,7 +257,7 @@ input::-webkit-input-placeholder {
     width: 90%;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1024px) and (orientation: landscape) {
   /* line 175, modules\navbar.less */
   #demo-2 input[type=search]:focus {
     width: 74px;
