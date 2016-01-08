@@ -15,6 +15,9 @@
          @media(max-width:767px){
             margin-left: 10px;
          }
+        
+        //Added class to handle mail and tel no in mobile with pointer events//////////////
+
          .notify-xs-click{
             pointer-events: none;
             .contact-icon{
@@ -35,7 +38,8 @@
                 height: 44px;
                 padding-top: 10px;
                 }
-                @media (max-width:600px) {
+                //For 5' landscape handling too//////////////
+                @media (max-width:768px) {
                      pointer-events: auto;
                  } 
             }
