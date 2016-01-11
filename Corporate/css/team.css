@@ -1,0 +1,58 @@
+.social-sharing {
+  text-align: center;
+}
+.social-sharing img {
+  display: inline-block;
+}
+.image-container {
+  position: relative;
+  display: table;
+}
+.image-container img.profile {
+  height: 100px;
+}
+.image-container .social-sharing-overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 30px 0px;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+          transition: all 1s ease;
+}
+.image-container .social-sharing-overlay img {
+  display: inline-block;
+}
+.single-member h4 {
+  -webkit-transition: color 1s ease;
+          transition: color 1s ease;
+}
+.single-member:hover .social-sharing-overlay {
+  opacity: 1;
+}
+.single-member:hover h4 {
+  color: #ff7f00;
+}
+.work-with-us {
+  background-color: #f2f2f2;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.work-with-us .container {
+  padding: 30px;
+}
+@media (max-width: 767px) {
+  .social-sharing {
+    text-align: left;
+  }
+}
+@media (max-width: 414px) {
+  .single-member,
+  .intern-member {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=team.css.map */
