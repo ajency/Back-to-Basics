@@ -3,14 +3,14 @@
   padding: 20px;
 }
 .clients-logo .helper {
-  display: inline-block
+  display: inline-block;
   /*height: 100%;
 	    vertical-align: middle;*/
 }
 .clients-logo img {
   vertical-align: middle;
   max-height: 50px;
-  max-width: 100%
+  max-width: 100%;
   /*display: inline-block;*/
 }
 .service-container img.image {
@@ -102,4 +102,3 @@
     margin-bottom: 10px;
   }
 }
-/*# sourceMappingURL=service.css.map */

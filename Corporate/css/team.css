@@ -20,15 +20,13 @@
   text-align: center;
   padding: 30px 0px;
   opacity: 0;
-  -webkit-transition: all 1s ease;
-          transition: all 1s ease;
+  transition: all 1s ease;
 }
 .image-container .social-sharing-overlay img {
   display: inline-block;
 }
 .single-member h4 {
-  -webkit-transition: color 1s ease;
-          transition: color 1s ease;
+  transition: color 1s ease;
 }
 .single-member:hover .social-sharing-overlay {
   opacity: 1;
@@ -55,4 +53,3 @@
     width: 100%;
   }
 }
-/*# sourceMappingURL=team.css.map */
