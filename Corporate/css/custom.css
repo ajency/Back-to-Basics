@@ -1040,7 +1040,17 @@ footer .footer-section .main-link a:hover {
   padding: 10px;
   position: relative;
 }
-/* line 18, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\accordion.less */
+@media (max-width: 768px) {
+  /* line 17, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\accordion.less */
+  .panel-group .panel-heading h3 {
+    font-size: 0.9em;
+  }
+}
+/* line 21, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\accordion.less */
+.panel-group .panel-heading h3 > div {
+  width: 90%;
+}
+/* line 24, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\accordion.less */
 .panel-group .panel-heading h3 a {
   position: absolute;
   top: 0;
@@ -1048,7 +1058,7 @@ footer .footer-section .main-link a:hover {
   right: 0;
   height: 100%;
 }
-/* line 26, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\accordion.less */
+/* line 32, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\accordion.less */
 .panel-group .panel-heading h3 a i.arrow {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"> <path d="m22.118 44.236c-12.196 0-22.118-9.922-22.118-22.118s9.922-22.118 22.118-22.118 22.118 9.922 22.118 22.118-9.922 22.118-22.118 22.118zm0-42.736c-11.368 0-20.618 9.249-20.618 20.618 0 11.368 9.25 20.618 20.618 20.618 11.37 0 20.618-9.25 20.618-20.618 0-11.369-9.248-20.618-20.618-20.618z"/>		<path d="m19.341 29.884c-0.192 0-0.384-0.073-0.53-0.22-0.293-0.292-0.293-0.768 0-1.061l6.796-6.804-6.796-6.803c-0.292-0.293-0.292-0.769 0-1.061 0.293-0.293 0.768-0.293 1.061 0l7.325 7.333c0.293 0.293 0.293 0.768 0 1.061l-7.325 7.333c-0.147 0.149-0.339 0.222-0.531 0.222z"/> </svg>');
   background-repeat: no-repeat;
@@ -1062,18 +1072,18 @@ footer .footer-section .main-link a:hover {
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
 }
-/* line 45, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\accordion.less */
+/* line 51, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\accordion.less */
 .panel-group .panel.activePanel i.arrow {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
   margin-left: 8px !important;
 }
-/* line 50, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\accordion.less */
+/* line 56, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\accordion.less */
 .panel-group .panel.activePanel .panel-heading {
   background-color: #ff7f00;
 }
-/* line 53, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\accordion.less */
+/* line 59, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\accordion.less */
 .panel-group .panel.activePanel .panel-heading h3 {
   color: #ffffff;
 }
@@ -1088,7 +1098,6 @@ footer .footer-section .main-link a:hover {
 /* line 9, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
 .image-container {
   position: relative;
-  display: table;
 }
 /* line 14, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
 .image-container img.profile {
@@ -1098,8 +1107,11 @@ footer .footer-section .main-link a:hover {
 .image-container .social-sharing-overlay {
   position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   height: 100%;
-  width: 100%;
+  width: 100px;
   background: rgba(0, 0, 0, 0.5);
   text-align: center;
   padding: 30px 0px;
@@ -1107,64 +1119,68 @@ footer .footer-section .main-link a:hover {
   -webkit-transition: all 1s ease;
           transition: all 1s ease;
 }
-/* line 30, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
+/* line 33, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
 .image-container .social-sharing-overlay img {
   display: inline-block;
 }
-/* line 38, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
+/* line 39, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
+.single-member {
+  text-align: center;
+}
+/* line 42, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
 .single-member h5 {
   -webkit-transition: color 1s ease;
           transition: color 1s ease;
 }
-/* line 45, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
+/* line 49, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
 .single-member:hover .social-sharing-overlay {
   opacity: 1;
 }
-/* line 49, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
+/* line 53, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
 .single-member:hover h5 {
   color: #ff7f00;
 }
-/* line 54, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
+/* line 58, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
 .work-with-us {
   background-color: #e9ecee;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 }
-/* line 59, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
+/* line 63, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
 .work-with-us .container {
   padding: 30px;
 }
-/* line 68, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
+/* line 72, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
 .intern-member h6:first-child {
   margin-top: 30px;
 }
 @media (max-width: 414px) {
-  /* line 75, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
+  /* line 79, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
   .top-container {
     text-align: center;
   }
-  /* line 79, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
+  /* line 83, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
   .founder-profile {
     margin: auto;
   }
-  /* line 83, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
+  /* line 87, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
   .single-member,
   .intern-member,
   .founder {
     width: 100%;
     text-align: center;
   }
-  /* line 87, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
+  /* line 91, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
   .single-member .image-container {
     height: 100px;
     width: 100px;
     margin: auto;
   }
-  /* line 97, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
+  /* line 101, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
   .intern-member h6:first-child {
     margin-top: 0px;
   }
-  /* line 104, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
+  /* line 108, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\team.less */
   .intern-member h3:last-child {
     margin-bottom: 20px;
   }
