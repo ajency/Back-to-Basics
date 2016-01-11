@@ -1,0 +1,189 @@
+// Navbar Section///////////////////////////////////////
+.navbar-inverse {
+	border-radius: 0px !important;
+	background: @base-light-four;
+	border:0px;
+	li{
+		
+		a{
+			color:@color-black!important;
+			padding: 10px 10px;
+  		    border-left: 1px solid @color-white;
+  		    font-weight: 500;
+			span{
+				color:@color-grey;
+				font-weight: 200;
+				i{
+				    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"> <path d="m22.118 44.236c-12.196 0-22.118-9.922-22.118-22.118s9.922-22.118 22.118-22.118 22.118 9.922 22.118 22.118-9.922 22.118-22.118 22.118zm0-42.736c-11.368 0-20.618 9.249-20.618 20.618 0 11.368 9.25 20.618 20.618 20.618 11.37 0 20.618-9.25 20.618-20.618 0-11.369-9.248-20.618-20.618-20.618z"/>		<path d="m19.341 29.884c-0.192 0-0.384-0.073-0.53-0.22-0.293-0.292-0.293-0.768 0-1.061l6.796-6.804-6.796-6.803c-0.292-0.293-0.292-0.769 0-1.061 0.293-0.293 0.768-0.293 1.061 0l7.325 7.333c0.293 0.293 0.293 0.768 0 1.061l-7.325 7.333c-0.147 0.149-0.339 0.222-0.531 0.222z"/> </svg>');
+				    background-repeat: no-repeat;
+				    background-size: auto 100%;
+				    display: inline-block;
+				    width:28px;
+				    height: 28px;
+				    display: block;
+				    float: right;
+				    margin-left: 20px;
+				    transition: all 0.5s ease;
+
+				}// Icon
+			}
+			//Added hover as per theme for particular li
+			&:hover{
+				background-color: @color-primary !important;
+				color:@color-white!important;
+				span{
+					color:@base-light-five;
+				}
+			}			
+		}
+		&:last-child{
+				a{
+					border-right: 1px solid @color-white;
+				}
+			}
+		
+	}
+	// Active Class///////////////////////////////////////
+	.active{
+		a{
+			background-color: @color-primary !important;
+			color:@color-white!important;
+			span{
+				color:@base-light-five;
+				
+			}
+		}
+	}
+	//Dropdown Class///////////////////////////////////////
+	.open{
+			.dropdown-toggle{
+				background-color: @color-primary !important;
+				color:@color-white!important;
+				border-color: @color-white !important;
+				i{
+					transform: rotate(90deg);
+				}
+			span{
+				color:@base-light-five;
+				
+			}
+		}
+		.dropdown-menu{
+			a{
+				font-weight: 400;
+			}
+		}
+	}
+	.navbar-toggle {
+		    background-color: #032457 !important;
+	}
+	@media(max-width:962px){
+		.navbar-header:before{
+			    content: "Menu";
+			    position: absolute;
+			    padding: 16px;
+			    font-weight: 500;
+			    text-transform: uppercase;
+		}
+	}
+}
+
+// Navbar Form///////////////////////////////////////
+
+.navbar-form{
+		margin-top: 11px;
+		margin-bottom: 0px;
+		border-color: @base-light-two !important;
+}
+.navbar-collapse{
+		padding:0px;
+		@media(max-width:962px){
+			padding-left: 15px;
+			padding-right: 15px;
+			border-color: @base-light-two !important;
+		}
+}
+
+
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+input[type=search] {
+	background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px @color-grey;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+	outline: none;
+	-webkit-border-radius: 20em;
+	-moz-border-radius: 20em;
+	border-radius: 20em;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	width: 130px;
+	background-color: #fff;
+	border-color: @color-primary;
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+/* Demo 2 *////////////////////////////////////////
+#demo-2 input[type=search] {
+	width: 20px;
+	height: 20px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+	text-indent: -100px;
+}
+
+
+#demo-2 input[type=search]:hover {
+	background-color: #fff;
+}
+
+
+#demo-2 input[type=search]:focus {
+	width: 130px;
+	padding-left: 32px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+	text-indent: inherit;
+	 @media (max-width:962px){
+        width:90%;
+    }
+    // Search box fix for landscape tab ////////////////////////////////////////
+    // @media (max-width:1024px) and (orientation: landscape) {
+    // 	width: 74px;
+    // }
+}
+
+// Mozilla fix for search box ////////////////////////////////////////
+@-moz-document url-prefix() {
+    #demo-2 input[type=search]{
+		width: 38px;
+		height: 38px;
+    }
+    #demo-2 input[type=search]:focus {
+		width: 170px;
+	}
+}
