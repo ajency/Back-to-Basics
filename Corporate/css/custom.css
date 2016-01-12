@@ -90,19 +90,25 @@
   background: #e9ecee;
   border: 0px;
 }
-/* line 8, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* line 7, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+  .navbar-inverse {
+    height: 60px;
+  }
+}
+/* line 12, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 .navbar-inverse li a {
   color: #1b1e24 !important;
   padding: 10px 10px;
   border-left: 1px solid #ffffff;
   font-weight: 500;
 }
-/* line 13, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 17, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 .navbar-inverse li a span {
   color: #8b91a0;
   font-weight: 200;
 }
-/* line 16, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 20, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 .navbar-inverse li a span i {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"> <path d="m22.118 44.236c-12.196 0-22.118-9.922-22.118-22.118s9.922-22.118 22.118-22.118 22.118 9.922 22.118 22.118-9.922 22.118-22.118 22.118zm0-42.736c-11.368 0-20.618 9.249-20.618 20.618 0 11.368 9.25 20.618 20.618 20.618 11.37 0 20.618-9.25 20.618-20.618 0-11.369-9.248-20.618-20.618-20.618z"/>		<path d="m19.341 29.884c-0.192 0-0.384-0.073-0.53-0.22-0.293-0.292-0.293-0.768 0-1.061l6.796-6.804-6.796-6.803c-0.292-0.293-0.292-0.769 0-1.061 0.293-0.293 0.768-0.293 1.061 0l7.325 7.333c0.293 0.293 0.293 0.768 0 1.061l-7.325 7.333c-0.147 0.149-0.339 0.222-0.531 0.222z"/> </svg>');
   background-repeat: no-repeat;
@@ -116,54 +122,54 @@
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
 }
-/* line 31, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 35, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 .navbar-inverse li a:hover {
   background-color: #ff7f00 !important;
   color: #ffffff !important;
 }
-/* line 34, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 38, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 .navbar-inverse li a:hover span {
   color: #f6f7f8;
 }
-/* line 40, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 44, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 .navbar-inverse li:last-child a {
   border-right: 1px solid #ffffff;
 }
-/* line 48, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 52, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 .navbar-inverse .active a {
   background-color: #ff7f00 !important;
   color: #ffffff !important;
 }
-/* line 51, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 55, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 .navbar-inverse .active a span {
   color: #f6f7f8;
 }
-/* line 59, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 63, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 .navbar-inverse .open .dropdown-toggle {
   background-color: #ff7f00 !important;
   color: #ffffff !important;
   border-color: #ffffff !important;
 }
-/* line 63, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 67, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 .navbar-inverse .open .dropdown-toggle i {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-/* line 66, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 70, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 .navbar-inverse .open .dropdown-toggle span {
   color: #f6f7f8;
 }
-/* line 72, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 76, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 .navbar-inverse .open .dropdown-menu a {
   font-weight: 400;
 }
-/* line 77, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 81, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 .navbar-inverse .navbar-toggle {
   background-color: #032457 !important;
 }
 @media (max-width: 962px) {
-  /* line 81, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+  /* line 85, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
   .navbar-inverse .navbar-header:before {
     content: "Menu";
     position: absolute;
@@ -172,37 +178,37 @@
     text-transform: uppercase;
   }
 }
-/* line 93, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 97, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 .navbar-form {
   margin-top: 11px;
   margin-bottom: 0px;
   border-color: #cfd6d9 !important;
 }
-/* line 98, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 102, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 .navbar-collapse {
   padding: 0px;
 }
 @media (max-width: 962px) {
-  /* line 100, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+  /* line 104, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
   .navbar-collapse {
     padding-left: 15px;
     padding-right: 15px;
     border-color: #cfd6d9 !important;
   }
 }
-/* line 108, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 112, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 input[type=search] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
   font-family: inherit;
   font-size: 100%;
 }
-/* line 114, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 118, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button {
   display: none;
 }
-/* line 118, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 122, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 input[type=search] {
   background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
   border: solid 1px #8b91a0;
@@ -213,23 +219,23 @@ input[type=search] {
   -webkit-transition: all .5s;
   transition: all .5s;
 }
-/* line 131, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 135, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 input[type=search]:focus {
   width: 130px;
   background-color: #fff;
   border-color: #ff7f00;
   box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
 }
-/* line 141, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 145, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 input:-moz-placeholder {
   color: #999;
 }
-/* line 144, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 148, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 input::-webkit-input-placeholder {
   color: #999;
 }
 /* Demo 2 */
-/* line 149, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 153, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 #demo-2 input[type=search] {
   width: 20px;
   height: 20px;
@@ -238,11 +244,11 @@ input::-webkit-input-placeholder {
   cursor: pointer;
   text-indent: -100px;
 }
-/* line 159, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 163, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 #demo-2 input[type=search]:hover {
   background-color: #fff;
 }
-/* line 164, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+/* line 168, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
 #demo-2 input[type=search]:focus {
   width: 130px;
   padding-left: 32px;
@@ -252,18 +258,29 @@ input::-webkit-input-placeholder {
   text-indent: inherit;
 }
 @media (max-width: 962px) {
-  /* line 171, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+  /* line 175, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
   #demo-2 input[type=search]:focus {
     width: 90%;
   }
 }
 @-moz-document url-prefix() {
-  /* line 182, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+  /* line 186, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
   #demo-2 input[type=search] {
     width: 38px;
     height: 38px;
   }
-  /* line 186, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+  /* line 190, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+  #demo-2 input[type=search]:focus {
+    width: 170px;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* line 198, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+  #demo-2 input[type=search] {
+    width: 38px;
+    height: 38px;
+  }
+  /* line 202, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
   #demo-2 input[type=search]:focus {
     width: 170px;
   }

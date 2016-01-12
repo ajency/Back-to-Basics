@@ -3,6 +3,10 @@
 	border-radius: 0px !important;
 	background: @base-light-four;
 	border:0px;
+	// IE fix for search box ////////////////////////////////////////
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		height: 60px;	
+	}
 	li{
 		
 		a{
@@ -180,6 +184,18 @@ input::-webkit-input-placeholder {
 // Mozilla fix for search box ////////////////////////////////////////
 @-moz-document url-prefix() {
     #demo-2 input[type=search]{
+		width: 38px;
+		height: 38px;
+    }
+    #demo-2 input[type=search]:focus {
+		width: 170px;
+	}
+}
+
+
+// IE fix for search box ////////////////////////////////////////
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     #demo-2 input[type=search]{
 		width: 38px;
 		height: 38px;
     }
