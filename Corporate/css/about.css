@@ -28,8 +28,14 @@
   }
 }
 @media (max-width: 384px) {
+  .team-container {
+    text-align: center;
+  }
   .team-member {
     width: 100%;
+  }
+  .team-member img {
+    margin: auto;
   }
 }
 body .panel-default .panel-heading {

@@ -45,6 +45,9 @@
   .clients-logo {
     width: 100%;
   }
+  .clients-logo img {
+    margin: auto;
+  }
 }
 .count-data {
   text-align: center;

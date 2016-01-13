@@ -843,7 +843,7 @@ footer .footer-section .main-link a:hover {
   background: #ffffff;
 }
 .panel-group .panel-heading h3 {
-  padding: 10px;
+  padding: 10px 45px 10px 10px;
   position: relative;
 }
 .panel-group .panel-heading h3 a {
