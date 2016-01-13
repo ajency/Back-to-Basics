@@ -76,6 +76,11 @@
   background: #e9ecee;
   border: 0px;
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .navbar-inverse {
+    height: 60px;
+  }
+}
 .navbar-inverse li a {
   color: #1b1e24 !important;
   padding: 10px 10px;
@@ -217,6 +222,15 @@ input::-webkit-input-placeholder {
   }
 }
 @-moz-document url-prefix() {
+  #demo-2 input[type=search] {
+    width: 38px;
+    height: 38px;
+  }
+  #demo-2 input[type=search]:focus {
+    width: 170px;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   #demo-2 input[type=search] {
     width: 38px;
     height: 38px;
