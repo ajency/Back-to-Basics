@@ -18,6 +18,7 @@
   .team-member {
     width: 50%;
     float: left;
+    text-align: center;
   }
   img.desaturate {
     height: 100px;

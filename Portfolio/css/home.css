@@ -1,0 +1,135 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.logo h3 {
+  margin: 0px;
+  font-size: 30px;
+}
+.logo h2 {
+  font-weight: bold;
+  margin: 0px;
+  font-size: 47px;
+  line-height: 37px;
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.logo-section {
+  height: 500px;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .logo-section {
+    height: 100%;
+  }
+}
+.logo-section .contact-info {
+  position: absolute;
+  bottom: 0px;
+  left: 6%;
+  right: 0%;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+@media (max-width: 768px) {
+  .logo-section .contact-info {
+    position: relative;
+    left: 0%;
+  }
+}
+.logo-section .contact-info a:hover {
+  opacity: .6;
+}
+.logo-section p {
+  font-weight: 200;
+}
+.carousel-inner {
+  height: 500px;
+}
+.carousel-inner .carousel-caption {
+  right: 0%;
+  padding-bottom: 30px;
+  bottom: 20%;
+  background: #fff;
+  width: 320px;
+  left: initial;
+  color: #000;
+  text-shadow: none;
+  text-align: left;
+  padding: 20px 20px;
+  font-weight: 200;
+}
+@media (max-width: 768px) {
+  .carousel-inner .carousel-caption {
+    width: 230px;
+  }
+}
+.carousel-inner .carousel-caption hr {
+  border-top: 2px solid #000000;
+  margin: 0px;
+}
+.carousel-inner .carousel-caption h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+}
+@media (max-width: 768px) {
+  .carousel-inner {
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .fp-slidesContainer {
+    margin-top: 10%;
+  }
+}
+/* Page Section */
+.page-title {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 70px;
+  text-align: right;
+  margin-top: 5%;
+}
+.fade-txt {
+  color: #f8f6ef;
+  font-size: 70px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.content-wrapper {
+  padding: 70px 0px;
+}
+.profile-box {
+  width: 320px;
+  height: 320px;
+  background: #f8f6ef;
+  -webkit-transform: rotate(71deg);
+      -ms-transform: rotate(71deg);
+          transform: rotate(71deg);
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+/*Portfolio*/
+.grid-item {
+  width: 280px;
+  border: 5px solid #fff;
+  padding: 10px;
+  float: left;
+}
+.grid-item .caption {
+  padding: 10px 0px;
+  font-weight: 300;
+}
+.grid-item--width2 {
+  width: 280px;
+}
+.grid-item--height2 {
+  height: 420px;
+}
+.callout-box {
+  background: #f8f6ef;
+  text-align: center;
+}
+/*# sourceMappingURL=home.css.map */

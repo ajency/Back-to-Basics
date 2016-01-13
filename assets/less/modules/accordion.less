@@ -14,7 +14,13 @@
 			{
 				padding: 10px 45px 10px 10px;
 				position: relative;
-
+				@media (max-width:768px) {
+					font-size: 0.9em;
+				}
+				///////Added an extra div to control accordion title length in smaller devices/////////////
+				& > div{
+					width: 90%;
+				}
 				a
 				{
 					position: absolute;
