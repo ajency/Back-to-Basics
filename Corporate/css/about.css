@@ -1,47 +1,38 @@
-/* line 3, about.less */
 .ourOffers p {
   line-height: 1.8;
 }
-/* line 11, about.less */
 .ourOffers ul li:before {
   content: "• ";
   color: #ff7f00;
   font-size: 22px;
   vertical-align: middle;
 }
-/* line 23, about.less */
 .counter-container .counter {
   font-size: 48px;
 }
-/* line 30, about.less */
 .team-container img.desaturate {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 @media (max-width: 767px) {
-  /* line 37, about.less */
   .team-member {
     width: 50%;
     float: left;
     text-align: center;
   }
-  /* line 43, about.less */
   img.desaturate {
     height: 100px;
   }
-  /* line 46, about.less */
   .team-container,
   .accordion-outer {
     padding: 0;
   }
 }
 @media (max-width: 384px) {
-  /* line 52, about.less */
   .team-member {
     width: 100%;
   }
 }
-/* line 57, about.less */
 body .panel-default .panel-heading {
   background: #f2f2f2 ;
 }
