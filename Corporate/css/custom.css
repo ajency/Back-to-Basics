@@ -264,6 +264,12 @@ input::-webkit-input-placeholder {
     width: 90%;
   }
 }
+@media (max-width: 1024px) and (orientation: landscape) {
+  /* line 180, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
+  #demo-2 input[type=search]:focus {
+    width: 125px;
+  }
+}
 @-moz-document url-prefix() {
   /* line 187, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\navbar.less */
   #demo-2 input[type=search] {
