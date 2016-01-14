@@ -50,6 +50,7 @@ body {
   left: 0%;
   right: 0%;
   padding: 20px;
+  height: 20em;
 }
 .cover-promotion .cover-content h2 {
   line-height: 1.2em;
@@ -78,3 +79,4 @@ body {
     margin: 20px 0px;
   }
 }
+/*# sourceMappingURL=home.css.map */
