@@ -1,37 +1,9 @@
-.ourOffers p {
-  line-height: 1.8;
-}
 .counter-container .counter {
   font-size: 48px;
 }
 .team-container img.desaturate {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-}
-@media (max-width: 767px) {
-  .team-member {
-    width: 50%;
-    float: left;
-    text-align: center;
-  }
-  img.desaturate {
-    height: 100px;
-  }
-  .team-container,
-  .accordion-outer {
-    padding: 0;
-  }
-}
-@media (max-width: 384px) {
-  .team-container {
-    text-align: center;
-  }
-  .team-member {
-    width: 100%;
-  }
-  .team-member img {
-    margin: auto;
-  }
 }
 body .panel-default .panel-heading {
   background: #f2f2f2 ;

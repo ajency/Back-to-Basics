@@ -41,14 +41,6 @@
     float: left;
   }
 }
-@media (max-width: 414px) {
-  .clients-logo {
-    width: 100%;
-  }
-  .clients-logo img {
-    margin: auto;
-  }
-}
 .count-data {
   text-align: center;
 }
@@ -97,12 +89,6 @@
   }
   .count-data h5 {
     font-size: 11px;
-  }
-}
-@media (max-width: 414px) {
-  .count-data {
-    width: 100%;
-    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=service.css.map */

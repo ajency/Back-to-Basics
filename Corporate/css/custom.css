@@ -15,6 +15,11 @@
   float: right;
   margin-top: 10px;
 }
+@media (max-width: 767px) {
+  .header-contacts {
+    margin-top: 5px;
+  }
+}
 .header-contacts .header-contacts__item {
   display: inline-block;
   margin-left: 25px;
@@ -337,6 +342,7 @@ a:active {
 }
 i {
   font-size: 1em;
+  font-weight: 400;
 }
 label {
   display: block;
@@ -527,6 +533,12 @@ hr {
   border: 2px solid #333;
   margin: 10px 0px;
 }
+@media (max-width: 767px) {
+  .lg-hr-grey {
+    width: 30%;
+    margin: 10px auto;
+  }
+}
 .lg-icon {
   width: 50px;
   height: 50px;
@@ -588,6 +600,7 @@ hr {
 }
 .spacer {
   margin: 20px 0px 20px 0px;
+  display: inline-block;
 }
 .alert-default {
   color: #ffffff;
@@ -604,6 +617,9 @@ hr {
     display: block;
   }
 }
+.clearfix {
+  clear: both;
+}
 body,
 html {
   height: 100%;
@@ -614,17 +630,30 @@ html {
     font-size: 110%;
   }
 }
+@media (min-width: 992px) {
+  body,
+  html {
+    font-size: 90%;
+  }
+}
+@media (min-width: 1024px) {
+  body,
+  html {
+    font-size: 94%;
+  }
+}
 @media only screen and (min-width: 1920px) {
   .container {
     width: 1600px;
   }
 }
 .widget {
-  height: 23em;
+  padding: 10px;
   margin-top: 20px;
 }
 .promo {
-  margin: 2.6em 0;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
 }
 .promo h2 {
   font-size: 1.9em;
@@ -663,9 +692,15 @@ html {
   right: 0;
   top: 0;
   z-index: -1;
-  font-size: 10.125rem;
+  font-size: 6.125rem;
   line-height: 8.5rem;
   font-weight: bold;
+}
+@media (max-width: 767px) {
+  .career-point {
+    left: 0;
+    font-size: 10.125rem;
+  }
 }
 .career-point:after {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQIW2NkYGBg+P///38QDQKMyBwUAUZGRrAkhgoAvKwT9VYXn50AAAAASUVORK5CYII=) repeat;
@@ -679,14 +714,13 @@ html {
 /* carousel */
 .carousel-testimonials {
   background: #f3f3f3;
-  margin: 3em auto;
-  padding: 10px
+  margin: 3em auto
   /* indicator position */
   /* indicator color */
   /* active indicator */
 }
 .carousel-testimonials #quote-carousel {
-  padding: 0 10px 30px 10px;
+  padding: 0 10px 40px 10px;
   margin-top: 30px;
   text-align: center;
 }
@@ -852,7 +886,7 @@ footer .footer-section .main-link a:hover {
 .breadcrumb a {
   text-decoration: none;
 }
-@media (max-width: 992px) {
+@media (max-width: 600px) {
   .breadcrub-container {
     text-align: left !important;
     font-size: 80%;
@@ -861,14 +895,14 @@ footer .footer-section .main-link a:hover {
     text-align: left !important;
   }
 }
-.sidebar .widget {
+.sidebar {
   height: auto;
 }
-.sidebar .widget .widget-title {
+.sidebar .widget-title {
   font-weight: 600;
   text-transform: uppercase;
 }
-.sidebar .widget ul {
+.sidebar ul {
   margin-left: 0px;
   padding-left: 16px;
 }
@@ -935,8 +969,8 @@ footer .footer-section .main-link a:hover {
   width: 28px;
   height: 28px;
   display: block;
-  margin-left: 15px;
-  margin-top: 15px;
+  margin-left: 20px;
+  margin-top: 12px;
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
 }
@@ -1030,6 +1064,10 @@ footer .footer-section .main-link a:hover {
   .intern-member h3:last-child {
     margin-bottom: 20px;
   }
+}
+.career-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .error-container {
   height: 100%;
