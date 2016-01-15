@@ -4,7 +4,12 @@ body {
   padding-bottom: 20px;
 }
 
-@fade-color:#f8f6ef;
+@fade-color: #f8f6ef;
+@white: #fff;
+@gray: #ccc;
+@dark-gray: #333;
+@primary-color: #ff7f00;
+@light-gray: #eee;
 
 .logo{
   h3{
@@ -120,18 +125,93 @@ body {
 
 /*Portfolio*/
 .grid-item { 
-  width: 280px;
+  /*width: 280px;*/
+  width: 25%;
   border:5px solid #fff;
   padding:10px;
   float: left;
+  @media screen and (max-width: 1200px){
+    width: 33.33%;
+  }
+  @media screen and (max-width: 767px){
+    width: 50%;
+  }
+  @media screen and (max-width: 480px){
+    width: 100%;
+  }
   .caption{
       padding:10px 0px;
       font-weight: 300;
   }
 }
 .grid-item--width2 { width: 280px; }
-.grid-item--height2 { height: 420px; }
+.grid-item--height2{
+  height: 420px;
+  @media screen and (max-width: 767px){
+    height: auto;
+  }
+}
 .callout-box{
   background: @fade-color;
   text-align: center;
 }
+
+
+/*contact*/
+.contact-form{
+  .form-group{
+    margin-bottom: 50px;
+    input,
+    select,
+    textarea{
+      border: none;
+      border-bottom: 1px solid @gray;
+      border-radius: 0;
+      box-shadow: none;
+      padding: 0;
+      &:focus{
+        box-shadow: none;
+        border-color: #d58512;
+      }
+    }
+    textarea{
+      resize: none;
+    }
+  }
+}
+
+.contact-details{
+  .p-t-30{
+    padding-top: 30px;
+  }
+  .fade-txt{
+    text-align: right;
+  }
+}
+
+.black-btn{
+  border-radius: 0;
+  padding: 10px 20px;
+  color: @white;
+  background: @dark-gray;
+  text-transform: uppercase;
+  &:hover{
+    background: @primary-color;
+    color: @white;
+  }
+}
+
+/*footer*/
+footer{
+  padding: 60px 0 15px 0;
+  background: @light-gray;
+  img{
+    margin: auto;
+  }
+  small{
+    display: block;
+    margin: 30px 0;
+  }
+}
+
+
