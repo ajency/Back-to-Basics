@@ -1,5 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 @import "../../assets/css/iconizr-svg-sprite.css";
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-regular-webfont.eot');
+  src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype')
+  
+  /* IE9 Compat Modes */
+  /* IE6-IE8 */
+}
 /* line 2, C:\xampp\htdocs\Back-to-Basics\assets\less\modules\header.less */
 .header {
   padding-bottom: 20px;
