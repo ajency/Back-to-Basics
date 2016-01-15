@@ -8,6 +8,9 @@
     padding: 0px 0px 10px 0px;
   }
 }
+.header .logo {
+  width: 140px;
+}
 .header-contacts {
   float: right;
   margin-top: 10px;
