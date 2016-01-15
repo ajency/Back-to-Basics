@@ -201,3 +201,9 @@ footer small {
   display: block;
   margin: 30px 0;
 }
+/*header*/
+.masthead {
+  background: #ffffff;
+  z-index: 1;
+  position: relative;
+}
