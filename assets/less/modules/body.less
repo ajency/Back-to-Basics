@@ -2,23 +2,30 @@
 body, html
 {
 	height: 100%;
-	@media(min-width: 1400px){   //Bigger Deskstop
+	@media only screen and (min-width: 1920px) {  //Bigger Deskstop
 		font-size: 110%;
 	}
+	@media (min-width: 992px){
+    	font-size:90%;
+    }
+    @media (min-width: 1024px){
+		font-size:94%;
+	}
 }
-@media(min-width: 1400px){
+@media only screen and (min-width: 1920px) {
 	.container {
 	    width: 1600px;
 	}
 }
 // Right Banner Section////////////////////////////////////////
 .widget{
-	height: 23em;
+	padding: 10px;
 	margin-top: 20px;
 }
 
 .promo{
-    margin: 2.6em 0;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
     h2{
         font-size: 1.9em;
         @media (min-width: 992px){
@@ -69,4 +76,30 @@ body, html
 		}
 	}
 
+}
+
+//Number-section/////////////////////////////////////////////////
+.career-point {
+    color: #B9B9B9;
+    font-family: "NHaasGroteskDSPro-75Bd","Helvetica Neue",Helvetica,Arial,sans-serif;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    font-size: 6.125rem;
+    line-height: 8.5rem;
+    font-weight: bold;
+	 @media (max-width: 767px){
+    	left: 0;
+    	font-size: 10.125rem;
+   	 }
+}
+.career-point:after {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQIW2NkYGBg+P///38QDQKMyBwUAUZGRrAkhgoAvKwT9VYXn50AAAAASUVORK5CYII=) repeat;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
