@@ -223,6 +223,11 @@ input::-webkit-input-placeholder {
     width: 90%;
   }
 }
+@media (max-width: 1024px) and (orientation: landscape) {
+  #demo-2 input[type=search]:focus {
+    width: 125px;
+  }
+}
 @-moz-document url-prefix() {
   #demo-2 input[type=search] {
     width: 38px;
