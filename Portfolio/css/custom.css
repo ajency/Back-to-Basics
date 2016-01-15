@@ -229,6 +229,15 @@ blockquote small:before {
 blockquote.pull-right small:after {
   content: "";
 }
+ul.bullet-list li:before {
+  content: "• ";
+  color: #ff7f00;
+  font-size: 22px;
+  vertical-align: middle;
+}
+ul.icon-list li {
+  padding: 5px 0px;
+}
 .normal {
   font-weight: normal;
 }
