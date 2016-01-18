@@ -181,11 +181,12 @@ body {
 }
 
 .contact-details{
-  .p-t-30{
-    padding-top: 30px;
-  }
   .fade-txt{
     text-align: right;
+    margin-bottom: 0;
+  }
+  [class*="col-"]:nth-of-type(2){
+    padding-top: 30px;
   }
 }
 
@@ -205,9 +206,6 @@ body {
 footer{
   padding: 60px 0 15px 0;
   background: @light-gray;
-  img{
-    margin: auto;
-  }
   small{
     display: block;
     margin: 10px 0;
