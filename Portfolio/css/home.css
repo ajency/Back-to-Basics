@@ -291,4 +291,14 @@ footer small {
   z-index: 1;
   position: relative;
 }
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1600px;
+  }
+}
 /*# sourceMappingURL=home.css.map */
