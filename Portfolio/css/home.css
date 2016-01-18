@@ -27,7 +27,8 @@ body {
   bottom: 0px;
   left: 6%;
   right: 0%;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }
 @media (max-width: 768px) {
   .logo-section .contact-info {
@@ -103,7 +104,9 @@ body {
   width: 320px;
   height: 320px;
   background: #f8f6ef;
-  transform: rotate(71deg);
+  -webkit-transform: rotate(71deg);
+      -ms-transform: rotate(71deg);
+          transform: rotate(71deg);
   position: absolute;
   top: 0px;
   z-index: -1;
@@ -199,7 +202,90 @@ footer img {
 }
 footer small {
   display: block;
-  margin: 30px 0;
+  margin: 10px 0;
+}
+.heart {
+  margin: 0 auto;
+  background: url('https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png');
+  width: 50px;
+  height: 50px;
+  background-size: 2900%;
+  background-repeat: no-repeat;
+}
+.heart:hover {
+  background-position: right;
+}
+.heart:hover.tooltip:after,
+.heart:hover.tooltip:before {
+  opacity: 1;
+}
+.animated-heart {
+  -webkit-animation-name: moveHeart;
+          animation-name: moveHeart;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: steps(28);
+          animation-timing-function: steps(28);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.tooltip:before {
+  content: attr(data-content);
+  display: block;
+  background-color: rgba(32, 36, 39, 0.85);
+  border-radius: 4px;
+  padding: 5px 10px;
+  color: white;
+  font-size: 12px;
+}
+.tooltip:after {
+  content: '';
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba(32, 36, 39, 0.85);
+  width: 0;
+  height: 0;
+  display: block;
+  margin: 0 auto;
+}
+.tooltip:before,
+.tooltip:after {
+  top: -14px;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: opacity 200ms linear;
+          transition: opacity 200ms linear;
+}
+@-webkit-keyframes moveHeart {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: right;
+  }
+}
+@keyframes moveHeart {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: right;
+  }
+}
+.infinite-heart {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.click-heart {
+  cursor: pointer;
 }
 /*header*/
 .masthead {
@@ -207,3 +293,4 @@ footer small {
   z-index: 1;
   position: relative;
 }
+/*# sourceMappingURL=home.css.map */

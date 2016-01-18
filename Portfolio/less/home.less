@@ -210,8 +210,76 @@ footer{
   }
   small{
     display: block;
-    margin: 30px 0;
+    margin: 10px 0;
   }
+}
+@main-black: rgba(32, 36, 39, 0.85);
+
+.heart {
+  margin: 0 auto;
+  background: url('https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png');
+  width: 50px;
+  height: 50px;
+  background-size: 2900%;
+  background-repeat: no-repeat;
+  &:hover {
+    background-position: right;
+    &.tooltip:after, &.tooltip:before {
+      opacity: 1;
+    }
+  }
+}
+
+.animated-heart {
+  animation-name: moveHeart;
+  animation-duration: .8s;
+  animation-iteration-count: 1;
+  animation-timing-function: steps(28);
+  animation-fill-mode: forwards;
+}
+
+.tooltip {
+  &:before {
+    content: attr(data-content);
+    display: block;
+    background-color: @main-black;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 12px;
+  }
+  &:after {
+    content: '';
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid @main-black;
+    width: 0;
+    height: 0;
+    display: block;
+    margin: 0 auto;
+  }
+  &:before, &:after {
+    top: -14px;
+    position: relative;
+    opacity: 0;
+    transition: opacity 200ms linear;
+  }
+}
+
+@keyframes moveHeart {
+    0% { background-position: left; }
+    50% { background-position: right; }
+    100% { background-position: right; }
+}
+
+
+
+.infinite-heart {
+  animation-iteration-count: infinite;
+}
+
+.click-heart {
+  cursor: pointer;
 }
 
 /*header*/

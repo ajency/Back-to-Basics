@@ -215,7 +215,7 @@
                         </div>
                </div>
             </div>
-            <div class="section fp-auto-height" id="section4">
+            <div class="section " id="section4">
                <div class="intro">
                   <h1 class="page-title">Contact</h1>
                   <p class="text-right">Write us your thoughts, concerns, or congratulations here <br> We would love to hear from you</p>
@@ -308,10 +308,10 @@
                   </div> <!--row-->
                </div>
 
-               <footer class="text-center">
-                <img src="img/logo.jpg" alt="" class="img-responsive">
-                <small>&copy; Copywright 2016 pennygerman.com. All Rights Reserved.</small>
-                <p>Made with <i class="fa fa-heart"></i></p>
+               <footer class="text-center" style="height:350px;">
+                <h2>Back To <b class="bold">Basic</b></h2>
+                <small class="text-muted">&copy; Copywright 2016 pennygerman.com. All Rights Reserved.</small>
+                <div>Made with  <div class="heart click-heart"></div></div>
               </footer>
             </div>
 
@@ -340,6 +340,7 @@
               fitToSection: true,
               verticalCentered: true,
               resize:false,
+              scrollOverflow: true,
               anchors: ['firstPage', 'secondPage', 'thirdPage','fourthpage'],
               // scrollOverflow: true
           });
@@ -349,6 +350,9 @@
         itemSelector: '.grid-item',
          percentPosition: true
           });
+          $('.click-heart').on('click', function(){
+  $(this).toggleClass('animated-heart');
+});
       });
    </script>
 </html>
