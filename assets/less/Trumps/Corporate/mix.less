@@ -1,0 +1,173 @@
+
+// STATES STYLE ////////////////////////////////////////
+.b-l{
+    border-left:1px solid lighten(#000, 90%);
+}
+.b-r{
+    border-right:1px solid lighten(#000, 90%);
+}
+
+i {
+    font-size: 1em;
+    font-weight: 400;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    &.inline {
+        display: inline-block;
+        position: relative;
+        top: 0px;
+        font-size: 13px;
+    }
+    &.done {
+        color: #0090d9 !important;
+        text-decoration: line-through;
+    }
+}
+
+
+blockquote {
+    padding: 0 0 0 18px;
+    border-left: 5px solid #EEEEEE;
+    p {
+        font-size: 16px;
+    }
+    small {
+        line-height: 29px;
+        color: #8b91a0;
+        &:before {
+            content: "";
+        }
+    }
+    &.pull-right {
+        small {
+            &:after {
+                content: "";
+            }
+        }
+    }
+}
+
+.icon-arrow {
+               background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"> <path d="m22.118 44.236c-12.196 0-22.118-9.922-22.118-22.118s9.922-22.118 22.118-22.118 22.118 9.922 22.118 22.118-9.922 22.118-22.118 22.118zm0-42.736c-11.368 0-20.618 9.249-20.618 20.618 0 11.368 9.25 20.618 20.618 20.618 11.37 0 20.618-9.25 20.618-20.618 0-11.369-9.248-20.618-20.618-20.618z"/>        <path d="m19.341 29.884c-0.192 0-0.384-0.073-0.53-0.22-0.293-0.292-0.293-0.768 0-1.061l6.796-6.804-6.796-6.803c-0.292-0.293-0.292-0.769 0-1.061 0.293-0.293 0.768-0.293 1.061 0l7.325 7.333c0.293 0.293 0.293 0.768 0 1.061l-7.325 7.333c-0.147 0.149-0.339 0.222-0.531 0.222z"/> </svg>');
+               background-repeat: no-repeat;
+               background-size: auto 100%;
+               display: inline-block;
+               width:28px;
+               height: 28px;
+               display: block;
+}
+
+.lg-icon{
+    width: 50px;
+    height: 50px;
+}
+.sm-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.gray-logo{
+    filter: grayscale(1);
+    transition-property: filter;
+    transition-duration: 1s;
+    opacity: .4;
+}
+
+
+
+// Padding Spacing //////////////////////////////////
+.padding-none{
+    padding: 0;
+}
+
+
+// Alert //////////////////////////////////////////
+.alert-default{
+        color: @color-white;
+        background-color: @color-primary;
+        border-radius: 0px;
+        margin-top: 40px;
+        font-weight: 200;
+        font-size: 19px;
+        line-height: 33px;
+        @media(max-width:962px) {
+            .btn{
+                float: none !important;
+                display: block;
+            }
+            
+        }
+}
+// Clear Fix ///////////////////////////////////////
+.clearfix{
+    clear: both;
+}
+
+
+//Number-section/////////////////////////////////////////////////
+.career-point {
+    color: #B9B9B9;
+    font-family: "NHaasGroteskDSPro-75Bd","Helvetica Neue",Helvetica,Arial,sans-serif;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    font-size: 6.125rem;
+    line-height: 8.5rem;
+    font-weight: bold;
+     @media (max-width: 767px){
+        left: 0;
+        font-size: 10.125rem;
+     }
+}
+.career-point:after {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQIW2NkYGBg+P///38QDQKMyBwUAUZGRrAkhgoAvKwT9VYXn50AAAAASUVORK5CYII=) repeat;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+//Blog Section /////////////////////////////////////////////////
+.blog-section{
+    .b-r{
+        border-right: 1px solid @base-light-four;
+    }
+    .featured-blog-title{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .featured-blog-excerpt{
+        margin-bottom: 20px;
+    }
+    .blog-sm{
+        .blog-meta{
+            opacity: .6;
+            display: block;
+            margin-top: 10px;
+            font-size: .7em;
+        }
+        .blog-title{
+            margin:0px 0px 20px 0px;
+        }
+    }
+
+}
+
+
+// Breadcrumb/////////////////////////////
+@media(max-width:600px) {
+    .breadcrub-container{
+        text-align: left !important;
+         font-size: 80%;
+
+        .breadcrumb{
+            text-align: left !important;
+        }
+    }
+    
+}

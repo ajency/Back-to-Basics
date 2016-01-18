@@ -1,0 +1,21 @@
+a {
+    text-shadow: none !important;
+    color: @color-primary;
+    transition: color 0.1s linear 0s,background-color 0.1s linear 0s,opacity 0.1s linear 0s  !important;
+    &.icon {
+        &:hover {
+            text-decoration: none;
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -o-transition: all 0.1s ease-in-out;
+            -ms-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+            opacity: .4;
+        }
+    }
+    &:hover, &:focus, &:active{
+            outline: 0;
+            text-decoration: none;
+    }
+}
+
