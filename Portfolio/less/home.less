@@ -144,9 +144,9 @@ body {
       font-weight: 300;
   }
 }
-.grid-item--width2 { width: 280px; }
+.grid-item--width2 { /*width: 280px;*/ }
 .grid-item--height2{
-  height: 420px;
+  /*height: 420px;*/
   @media screen and (max-width: 767px){
     height: auto;
   }
@@ -293,5 +293,28 @@ footer{
   }
   @media screen and (min-width: 1600px){
     width: 1600px;
+  }
+}
+
+/*polaroid effect*/
+.polaroid{
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  @media screen and (max-width: 767px){
+    position: relative;
+  }
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    box-shadow: inset 0px 0px 0px 100vh #f8f6ef;
+    transform: rotate(62deg);
+    z-index: -1;
   }
 }
