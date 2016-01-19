@@ -1,13 +1,10 @@
-/* line 4, about.less */
 .counter-container .counter {
   font-size: 48px;
 }
-/* line 11, about.less */
 .team-container img.desaturate {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-/* line 18, about.less */
 body .panel-default .panel-heading {
   background: #f2f2f2 ;
 }

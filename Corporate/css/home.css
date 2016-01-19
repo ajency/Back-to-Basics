@@ -57,6 +57,14 @@ body {
   margin: 0 5px 0 0;
   width: 40px;
 }
+.cover-promotion .cover-info .cover-icon i {
+  -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
+  margin-top: 17px;
+  margin-left: 10px;
+  display: block;
+}
 .cover-promotion .cover-info .cover-label {
   display: inline-block;
   width: 70%;
