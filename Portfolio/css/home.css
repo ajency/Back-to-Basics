@@ -324,9 +324,16 @@ footer small {
   bottom: 0;
   background: transparent;
   box-shadow: inset 0px 0px 0px 100vh #f8f6ef;
-  -webkit-transform: rotate(62deg);
-      -ms-transform: rotate(62deg);
-          transform: rotate(62deg);
+  -webkit-transform: rotate(75deg);
+      -ms-transform: rotate(75deg);
+          transform: rotate(75deg);
   z-index: -1;
+}
+@media screen and (max-width: 460px) {
+  .polaroid:before {
+    -webkit-transform: rotate(62deg);
+        -ms-transform: rotate(62deg);
+            transform: rotate(62deg);
+  }
 }
 /*# sourceMappingURL=home.css.map */
