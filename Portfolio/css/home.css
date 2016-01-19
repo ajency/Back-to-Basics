@@ -139,10 +139,10 @@ body {
   font-weight: 300;
 }
 .grid-item--width2 {
-  width: 280px;
+  /*width: 280px;*/
 }
 .grid-item--height2 {
-  height: 420px;
+  /*height: 420px;*/
 }
 @media screen and (max-width: 767px) {
   .grid-item--height2 {
@@ -300,5 +300,33 @@ footer small {
   .container {
     width: 1600px;
   }
+}
+/*polaroid effect*/
+.polaroid {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media screen and (max-width: 767px) {
+  .polaroid {
+    position: relative;
+  }
+}
+.polaroid:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  box-shadow: inset 0px 0px 0px 100vh #f8f6ef;
+  -webkit-transform: rotate(62deg);
+      -ms-transform: rotate(62deg);
+          transform: rotate(62deg);
+  z-index: -1;
 }
 /*# sourceMappingURL=home.css.map */
