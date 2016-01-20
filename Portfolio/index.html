@@ -16,43 +16,38 @@
    <!-- BEGIN BODY -->
    <body>
       <div class="container">
-         <div class="row">
-            <div class="col-sm-12">
-               <div class="masthead clearfix">
-                  <div class="inner">
-                     <nav class="navbar">
-                        <div class="container-fluid">
-                           <!-- Brand and toggle get grouped for better mobile display -->
-                           <div class="navbar-header">
-                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                              <span class="sr-only">Toggle navigation</span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                              </button>
-                              <a class="navbar-brand" href="#">
-                                 <h3 class="bold">BACK 2 BASIC</h3>
-                              </a>
-                           </div>
-                           <!-- Collect the nav links, forms, and other content for toggling -->
-                           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                              <nav >
-                                 <ul id="menu" class="nav masthead-nav">
-                                    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
-                                    <li data-menuanchor="secondPage" class="active"><a href="#secondPage">About</a></li>
-                                    <li data-menuanchor="thirdPage" class="active"><a href="#thirdPage">Work</a></li>
-                                    <li data-menuanchor="fourthpage" class="active"><a href="#fourthpage">Contact</a></li>
-                                 </ul>
-                              </nav>
-                           </div>
-                           <!-- /.navbar-collapse -->
-                        </div>
-                        <!-- /.container-fluid -->
+         
+         <div class="masthead clearfix">
+            <div class="inner">
+               <nav class="navbar">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     </button>
+                     <a class="navbar-brand" href="#">
+                        <h3 class="bold">BACK 2 BASIC</h3>
+                     </a>
+                  </div>
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                     <nav >
+                        <ul id="menu" class="nav masthead-nav">
+                           <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
+                           <li data-menuanchor="secondPage" class=""><a href="#secondPage">About</a></li>
+                           <li data-menuanchor="thirdPage" class=""><a href="#thirdPage">Work</a></li>
+                           <li data-menuanchor="fourthpage" class=""><a href="#fourthpage">Contact</a></li>
+                        </ul>
                      </nav>
                   </div>
-               </div>
+                  <!-- /.navbar-collapse -->
+               </nav>
             </div>
          </div>
+            
          <div id="fullpage">
             <div class="section " id="section0">
                <div class="intro">
@@ -124,7 +119,6 @@
                         <div class="polaroid">
                            <img src="img/portfolio_03.jpg " class="img-responsive center-block" height="" id="test"/>
                         </div>
-                        <!-- <div class="profile-box"></div> -->
                      </div>
                      <div class="col-sm-3">
                         <h1 class="fade-txt">01</h1>
@@ -291,7 +285,7 @@
                   <!--row-->
                </div>
       
-               <footer class="text-center" style="height:350px;">
+               <footer class="text-center" style="height:320px;">
                   <h2>Back To <b class="bold">Basic</b></h2>
                   <small class="text-muted">&copy; Copyright 2016 pennygerman.com. All Rights Reserved.</small>
                   <div>
@@ -337,6 +331,11 @@
           $('.click-heart').on('click', function(){
       $(this).toggleClass('animated-heart');
       });
+
+          // responsive menu  jQuery("#menu li a").click(function(event) {
+         $("ul#menu li a").click(function(event) {
+          $(".navbar-collapse").collapse('hide');
+        });
       });
    </script>
 </html>

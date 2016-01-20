@@ -39,6 +39,11 @@ body {
 .logo-section .contact-info a:hover {
   opacity: .6;
 }
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .logo-section .contact-info a i {
+    margin-bottom: 0;
+  }
+}
 .logo-section p {
   font-weight: 200;
 }
@@ -291,6 +296,12 @@ footer small {
   z-index: 1;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .masthead {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
 @media screen and (min-width: 1400px) {
   .container {
     width: 1370px;
@@ -324,9 +335,34 @@ footer small {
   bottom: 0;
   background: transparent;
   box-shadow: inset 0px 0px 0px 100vh #f8f6ef;
-  -webkit-transform: rotate(62deg);
-      -ms-transform: rotate(62deg);
-          transform: rotate(62deg);
+  -webkit-transform: rotate(75deg);
+      -ms-transform: rotate(75deg);
+          transform: rotate(75deg);
   z-index: -1;
+}
+@media screen and (max-width: 460px) {
+  .polaroid:before {
+    -webkit-transform: rotate(62deg);
+        -ms-transform: rotate(62deg);
+            transform: rotate(62deg);
+  }
+}
+/*navbar*/
+@media screen and (max-width: 768px) {
+  .navbar .navbar-brand {
+    margin-left: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=home.css.map */
