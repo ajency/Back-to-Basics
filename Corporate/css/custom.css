@@ -892,6 +892,9 @@ input::-webkit-input-placeholder {
   -webkit-transition: color 1s ease;
           transition: color 1s ease;
 }
+.single-member a {
+  text-decoration: none;
+}
 .single-member:hover .social-sharing-overlay {
   opacity: 1;
 }
@@ -908,6 +911,15 @@ input::-webkit-input-placeholder {
 }
 .intern-member h6:first-child {
   margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .founder,
+  .intern-member {
+    text-align: center;
+  }
+  .intern-member .lg-hr-grey {
+    width: 40%;
+  }
 }
 @media (max-width: 414px) {
   .top-container {

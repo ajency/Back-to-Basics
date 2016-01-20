@@ -35,6 +35,9 @@
   -webkit-transition: color 1s ease;
           transition: color 1s ease;
 }
+.single-member a {
+  text-decoration: none;
+}
 .single-member:hover .social-sharing-overlay {
   opacity: 1;
 }
