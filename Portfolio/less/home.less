@@ -45,6 +45,11 @@ body {
           &:hover{
             opacity: .6;
           }
+          i{
+            @media screen and (min-width: 767px) and (max-width: 991px){
+              margin-bottom: 0;
+            }
+          }
        }
       }
   p{
@@ -285,6 +290,10 @@ footer{
   background: @white;
   z-index: 1;
   position: relative;
+  @media screen and (max-width: 768px){
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }
 
 .container{
@@ -318,6 +327,18 @@ footer{
     z-index: -1;
     @media screen and (max-width: 460px){
       transform: rotate(62deg);
+    }
+  }
+}
+
+/*navbar*/
+.navbar{
+  .navbar-brand{
+    @media screen and (max-width: 768px){
+      margin-left: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
