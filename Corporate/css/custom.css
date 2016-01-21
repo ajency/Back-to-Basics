@@ -391,7 +391,6 @@ h6.block {
   }
   .panel-group .panel.activePanel i {
     margin-top: 15px;
-    height: 17px;
   }
 }
 .btn {
@@ -828,6 +827,9 @@ input::-webkit-input-placeholder {
   }
 }
 @media (max-width: 991px) {
+  .navbar-inverse .open li a {
+    border-left: none;
+  }
   .navbar-inverse .open .dropdown-menu > li a {
     line-height: 30px;
     padding-top: 8px;
