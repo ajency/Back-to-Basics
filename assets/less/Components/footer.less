@@ -52,3 +52,35 @@ footer {
              }
          }
 }
+@media(max-width:991px)
+{
+    .subscribe-form
+    {
+        border-left: none;
+        text-align: center;
+        margin-top: 20px;
+        border-top: 1px solid lighten(#000, 90%);
+        padding-top: 10px;
+
+        h5
+        {
+            font-size: 20px;
+        }
+        
+        input[type="email"]
+        {
+            width: 50%;
+            margin: auto;
+        }
+    }
+}
+@media(max-width:414px)
+{
+    .subscribe-form
+    {
+         input[type="email"]
+        {
+            width: 100%;            
+        }
+    }
+}

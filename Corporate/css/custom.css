@@ -385,6 +385,15 @@ h6.block {
 .panel-group .panel.activePanel .panel-heading h3 {
   color: #ffffff;
 }
+@media (max-width: 991px) {
+  .panel-group .panel-heading h3 a i {
+    margin-top: 11px;
+  }
+  .panel-group .panel.activePanel i {
+    margin-top: 15px;
+    height: 17px;
+  }
+}
 .btn {
   border-radius: 2px;
   padding: 10px 20px;
@@ -557,6 +566,27 @@ footer .footer-section .main-link a:hover {
   footer .footer-logo hr {
     margin: 10px auto;
     width: 50%;
+  }
+}
+@media (max-width: 991px) {
+  .subscribe-form {
+    border-left: none;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #e6e6e6;
+    padding-top: 10px;
+  }
+  .subscribe-form h5 {
+    font-size: 20px;
+  }
+  .subscribe-form input[type="email"] {
+    width: 50%;
+    margin: auto;
+  }
+}
+@media (max-width: 414px) {
+  .subscribe-form input[type="email"] {
+    width: 100%;
   }
 }
 .header-contacts {
@@ -797,10 +827,11 @@ input::-webkit-input-placeholder {
     width: 170px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .navbar-inverse .open .dropdown-menu > li a {
     line-height: 30px;
     padding-top: 8px;
+    border-left: none;
   }
 }
 .contact-info h1 {
@@ -1036,9 +1067,13 @@ blockquote.pull-right small:after {
   line-height: 33px;
 }
 @media (max-width: 962px) {
+  .alert-default .alert-default {
+    line-height: 25px;
+  }
   .alert-default .btn {
     float: none !important;
     display: block;
+    margin-top: 10px;
   }
 }
 .clearfix {
@@ -1088,11 +1123,12 @@ blockquote.pull-right small:after {
 }
 .blog-section .blog-sm .blog-title {
   margin: 0px 0px 20px 0px;
+  word-break: break-word;
 }
-.page-title {
+.main-title {
   text-align: center;
 }
-.page-title hr {
+.main-title hr {
   text-align: center;
   margin: 10px auto;
 }

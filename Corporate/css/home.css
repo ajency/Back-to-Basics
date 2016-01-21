@@ -79,4 +79,12 @@ body {
     margin: 20px 0px;
   }
 }
+@media (max-width: 991px) {
+  .cover-promotion .cover-content {
+    padding: 10px;
+  }
+  .widget {
+    padding: 7px;
+  }
+}
 /*# sourceMappingURL=home.css.map */
