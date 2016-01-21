@@ -8,13 +8,16 @@
 .nf-container {
   display: -webkit-flex;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+          justify-content: center;
   text-align: center;
   background: #fff;
   padding: 50px 15px;
@@ -28,3 +31,4 @@
   color: #A9A5A5;
   font-size: 1.6em;
 }
+/*# sourceMappingURL=404.css.map */
