@@ -7,10 +7,12 @@ body {
   font-size: 30px;
 }
 .logo h2 {
-  font-weight: bold;
+  font-weight: 800;
   margin: 0px;
-  font-size: 47px;
-  line-height: 37px;
+  font-size: 60px;
+  line-height: 44px;
+  text-transform: uppercase;
+  margin-left: -2px;
 }
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .logo-section {
@@ -20,6 +22,7 @@ body {
 @media (max-width: 768px) {
   .logo-section {
     height: 100%;
+    text-align: center;
   }
 }
 .logo-section .contact-info {
@@ -66,6 +69,9 @@ body {
 @media (max-width: 768px) {
   .carousel-inner .carousel-caption {
     width: 230px;
+    right: 0%;
+    left: 0%;
+    margin: auto;
   }
 }
 .carousel-inner .carousel-caption hr {
@@ -121,8 +127,9 @@ body {
   /*width: 280px;*/
   width: 25%;
   border: 5px solid #fff;
-  padding: 10px;
+  padding: 0px;
   float: left;
+  text-align: center;
 }
 @media screen and (max-width: 1200px) {
   .grid-item {
