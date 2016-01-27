@@ -102,7 +102,7 @@ body {
  @media (max-width: 768px) {
   
   .fp-slidesContainer {
-      margin-top: 10%;
+      margin-top: 3%;
   }
 }
 
@@ -143,6 +143,18 @@ body {
     padding: 0px;
     float: left;
     text-align: center;
+    overflow: hidden;
+    img
+    {
+      transition: 1s transform ;  
+    }    
+    &:hover
+    {
+      img
+      {
+        transform: scale(1.1);       
+      }
+    }
   @media screen and (max-width: 1200px){
     width: 33.33%;
   }
@@ -191,6 +203,10 @@ body {
       resize: none;
     }
   }
+}
+.contact-us-text
+{
+  text-align: right;
 }
 
 .contact-details{
@@ -344,9 +360,100 @@ footer{
   .navbar-brand{
     @media screen and (max-width: 768px){
       margin-left: 15px;
+      margin-top: 2px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
   }
+}
+
+/* About Us Content */
+
+.about-content
+{
+  bottom: 0;
+  transition:all 0.5s ease;
+  .read-more
+  {
+    opacity: 0;
+    color: @dark-gray;
+    font-weight: 700;
+  }
+
+  &:hover
+  {
+    bottom: 10px;
+    .read-more
+    {
+      opacity: 1;     
+    }
+  }
+}
+
+/* Overall Center Content */
+@media screen and (max-width:991px)
+{
+  .grid-item
+  {   
+    &:hover
+    {
+      img
+      {
+        transform: scale(1);       
+      }
+    }
+  }
+  .about-content
+  {
+    bottom: 10px;
+    .read-more
+    {
+      opacity: 1;     
+    }    
+  }
+  .masthead-nav > li + li
+  {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px)
+{  
+  .intro, .contact-us-text
+  {
+    text-align: center;
+    .contact-details
+    {
+      text-align: left;
+    }
+  }
+  .page-title
+  {
+    text-align: center;
+    font-size: 40px;
+  }
+  .polaroid
+  {
+    display: block;
+    &:before
+    {
+      display:none;
+    }
+  }
+  .contact-details .row > div {
+    padding-left: 0;
+    padding-right: 9px;
+    .icon
+    {
+      width: 37px;
+    }
+  }
+  .grid-item
+  {
+    img
+    {
+      margin: auto;
+    }   
+  } 
 }
