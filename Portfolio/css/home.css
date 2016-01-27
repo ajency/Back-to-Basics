@@ -91,7 +91,7 @@ body {
 }
 @media (max-width: 768px) {
   .fp-slidesContainer {
-    margin-top: 10%;
+    margin-top: 3%;
   }
 }
 /* Page Section */
@@ -130,6 +130,16 @@ body {
   padding: 0px;
   float: left;
   text-align: center;
+  overflow: hidden;
+}
+.grid-item img {
+  -webkit-transition: 1s -webkit-transform ;
+          transition: 1s transform ;
+}
+.grid-item:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 @media screen and (max-width: 1200px) {
   .grid-item {
@@ -186,6 +196,9 @@ body {
 }
 .contact-form .form-group textarea {
   resize: none;
+}
+.contact-us-text {
+  text-align: right;
 }
 .contact-details .fade-txt {
   text-align: right;
@@ -358,6 +371,7 @@ footer small {
 @media screen and (max-width: 768px) {
   .navbar .navbar-brand {
     margin-left: 15px;
+    margin-top: 2px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -370,6 +384,70 @@ footer small {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+/* About Us Content */
+.about-content {
+  bottom: 0;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.about-content .read-more {
+  opacity: 0;
+  color: #333333;
+  font-weight: 700;
+}
+.about-content:hover {
+  bottom: 10px;
+}
+.about-content:hover .read-more {
+  opacity: 1;
+}
+/* Overall Center Content */
+@media screen and (max-width: 991px) {
+  .grid-item:hover img {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+  .about-content {
+    bottom: 10px;
+  }
+  .about-content .read-more {
+    opacity: 1;
+  }
+  .masthead-nav > li + li {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .intro,
+  .contact-us-text {
+    text-align: center;
+  }
+  .intro .contact-details,
+  .contact-us-text .contact-details {
+    text-align: left;
+  }
+  .page-title {
+    text-align: center;
+    font-size: 40px;
+  }
+  .polaroid {
+    display: block;
+  }
+  .polaroid:before {
+    display: none;
+  }
+  .contact-details .row > div {
+    padding-left: 0;
+    padding-right: 9px;
+  }
+  .contact-details .row > div .icon {
+    width: 37px;
+  }
+  .grid-item img {
+    margin: auto;
   }
 }
 /*# sourceMappingURL=home.css.map */
