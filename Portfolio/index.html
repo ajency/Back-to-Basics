@@ -36,6 +36,9 @@
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                      <nav >
                         <ul id="menu" class="nav masthead-nav">
+                           <a class="navbar-brand" href="#" id="navbar_brand">
+                              <h3 class="bold">BACK 2 BASIC</h3>
+                           </a>
                            <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
                            <li data-menuanchor="secondPage" class=""><a href="#secondPage">About</a></li>
                            <li data-menuanchor="thirdPage" class=""><a href="#thirdPage">Work</a></li>
@@ -338,10 +341,10 @@
               fitToSection: true,
               verticalCentered: true,
               resize:false,
-              scrollOverflow: true,
+              // scrollOverflow: true,
               anchors: ['firstPage', 'secondPage', 'thirdPage','fourthpage'],
-              responsiveWidth: 767
-              // scrollOverflow: true
+              // responsiveWidth: 767
+              scrollOverflow: true
           });
       
           $('.grid').masonry({
@@ -356,7 +359,20 @@
           // responsive menu  jQuery("#menu li a").click(function(event) {
          $("ul#menu li a").click(function(event) {
           $(".navbar-collapse").collapse('hide');
-        });
+        });      
       });
+
+
+      $(document).scroll(function(){
+          if($(this).scrollTop()>=$('#section1').position().top){
+              alert("in");
+              $('#navbar_brand').css('opacity','1');
+          }
+          else
+          {
+            alert("out");
+            $('#navbar_brand').css('opacity','0');
+          }
+      })
    </script>
 </html>

@@ -135,6 +135,7 @@ body {
 .grid-item img {
   -webkit-transition: 1s -webkit-transform ;
           transition: 1s transform ;
+  width: 100%;
 }
 .grid-item:hover img {
   -webkit-transform: scale(1.1);
@@ -394,7 +395,7 @@ footer small {
 }
 .about-content .read-more {
   opacity: 0;
-  color: #333333;
+  /*color: @dark-gray;*/
   font-weight: 700;
 }
 .about-content:hover {
