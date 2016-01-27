@@ -316,32 +316,42 @@ h6.block {
   top: 0;
   width: 50px;
   right: 0;
-  height: 100%;
+  height: 16px;
 }
-.panel-group .panel-heading h3 a i.arrow {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"> <path d="m22.118 44.236c-12.196 0-22.118-9.922-22.118-22.118s9.922-22.118 22.118-22.118 22.118 9.922 22.118 22.118-9.922 22.118-22.118 22.118zm0-42.736c-11.368 0-20.618 9.249-20.618 20.618 0 11.368 9.25 20.618 20.618 20.618 11.37 0 20.618-9.25 20.618-20.618 0-11.369-9.248-20.618-20.618-20.618z"/>		<path d="m19.341 29.884c-0.192 0-0.384-0.073-0.53-0.22-0.293-0.292-0.293-0.768 0-1.061l6.796-6.804-6.796-6.803c-0.292-0.293-0.292-0.769 0-1.061 0.293-0.293 0.768-0.293 1.061 0l7.325 7.333c0.293 0.293 0.293 0.768 0 1.061l-7.325 7.333c-0.147 0.149-0.339 0.222-0.531 0.222z"/> </svg>');
-  background-repeat: no-repeat;
-  background-size: auto 100%;
+.panel-group .panel-heading h3 a i {
+  /* background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"> <path d="m22.118 44.236c-12.196 0-22.118-9.922-22.118-22.118s9.922-22.118 22.118-22.118 22.118 9.922 22.118 22.118-9.922 22.118-22.118 22.118zm0-42.736c-11.368 0-20.618 9.249-20.618 20.618 0 11.368 9.25 20.618 20.618 20.618 11.37 0 20.618-9.25 20.618-20.618 0-11.369-9.248-20.618-20.618-20.618z"/>		<path d="m19.341 29.884c-0.192 0-0.384-0.073-0.53-0.22-0.293-0.292-0.293-0.768 0-1.061l6.796-6.804-6.796-6.803c-0.292-0.293-0.292-0.769 0-1.061 0.293-0.293 0.768-0.293 1.061 0l7.325 7.333c0.293 0.293 0.293 0.768 0 1.061l-7.325 7.333c-0.147 0.149-0.339 0.222-0.531 0.222z"/> </svg>');
+				    background-repeat: no-repeat;
+					    background-size: auto 100%;*/
   display: inline-block;
   width: 28px;
-  height: 28px;
+  height: 16px;
   display: block;
   margin-left: 20px;
   margin-top: 12px;
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
 }
-.panel-group .panel.activePanel i.arrow {
+.panel-group .panel.activePanel i {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
-  margin-left: 8px !important;
+  margin-top: 19px;
+  margin-left: 14px;
 }
 .panel-group .panel.activePanel .panel-heading {
   background-color: #ff7f00;
 }
 .panel-group .panel.activePanel .panel-heading h3 {
   color: #ffffff;
+}
+@media (max-width: 991px) {
+  .panel-group .panel-heading h3 a i {
+    margin-top: 11px;
+  }
+  .panel-group .panel.activePanel i {
+    margin-top: 15px;
+    height: 17px;
+  }
 }
 .btn {
   border-radius: 2px;
@@ -438,6 +448,27 @@ footer .footer-section .main-link a:hover {
   footer .footer-logo hr {
     margin: 10px auto;
     width: 50%;
+  }
+}
+@media (max-width: 991px) {
+  .subscribe-form {
+    border-left: none;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #e6e6e6;
+    padding-top: 10px;
+  }
+  .subscribe-form h5 {
+    font-size: 20px;
+  }
+  .subscribe-form input[type="email"] {
+    width: 50%;
+    margin: auto;
+  }
+}
+@media (max-width: 414px) {
+  .subscribe-form input[type="email"] {
+    width: 100%;
   }
 }
 /* Social Icon*/
