@@ -1,92 +1,112 @@
-.masthead-brand {
-  margin-top:10px;
-  margin-bottom:10px;
-  
-}
-.masthead-nav > li {
-  display:inline-block;
-  @media (max-width: 768px) {
-	display: block;
-  }
-  > a:hover, > a:focus {
-    background-color:transparent;
-    border-bottom-color:@color-black;
-    border-bottom-color:@color-black;
-  }
-  + li {
-    margin-left:30px;
-  }
-  > a {
-    padding-right:0;
-    padding-left:0;
-    font-size:14px;
-    font-weight:bold;
-    text-transform:uppercase;
-    color:@color-black;
-    color:@color-black;
-    border-bottom:2px solid transparent;
-  }
-}
-.masthead-nav > .active {
-  > a, > a:hover, > a:focus {
-    color:@color-black;
-    border-bottom-color:@color-black;
-  }
-}
-.masthead {
-	z-index: 9999;
-}
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
-}
-	#menu{
-			    position: absolute;
-			    margin: 0;
-			    right: 0px;
-			    z-index: 9999;
-			    background: #fff;
-			    width: 100%;
-			    text-align: right;
-			    padding: 20px 20px;
-		      @media (max-width: 768px) {
-				background: #f2f2f2;
-				position: relative;
-		 }
-	}
-	.section{
-		height: 100%!important;
-		padding-top: 3%;
-	}
-	.slimScrollBar{
-		display: none !important;
-	}
 
-//MOBILE MENU /////////////////////////////
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        background: @color-white;
+        border: 0px;
+        .navbar-nav {
+            float: right;
+            margin: 0;
+            a{
+              font-weight: 800;
+              text-transform: uppercase;
+              color:@color-black !important;
+              padding: 10px 0px;
+              margin: 0px 20px;
 
-.navbar{
-	border: 0px !important;
+
+            }
+            .active{
+              a{
+                background: none;
+                background-color: inherit;
+                border-bottom: 2px solid @color-black;
+                 &:hover, &:focus{
+                  background: none;
+                  opacity: 1;
+                      background-color: #F7F5F5;
+                }
+              }
+            }
+        }
+    }
+ // .navbar-brand {
+ //          display: none;
+ //        }
+    .top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid #ccc;
+        background: #F7F5F5;
+        .navbar-brand {
+          display: block !important;
+          color: @color-black;
+          font-weight: bold;
+        }
+    }
+
+@media(max-width:967px) {
+
+.navbar {
+    background: @color-white;
+    padding: 0px;
+    .navbar-nav{
+        width: 100%;
+    }
+    .navbar-brand{
+          color: #000;
+          font-weight: bold;
+    }
+    .navbar-toggle {
+          padding: 9px 9px;
+          margin-top: 10px;
+          background-color: rgb(0, 0, 0);
+          background-image: none;
+          border: 0px;
+          border-radius: 0px;
+          .icon-bar {
+              background-color: #fff !important;
+              width: 20px;
+              height: 2px;
+              border-radius: 0;
+          }
+          &:hover, &:focus, &:active{
+              background:@color-black;
+          }
+      }
+  }
 }
-@media (max-width: 768px) {
-		    background: #fff;
-	    	z-index: 9999;
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+    padding-top: 100px;
+    @media(max-width:767px) {
+        padding-top: 50px;
+    }
 }
-.navbar-toggle {
-	background:#000;
-	z-index: 9999;
-	border-radius: 0px;
-	height: 40px;
-	.icon-bar{
-		height: 3px;
-	    background: #fff;
-	    border-radius: 0px;
-	    width: 20px;
-	}	
+
+.about-section {
+    padding-top: 100px;
+     @media(max-width:767px) {
+        padding-top: 50px;
+    }  
 }
-.navbar-brand{
-	    padding: 5px 0px;
+
+.work-section {
+    padding-top: 100px;
+    @media(max-width:767px) {
+        padding-top: 50px;
+    }
 }
+
+.contact-section {
+    padding-top: 100px;
+     @media(max-width:767px) {
+        padding-top: 50px;
+    }
+}
+

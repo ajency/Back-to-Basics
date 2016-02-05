@@ -25,6 +25,7 @@
                <nav class="navbar">
                   <!-- Brand and toggle get grouped for better mobile display -->
                   <div class="navbar-header">
+
                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                      <span class="sr-only">Toggle navigation</span>
                      <span class="icon-bar"></span>
@@ -37,6 +38,7 @@
                   </div>
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
                      <nav >
                         <ul id="menu" class="nav masthead-nav">
                            <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
@@ -57,7 +59,7 @@
             <div class="section " id="section0">
                <div class="intro">
                   <div class="row">
-                     <div class="col-sm-3 logo-section ">
+                     <div id="window-left" class="col-sm-3 logo-section">
                         <div class="logo hidden-xs">
                            <h3>Back to</h3>
                            <h2>  Basic</h2>
@@ -85,7 +87,7 @@
                               <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                            </ol>
                            <!-- Wrapper for slides -->
-                           <div class="carousel-inner" role="listbox">
+                           <div id="window-right" class="carousel-inner window-resize" role="listbox">
                               <div class="item active">
                                  <img src="img/aspens.jpg" class="img-responsive"/>
                                  <div class="carousel-caption">
@@ -337,15 +339,11 @@
       $(document).ready(function() {
           $('#fullpage').fullpage({
               menu: '#menu',
-              autoScrolling: true,
               fitToSection: true,
               verticalCentered: true,
               resize:false,
-              scrollOverflow: true,
               autoScrolling: false,
-              anchors: ['firstPage', 'secondPage', 'thirdPage','fourthpage'],
-              responsiveWidth: 767
-              // scrollOverflow: true
+              anchors: ['firstPage', 'secondPage', 'thirdPage','fourthpage']
           });
       
           $('.grid').masonry({
@@ -362,8 +360,35 @@
           $(".navbar-collapse").collapse('hide');
         });
       });
-
+if (document.documentElement.clientWidth > 1023) {
+    $('#fullpage').fullpage({
+        // we need to enable scrolling on desktop version
+        scrollOverflow: false
+        // the rest setting can goes below here
+    });
+}
+if (document.documentElement.clientWidth < 1024) {
+    $('#fullpage').fullpage({
+        // we need to disable scrolling not on desktop version
+        scrollOverflow: false
+        // the rest setting can goes below here
+    });
+}
 
 
    </script>
+      <script type="text/javascript">//<![CDATA[ 
+            function resize()
+            {
+                var heights = window.innerHeight - 200;
+                document.getElementById("window-right").style.height = heights + "px";
+                document.getElementById("window-left").style.height = heights + "px";
+            }
+            resize();
+            window.onresize = function() {
+                resize();
+            };
+            //]]>  
+  
+        </script> 
 </html>

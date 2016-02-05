@@ -203,6 +203,10 @@ ul.icon-list li {
     margin: 10px auto;
   }
 }
+.title-hr {
+  width: 100px;
+  border: 1px solid #1b1e24;
+}
 .divider {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGUlEQVQIW2NM6fj/f04FIyMDEIAJGEDhAACOHQQEK+qzwwAAAABJRU5ErkJggg==) repeat;
   text-indent: -9999rem;

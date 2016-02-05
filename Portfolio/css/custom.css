@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 @import "../../assets/less/Generic/bootstrap.css";
 @import "../../assets/less/Generic/jquery.fullpage.css";
+@import "../../assets/less/Generic/font-awesome.min.css";
 @font-face {
   font-family: 'Open Sans';
   src: url('../fonts/opensans-regular-webfont.eot');
@@ -202,6 +203,10 @@ ul.icon-list li {
     width: 30%;
     margin: 10px auto;
   }
+}
+.title-hr {
+  width: 100px;
+  border: 1px solid #1b1e24;
 }
 .divider {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGUlEQVQIW2NM6fj/f04FIyMDEIAJGEDhAACOHQQEK+qzwwAAAABJRU5ErkJggg==) repeat;
@@ -492,99 +497,110 @@ footer .footer-section .main-link a:hover {
 .fb-linkedin {
   background-position: -9px -195px;
 }
-.masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.masthead-nav > li {
-  display: inline-block;
-}
-@media (max-width: 768px) {
-  .masthead-nav > li {
-    display: block;
-  }
-}
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
-  border-bottom-color: #1b1e24;
-}
-.masthead-nav > li + li {
-  margin-left: 30px;
-}
-.masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #1b1e24;
-  border-bottom: 2px solid transparent;
-}
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: #1b1e24;
-  border-bottom-color: #1b1e24;
-}
-.masthead {
-  z-index: 9999;
-}
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
-}
-#menu {
-  position: absolute;
-  margin: 0;
-  right: 0px;
-  z-index: 9999;
-  background: #fff;
-  width: 100%;
-  text-align: right;
-  padding: 20px 20px;
-}
-@media (max-width: 768px) {
-  #menu {
-    background: #f2f2f2;
-    position: relative;
-  }
-}
-.section {
-  height: 100%!important;
-  padding-top: 3%;
-}
-.slimScrollBar {
-  display: none !important;
-}
 .navbar {
-  border: 0px !important;
+  padding: 20px 0;
+  -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  background: #ffffff;
+  border: 0px;
 }
-@media (max-width: 768px) {
-  background: #fff;
-  z-index: 9999;
-  
-  .masthead-nav > li + li {
-    margin-left: 0;
+.navbar .navbar-nav {
+  float: right;
+  margin: 0;
+}
+.navbar .navbar-nav a {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #1b1e24 !important;
+  padding: 10px 0px;
+  margin: 0px 20px;
+}
+.navbar .navbar-nav .active a {
+  background: none;
+  background-color: inherit;
+  border-bottom: 2px solid #1b1e24;
+}
+.navbar .navbar-nav .active a:hover,
+.navbar .navbar-nav .active a:focus {
+  background: none;
+  opacity: 1;
+  background-color: #F7F5F5;
+}
+.top-nav-collapse {
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+  background: #F7F5F5;
+}
+.top-nav-collapse .navbar-brand {
+  display: block !important;
+  color: #1b1e24;
+  font-weight: bold;
+}
+@media (max-width: 967px) {
+  .navbar {
+    background: #ffffff;
+    padding: 0px;
+  }
+  .navbar .navbar-nav {
+    width: 100%;
+  }
+  .navbar .navbar-brand {
+    color: #000;
+    font-weight: bold;
+  }
+  .navbar .navbar-toggle {
+    padding: 9px 9px;
+    margin-top: 10px;
+    background-color: #000000;
+    background-image: none;
+    border: 0px;
+    border-radius: 0px;
+  }
+  .navbar .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+    width: 20px;
+    height: 2px;
+    border-radius: 0;
+  }
+  .navbar .navbar-toggle:hover,
+  .navbar .navbar-toggle:focus,
+  .navbar .navbar-toggle:active {
+    background: #1b1e24;
   }
 }
-.navbar-toggle {
-  background: #000;
-  z-index: 9999;
-  border-radius: 0px;
-  height: 40px;
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+.intro-section {
+  padding-top: 100px;
 }
-.navbar-toggle .icon-bar {
-  height: 3px;
-  background: #fff;
-  border-radius: 0px;
-  width: 20px;
+@media (max-width: 767px) {
+  .intro-section {
+    padding-top: 50px;
+  }
 }
-.navbar-brand {
-  padding: 5px 0px;
+.about-section {
+  padding-top: 100px;
+}
+@media (max-width: 767px) {
+  .about-section {
+    padding-top: 50px;
+  }
+}
+.work-section {
+  padding-top: 100px;
+}
+@media (max-width: 767px) {
+  .work-section {
+    padding-top: 50px;
+  }
+}
+.contact-section {
+  padding-top: 100px;
+}
+@media (max-width: 767px) {
+  .contact-section {
+    padding-top: 50px;
+  }
 }
 /*# sourceMappingURL=custom.css.map */
