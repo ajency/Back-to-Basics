@@ -501,4 +501,17 @@ footer small {
 .carousel {
   background: black;
 }
+.social-icons {
+  height: 30px;
+  width: 30px;
+  background: #333333;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 2.3;
+}
+.social-icons i {
+  color: #ffffff;
+  font-size: 16px;
+}
 /*# sourceMappingURL=home.css.map */

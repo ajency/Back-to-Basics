@@ -40,6 +40,9 @@
 .logo-section p {
   font-weight: 200;
 }
+a {
+  color: #1a85a7;
+}
 a:hover {
   opacity: .6;
 }
@@ -114,6 +117,12 @@ a:hover {
   font-size: 70px;
   font-weight: 900;
   margin-bottom: 20px;
+  word-break: break-all;
+}
+@media screen and (max-width: 480px) {
+  .fade-txt {
+    font-size: 50px;
+  }
 }
 .content-wrapper {
   padding: 70px 0px;
@@ -157,6 +166,11 @@ a:hover {
 .grid-item img {
   width: 100%;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .grid-item {
+    width: 50%;
+  }
+}
 @media screen and (max-width: 767px) {
   .grid-item {
     width: 50%;
@@ -164,6 +178,24 @@ a:hover {
 }
 @media screen and (max-width: 480px) {
   .grid-item {
+    width: 100%;
+  }
+}
+.grid-item .grid-sizer {
+  width: 25%;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .grid-item .grid-sizer {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .grid-item .grid-sizer {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .grid-item .grid-sizer {
     width: 100%;
   }
 }
@@ -538,6 +570,11 @@ figure.snip0019 figcaption > div {
   overflow: hidden;
   width: 50%;
   position: relative;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+figure.snip0019 figcaption > div:nth-child(2) {
+  /*background: @white;*/
 }
 figure.snip0019 figcaption::before {
   position: absolute;
@@ -573,11 +610,42 @@ figure.snip0019 h2 {
   text-transform: uppercase;
   bottom: 0;
   color: #fff;
-  background: rgba(0, 0, 0, 0.5);
   -webkit-transform: translate3d(50%, 0%, 0);
   transform: translate3d(50%, 0%, 0);
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+figure.snip0019 p span {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+figure.snip0019.grid-2 h2 {
+  max-height: 335px;
+  -webkit-line-clamp: 12;
+}
+figure.snip0019.grid-1 h2 {
+  max-height: 150px;
+  -webkit-line-clamp: 5;
+}
+figure.snip0019.grid-2 p span {
+  max-height: 335px;
+  -webkit-line-clamp: 17;
+}
+figure.snip0019.grid-1 p span {
+  max-height: 150px;
+  -webkit-line-clamp: 9;
 }
 figure.snip0019 h2 span {
   font-weight: 800;
@@ -617,6 +685,9 @@ figure.snip0019:hover figcaption h2 {
   opacity: 1;
 }
 figure.snip0019:hover figcaption p {
+  opacity: 1;
+}
+figure.snip0019:hover figcaption > div {
   opacity: 1;
 }
 figure.snip0019:hover figcaption::before {
@@ -718,5 +789,51 @@ figure.snip0019:hover figcaption::before {
   background-color: #ff72a5;
   color: white;
   opacity: .7;
+}
+@media screen and (max-width: 991px) {
+  .window-left {
+    height: auto !important;
+  }
+  figure.snip0019 figcaption > div,
+  figure.snip0019 figcaption > div h2,
+  figure.snip0019 figcaption > div p {
+    opacity: 1;
+    -webkit-transform: translate3d(0%, 0%, 0);
+            transform: translate3d(0%, 0%, 0);
+  }
+}
+@media screen and (max-width: 568px) {
+  #quote-carousel .carousel-indicators li {
+    display: block;
+    margin: 10px auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .carousel-inner .carousel-caption {
+    top: 5%;
+    padding: 10px;
+  }
+  .carousel-inner .carousel-caption hr {
+    margin: 10px 0;
+  }
+  .carousel-indicators {
+    bottom: 0;
+  }
+  .page-title {
+    font-size: 29px;
+  }
+  figure.snip0019 {
+    margin: auto;
+    float: none;
+  }
+}
+@media screen and (max-width: 384px) {
+  .carousel-inner .carousel-caption {
+    font-size: 12px;
+    line-height: 1.1;
+  }
+  .carousel-indicators {
+    bottom: -10px;
+  }
 }
 /*# sourceMappingURL=homepage-2.css.map */
