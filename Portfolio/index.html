@@ -41,6 +41,9 @@
 
                      <nav >
                         <ul id="menu" class="nav masthead-nav">
+                           <a class="navbar-brand" href="#" id="navbar_brand">
+                              <h3 class="bold">BACK 2 BASIC</h3>
+                           </a>
                            <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
                            <li data-menuanchor="secondPage" class=""><a href="#secondPage">About</a></li>
                            <li data-menuanchor="thirdPage" class=""><a href="#thirdPage">Work</a></li>
@@ -337,14 +340,7 @@
    <!-- BEGIN PLUGIN JS FRAMEWORK -->
    <script type="text/javascript">
       $(document).ready(function() {
-          $('#fullpage').fullpage({
-              menu: '#menu',
-              fitToSection: true,
-              verticalCentered: true,
-              resize:false,
-              autoScrolling: false,
-              anchors: ['firstPage', 'secondPage', 'thirdPage','fourthpage']
-          });
+   
       
           $('.grid').masonry({
         // options
@@ -358,23 +354,21 @@
           // responsive menu  jQuery("#menu li a").click(function(event) {
          $("ul#menu li a").click(function(event) {
           $(".navbar-collapse").collapse('hide');
-        });
+        });      
       });
-if (document.documentElement.clientWidth > 1023) {
-    $('#fullpage').fullpage({
-        // we need to enable scrolling on desktop version
-        scrollOverflow: false
-        // the rest setting can goes below here
-    });
-}
-if (document.documentElement.clientWidth < 1024) {
-    $('#fullpage').fullpage({
-        // we need to disable scrolling not on desktop version
-        scrollOverflow: false
-        // the rest setting can goes below here
-    });
-}
 
+
+      $(document).scroll(function(){
+          if($(this).scrollTop()>=$('#section1').position().top){
+              alert("in");
+              $('#navbar_brand').css('opacity','1');
+          }
+          else
+          {
+            alert("out");
+            $('#navbar_brand').css('opacity','0');
+          }
+      })
 
    </script>
       <script type="text/javascript">//<![CDATA[ 

@@ -421,7 +421,7 @@ footer small {
 }
 .about-content .read-more {
   opacity: 0;
-  color: #333333;
+  /*color: @dark-gray;*/
   font-weight: 700;
 }
 .about-content:hover {
