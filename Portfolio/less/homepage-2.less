@@ -825,6 +825,7 @@ figure.snip0019:hover figcaption::before {
   {
     opacity: 1;
     transform: translate3d(0%, 0%, 0); 
+    text-align: center;
   }
   figure.snip0019 figcaption > div
   {
@@ -844,10 +845,10 @@ figure.snip0019:hover figcaption::before {
 }
 @media screen and (max-width:568px)
 {
-  #quote-carousel .carousel-indicators li
+  #quote-carousel .carousel-indicators .active
   {
-    display: block;
-    margin:10px auto;
+    height: 60px;
+    width: 60px;
   }
 }
 @media screen and (max-width:480px)
@@ -885,5 +886,15 @@ figure.snip0019:hover figcaption::before {
   }
   .carousel-indicators {
       bottom: -10px;
+  }
+  #quote-carousel .carousel-indicators li
+  {
+    height: 40px;
+    width: 40px;
+  }
+  #quote-carousel .carousel-indicators .active
+  {
+    height: 50px;
+    width: 50px;
   }
 }

@@ -800,6 +800,7 @@ figure.snip0019:hover figcaption::before {
     opacity: 1;
     -webkit-transform: translate3d(0%, 0%, 0);
             transform: translate3d(0%, 0%, 0);
+    text-align: center;
   }
   figure.snip0019 figcaption > div {
     height: 50%;
@@ -814,9 +815,9 @@ figure.snip0019:hover figcaption::before {
   }
 }
 @media screen and (max-width: 568px) {
-  #quote-carousel .carousel-indicators li {
-    display: block;
-    margin: 10px auto;
+  #quote-carousel .carousel-indicators .active {
+    height: 60px;
+    width: 60px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -845,6 +846,14 @@ figure.snip0019:hover figcaption::before {
   }
   .carousel-indicators {
     bottom: -10px;
+  }
+  #quote-carousel .carousel-indicators li {
+    height: 40px;
+    width: 40px;
+  }
+  #quote-carousel .carousel-indicators .active {
+    height: 50px;
+    width: 50px;
   }
 }
 /*# sourceMappingURL=homepage-2.css.map */
