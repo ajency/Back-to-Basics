@@ -1,3 +1,6 @@
+p {
+  font-size: .9em;
+}
 .logo h3 {
   margin: 0px;
   font-size: 30px;
@@ -516,7 +519,7 @@ footer small {
   display: inline-block;
   text-align: center;
   border-radius: 50%;
-  line-height: 2.3;
+  line-height: 30px;
 }
 .social-icons i {
   color: #ffffff;
