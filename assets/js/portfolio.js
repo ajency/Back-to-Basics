@@ -77,6 +77,10 @@ $grid.imagesLoaded().progress( function() {
           }
       });
 
+  $(".scrollup").click(function() {
+     $("html, body").animate({ scrollTop: 0 }, "slow");
+     return false;
+  });
       //Loader Animation
         $(".animsition").animsition({
             inClass: 'fade-in',

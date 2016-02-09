@@ -515,6 +515,7 @@ footer .footer-section .main-link a:hover {
   color: #1b1e24 !important;
   padding: 10px 0px;
   margin: 0px 20px;
+  font-size: .8em;
 }
 .navbar .navbar-nav .active a {
   background: none;
