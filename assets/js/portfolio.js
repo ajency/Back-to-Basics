@@ -105,7 +105,24 @@ $grid.imagesLoaded().progress( function() {
         slidesPerView: 4,
         paginationClickable: true,
         spaceBetween: 30,
-        loop: true
+        loop: true, 
+         breakpoints: {
+          // when window width is <= 320px
+          384: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 10
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 20
+          },
+          // when window width is <= 640px
+          767: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 30
+          }
+        }
     });
     
 
