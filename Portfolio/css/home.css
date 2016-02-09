@@ -629,59 +629,11 @@ h1 .flip span.down {
   color: #ffffff;
   font-size: 16px;
 }
-/********* Service section *********/
-.service-section .panel {
-  border: 1px solid #eeeeee;
-  position: relative;
-  padding: 20px;
-  overflow: hidden;
-  height: 350px;
-  border-radius: 0;
-}
-.service-section .panel .service-icon {
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  margin: 10px auto;
-  display: block;
-  border: 2px solid #013d47;
-  line-height: 6;
-}
-.service-section .panel .service-slide {
-  position: absolute;
-  bottom: -350px;
-  left: 0;
-  z-index: 100;
-  padding: 10px;
-  height: 100%;
-  width: 100%;
-  text-align: left;
-  background: #013d47;
-  -webkit-transition: all 300ms 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
-          transition: all 300ms 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.service-section .panel .service-slide h4 {
-  margin-top: 0;
-  color: #ffffff;
-}
-.service-section .panel .service-slide li {
-  padding: 5px 5px 5px 8px;
-  line-height: 24px;
-  color: #F0F0F0;
-  border-bottom: 1px solid #3e737b;
-}
-.service-section .panel .service-slide li:last-child {
-  border: 0;
-}
-.service-section .panel:hover {
-  border: 1px solid #013d47;
-}
-.service-section .panel:hover .service-slide {
-  bottom: 0;
-}
+/************* Clients **************/
 .swiper-container {
   width: 100%;
   height: 100%;
+  padding: 0 20px;
 }
 .swiper-slide {
   text-align: center;
@@ -704,5 +656,39 @@ h1 .flip span.down {
 }
 .swiper-slide img {
   width: 50%;
+}
+@media screen and (max-width: 991px) {
+  .flipper i {
+    margin-top: 0;
+  }
+  .flip-container,
+  .front,
+  .back {
+    height: auto;
+    position: relative;
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    border: none;
+  }
+  .flip-container {
+    border: 1px dashed #333333;
+    padding: 20px 0;
+  }
+  .flip-container:hover .flipper {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+  }
+  .service-intro {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .flip-container {
+    border: none;
+    border-bottom: 1px dashed #333333;
+  }
+  .back p {
+    padding: 20px;
+  }
 }
 /*# sourceMappingURL=home.css.map */
