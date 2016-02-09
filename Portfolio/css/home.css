@@ -108,6 +108,13 @@ a:hover {
   font-weight: 900;
   margin-bottom: 20px;
 }
+.footer-icon {
+  color: #eee;
+  font-size: 40px;
+  font-weight: 900;
+  margin: 0px;
+  text-align: center !important;
+}
 .content-wrapper {
   padding: 70px 0px;
 }
@@ -221,7 +228,7 @@ a:hover {
     text-align: center;
   }
 }
-.contact-details [class*="col-"]:nth-of-type(2) {
+.contact-details [class*="col-"] {
   padding-top: 30px;
 }
 .black-btn {
