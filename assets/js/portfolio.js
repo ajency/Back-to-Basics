@@ -12,7 +12,7 @@ $(document).ready(function() {
 
       // Masonry Image
  // external js: masonry.pkgd.js, imagesloaded.pkgd.js
-
+$("#lightgallery").lightGallery(); 
 // init Masonry
 var $grid = $('.grid').masonry({
   itemSelector: '.grid-item',
@@ -130,7 +130,6 @@ $grid.imagesLoaded().progress( function() {
       currentStepEl = this.el.find(".step" + this.currentStep);
       nextStepEl = this.el.find(".step" + nextStepNum);
       if (nextStepEl.length) {
-        console.log('we found the next step', nextStepEl);
         currentStepEl.prev().removeClass('down');
         currentStepEl.removeClass('set');
         currentStepEl.addClass('down');

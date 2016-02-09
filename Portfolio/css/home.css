@@ -1,5 +1,5 @@
 p {
-  font-size: .9em;
+  font-size: 1em;
 }
 .logo h3 {
   margin: 0px;
@@ -510,7 +510,7 @@ h1 .flip span.down {
 }
 .front {
   z-index: 1;
-  border: 1px dashed #666;
+  border: 1px dotted #666;
 }
 .flip-container,
 .front,
