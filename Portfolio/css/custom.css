@@ -2,6 +2,7 @@
 @import "../../assets/less/Generic/bootstrap.css";
 @import "../../assets/less/Generic/jquery.fullpage.css";
 @import "../../assets/less/Generic/font-awesome.min.css";
+@import "../../assets/less/Generic/swiper.min.css";
 @font-face {
   font-family: 'Open Sans';
   src: url('../fonts/opensans-regular-webfont.eot');
