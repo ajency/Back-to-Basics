@@ -619,6 +619,22 @@ of those sections to manage the look and feel of the site. */
     padding-top: 50px;
   }
 }
+.service-section {
+  padding-top: 100px;
+}
+@media (max-width: 767px) {
+  .service-section {
+    padding-top: 50px;
+  }
+}
+.client-section {
+  padding-top: 100px;
+}
+@media (max-width: 767px) {
+  .client-section {
+    padding-top: 50px;
+  }
+}
 .work-section {
   padding-top: 100px;
 }
