@@ -500,6 +500,10 @@ h1 .flip span.down {
   width: 70px;
   height: 70px;
 }
+.flipper .more-less {
+  color: #ababab;
+  font-weight: 700;
+}
 .front,
 .back {
   -webkit-backface-visibility: hidden;

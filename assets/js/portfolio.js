@@ -178,4 +178,31 @@ $grid.imagesLoaded().progress( function() {
 }).call(this);
 
 
+var width = $(window).width();        
+if(width < 991)
+{
+  $(".back").hide();
+  $(".more-less").click(function(){
+    $(this).parents(".flipper").addClass("flip-outer");
+
+    if($(this).parents(".flipper").hasClass("flip-outer"))
+    {
+      $(this).parents(".flipper").find(".front").toggleClass("show-more-height");
+      $(this).parents(".flipper").find(".back").slideToggle();
+
+
+      if($(this).parents(".flipper").find(".front").hasClass("show-more-height")) {
+        $(this).text("Read Less");
+      } else {
+          $(this).text("Read More");
+      }
+
+      $(this).parents(".flipper").removeClass("flip-outer");
+    }
+    
+
+    
+  });
+
+}
 });
