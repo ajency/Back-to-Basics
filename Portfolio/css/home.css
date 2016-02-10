@@ -56,8 +56,7 @@ a:hover {
 }
 .carousel-inner .carousel-caption {
   right: 0%;
-  padding-bottom: 30px;
-  bottom: 30%;
+  bottom: 20%;
   background: #fff;
   width: 40%;
   left: initial;
@@ -65,7 +64,8 @@ a:hover {
   text-shadow: none;
   text-align: left;
   padding: 20px 20px;
-  font-weight: 200;
+  font-weight: 200
+  /*position: absolute;*/
 }
 @media (max-width: 768px) {
   .carousel-inner .carousel-caption {
@@ -86,6 +86,10 @@ a:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
+}
+.carousel-inner .item {
+  height: 100%
+  /*position: relative;*/
 }
 @media (max-width: 768px) {
   .carousel-inner {
