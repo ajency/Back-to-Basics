@@ -157,15 +157,48 @@ a:hover {
   text-align: center;
   overflow: hidden;
 }
+.grid-item a {
+  position: relative;
+  display: table;
+  overflow: hidden;
+}
+.grid-item a:hover {
+  opacity: 1;
+}
 .grid-item img {
   -webkit-transition: 1s -webkit-transform ;
           transition: 1s transform ;
   width: 100%;
 }
+.grid-item .grid-hover-search {
+  display: none;
+}
 .grid-item:hover img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
+}
+.grid-item:hover .grid-hover-search {
+  display: table-cell;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.grid-item:hover .grid-hover-search i {
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  height: 27px;
+  width: 27px;
+  top: 50%;
+  left: 50%;
+  margin-left: -13.5px;
+  margin-top: -13.5px;
 }
 @media screen and (max-width: 767px) {
   .grid-item {
@@ -748,6 +781,7 @@ h1 .flip span.down {
   text-align: center;
   border-radius: 50%;
   line-height: 30px;
+  margin-right: 5px;
 }
 .social-icons i {
   color: #ffffff;
