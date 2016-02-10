@@ -501,8 +501,8 @@ h1 .flip span.down {
   height: 70px;
 }
 .flipper .more-less {
-  color: #ababab;
-  font-weight: 700;
+  color: #999999;
+  font-weight: 300;
 }
 .front,
 .back {
@@ -690,6 +690,7 @@ h1 .flip span.down {
   .flip-container {
     border: none;
     border-bottom: 1px dashed #333333;
+    padding: 35px 0;
   }
   .back p {
     padding: 20px;
