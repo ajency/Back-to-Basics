@@ -103,7 +103,6 @@ $grid.imagesLoaded().progress( function() {
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         slidesPerView: 4,
-        paginationClickable: true,
         spaceBetween: 30,
         loop: true, 
          breakpoints: {
