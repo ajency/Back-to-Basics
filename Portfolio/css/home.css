@@ -402,7 +402,7 @@ footer small {
     width: 1370px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1700px) {
   .container {
     width: 1600px;
   }
