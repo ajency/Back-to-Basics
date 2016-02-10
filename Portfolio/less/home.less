@@ -172,7 +172,6 @@ p{
     a
     {
       position: relative;
-      display: table;
       overflow: hidden;
       &:hover
       {
@@ -474,6 +473,9 @@ footer{
         -o-transition: all 0.3s ease-in-out;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
+          @media screen and (min-width: 1700px){
+    width: 8%;
+  }
         span {
           font-weight: 600;
           display: block;

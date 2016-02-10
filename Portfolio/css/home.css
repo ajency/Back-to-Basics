@@ -159,7 +159,6 @@ a:hover {
 }
 .grid-item a {
   position: relative;
-  display: table;
   overflow: hidden;
 }
 .grid-item a:hover {
@@ -471,6 +470,11 @@ footer small {
   perspective: 500;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+@media screen and (min-width: 1700px) {
+  .service-intro .flip {
+    width: 8%;
+  }
 }
 .service-intro .flip span {
   font-weight: 600;
