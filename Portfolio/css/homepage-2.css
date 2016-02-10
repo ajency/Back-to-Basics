@@ -54,12 +54,15 @@ a:hover {
 .carousel-inner {
   height: 500px;
 }
+.carousel-inner img {
+  width: 100%;
+}
 .carousel-inner .carousel-caption {
   right: 0%;
   padding-bottom: 30px;
   bottom: inherit;
   top: 20%;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.64);
   width: 40%;
   left: 0px;
   color: #000;
@@ -77,6 +80,11 @@ a:hover {
     margin: auto;
     background: rgba(255, 255, 255, 0.92);
     text-align: center;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .carousel-inner .carousel-caption {
+    top: 25%;
   }
 }
 .carousel-inner .carousel-caption hr {
@@ -526,22 +534,9 @@ footer small {
 .carousel {
   background: black;
 }
-.grid-1 {
-  min-width: 220px;
-  max-width: 310px;
-  max-height: 220px;
-  width: 100%;
-}
-.grid-2 {
-  min-width: 220px;
-  max-width: 310px;
-  max-height: 380px;
-  width: 100%;
-}
 figure.snip0019 {
   color: #fff;
   position: relative;
-  float: left;
   overflow: hidden;
   margin: 10px 1%;
   background: #000000;
