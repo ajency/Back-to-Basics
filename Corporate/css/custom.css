@@ -204,8 +204,11 @@ ul.icon-list li {
   }
 }
 .title-hr {
-  width: 100px;
-  border: 1px solid #1b1e24;
+  width: 160px;
+  border: 0px;
+  background: url(../img/zizag.png) no-repeat;
+  height: 14px;
+  background-size: 100%;
 }
 .divider {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGUlEQVQIW2NM6fj/f04FIyMDEIAJGEDhAACOHQQEK+qzwwAAAABJRU5ErkJggg==) repeat;
