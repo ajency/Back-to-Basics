@@ -2,7 +2,6 @@
 @import "../../assets/less/Generic/bootstrap.css";
 @import "../../assets/less/Generic/jquery.fullpage.css";
 @import "../../assets/less/Generic/font-awesome.min.css";
-@import "../../assets/less/Generic/swiper.min.css";
 @import "../../assets/less/Generic/lightgallery.css";
 @font-face {
   font-family: 'Open Sans';
@@ -518,7 +517,7 @@ footer .footer-section .main-link a:hover {
   text-transform: uppercase;
   color: #1b1e24 !important;
   padding: 10px 0px;
-  margin: 0px 20px;
+  margin: 0px 15px;
   font-size: .8em;
 }
 .navbar .navbar-nav .active a {

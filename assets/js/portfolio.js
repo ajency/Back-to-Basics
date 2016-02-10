@@ -100,29 +100,29 @@ $grid.imagesLoaded().progress( function() {
 
 
         
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        slidesPerView: 4,
-        spaceBetween: 30,
-        loop: true, 
-         breakpoints: {
-          // when window width is <= 320px
-          384: {
-            slidesPerView: 1,
-            spaceBetweenSlides: 10
-          },
-          // when window width is <= 480px
-          480: {
-            slidesPerView: 2,
-            spaceBetweenSlides: 20
-          },
-          // when window width is <= 640px
-          767: {
-            slidesPerView: 3,
-            spaceBetweenSlides: 30
-          }
-        }
-    });
+    // var swiper = new Swiper('.swiper-container', {
+    //     pagination: '.swiper-pagination',
+    //     slidesPerView: 4,
+    //     spaceBetween: 30,
+    //     loop: true, 
+    //      breakpoints: {
+    //       // when window width is <= 320px
+    //       384: {
+    //         slidesPerView: 1,
+    //         spaceBetweenSlides: 10
+    //       },
+    //       // when window width is <= 480px
+    //       480: {
+    //         slidesPerView: 2,
+    //         spaceBetweenSlides: 20
+    //       },
+    //       // when window width is <= 640px
+    //       767: {
+    //         slidesPerView: 3,
+    //         spaceBetweenSlides: 30
+    //       }
+    //     }
+    // });
     
 
     //Services
