@@ -272,6 +272,13 @@ a:hover {
 .contact-details [class*="col-"] {
   padding-top: 30px;
 }
+.contact-details .contact-number input {
+  border: none;
+}
+.contact-details .contact-number input:hover,
+.contact-details .contact-number input:focus {
+  outline: none;
+}
 .black-btn {
   border-radius: 0;
   padding: 10px 20px;
