@@ -654,4 +654,12 @@ of those sections to manage the look and feel of the site. */
     padding-top: 50px;
   }
 }
+.testimonials-section {
+  padding-top: 70px;
+}
+@media (max-width: 767px) {
+  .testimonials-section {
+    padding-top: 50px;
+  }
+}
 /*# sourceMappingURL=custom.css.map */

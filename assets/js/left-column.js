@@ -59,7 +59,7 @@ $grid.imagesLoaded().progress( function() {
       //Resize 
         function resize()
       {
-         var heights = window.innerHeight - 180;
+         var heights = window.innerHeight - 100;
          document.getElementById("window-right").style.height = heights + "px";
          document.getElementById("window-left").style.height = heights + "px";
       }
@@ -98,34 +98,6 @@ $grid.imagesLoaded().progress( function() {
          
         });
 
-
-        
-    // var swiper = new Swiper('.swiper-container', {
-    //     pagination: '.swiper-pagination',
-    //     slidesPerView: 4,
-    //     spaceBetween: 30,
-    //     loop: true, 
-    //      breakpoints: {
-    //       // when window width is <= 320px
-    //       384: {
-    //         slidesPerView: 1,
-    //         spaceBetweenSlides: 10
-    //       },
-    //       // when window width is <= 480px
-    //       480: {
-    //         slidesPerView: 2,
-    //         spaceBetweenSlides: 20
-    //       },
-    //       // when window width is <= 640px
-    //       767: {
-    //         slidesPerView: 3,
-    //         spaceBetweenSlides: 30
-    //       }
-    //     }
-    // });
-    
-
-    //Services
     (function() {
   var Flip;
 
@@ -176,32 +148,4 @@ $grid.imagesLoaded().progress( function() {
 
 }).call(this);
 
-
-var width = $(window).width();        
-if(width < 991)
-{
-  $(".back").hide();
-  $(".more-less").click(function(){
-    $(this).parents(".flipper").addClass("flip-outer");
-
-    if($(this).parents(".flipper").hasClass("flip-outer"))
-    {
-      $(this).parents(".flipper").find(".front").toggleClass("show-more-height");
-      $(this).parents(".flipper").find(".back").slideToggle();
-
-
-      if($(this).parents(".flipper").find(".front").hasClass("show-more-height")) {
-        $(this).text("Read Less");
-      } else {
-          $(this).text("Read More");
-      }
-
-      $(this).parents(".flipper").removeClass("flip-outer");
-    }
-    
-
-    
-  });
-
-}
 });
