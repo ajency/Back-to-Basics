@@ -534,6 +534,9 @@ footer small {
 .carousel {
   background: black;
 }
+.carousel .item img {
+  width: 100%;
+}
 figure.snip0019 {
   color: #fff;
   position: relative;
