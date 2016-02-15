@@ -551,7 +551,7 @@ footer .footer-section .main-link a:hover {
   }
   .navbar .navbar-brand {
     color: #000;
-    font-weight: bold;
+    font-weight: 200;
   }
   .navbar .navbar-toggle {
     padding: 9px 9px;

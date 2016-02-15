@@ -748,6 +748,9 @@ figure.snip0019:hover figcaption::before {
           transition: all 0.4s ease-in;
   vertical-align: middle;
 }
+#quote-carousel .carousel-indicators li img {
+  width: 100%;
+}
 #quote-carousel .carousel-indicators .active {
   width: 128px;
   height: 128px;
