@@ -836,9 +836,19 @@ figure.snip0019:hover figcaption::before {
   color: white;
   opacity: .7;
 }
-
+@media screen and (max-width:1024px) and (orientation:landscape)
+{
+  .aboutus-image-container
+  {
+    margin-top: 10%;
+  }
+}
 @media screen and (max-width:991px)
 {
+  .aboutus-image-container
+  {
+    margin-top: 0;
+  }
   .window-left
   {
     height: auto !important;
@@ -898,6 +908,10 @@ figure.snip0019:hover figcaption::before {
     {
       margin: 5px;
     }
+  }
+  #quote-carousel
+  {
+    margin-top: 10px;
   }
 }
 @media screen and (max-width:568px)
