@@ -886,6 +886,24 @@ figure.snip0019:hover figcaption::before {
     opacity: 0;
   }
 }
+@media screen and (max-width:767px) and (orientation:portrait)
+{
+  .carousel .item img
+  {
+    height: 410px;
+    max-width: inherit;
+    width: auto;
+  } 
+}
+@media screen and (max-width:767px) and (orientation:landscape)
+{
+  .carousel .item img
+  {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+  }  
+}
 @media screen and (max-width:767px)
 {
   .contact-details-block
@@ -910,7 +928,8 @@ figure.snip0019:hover figcaption::before {
   .carousel-inner .carousel-caption
   {
     padding:10px;
-    font-size: 13px;
+    font-size: 11px;
+    top: 30%;
     h3
     {
       font-size: 1.5em;
@@ -936,8 +955,7 @@ figure.snip0019:hover figcaption::before {
 @media screen and (max-width:480px)
 {
   .carousel-inner .carousel-caption
-  {
-    top: 5%;
+  {    
     padding: 10px;  
 
     hr
@@ -962,8 +980,7 @@ figure.snip0019:hover figcaption::before {
 @media screen and (max-width:384px)
 {
   .carousel-inner .carousel-caption
-  {
-    font-size: 12px;
+  {    
     line-height: 1.1;
   }
   .carousel-indicators {
