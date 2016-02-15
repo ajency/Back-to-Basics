@@ -71,7 +71,7 @@ p{
         bottom: 20%;        
         background: #fff;
         width: 40%;
-        left: initial;
+        left: auto;
         color:#000;
         text-shadow:none;
         text-align: left;
@@ -438,6 +438,7 @@ footer{
   display: inline-block;
   position: absolute;
   left: 50%;
+  width: 60%;
   transform: translateX(-50%);
   @media screen and (max-width: 967px){
     position: relative;
@@ -473,6 +474,10 @@ footer{
 }
 
 // Services ///
+.service-section
+{
+  padding-top: 0;
+}
 .service-intro{
   font-size: 1.6em;
   text-align:right;
@@ -977,6 +982,18 @@ h1 .flip span.down {
     {
       text-align: center;
     }
+    .timeline .panel-container .slide-panel 
+    {
+      .panel-title, .time-label
+      {
+        padding-left: 0;
+      }
+      .panel-content
+      {
+        padding-right: 24px;
+      }
+    }
+    
 }
 @media screen and (max-width: 767px)
 {
@@ -991,4 +1008,41 @@ h1 .flip span.down {
     {
       padding: 20px;
     }
+    .tcb-quote-carousel blockquote
+    {
+      font-size: 14px;
+    }
+    .timeline .panel-container .slide-panel .panel-content
+    {
+      padding: 12px 24px 18px 24px;
+    }
+}
+@media screen and (max-width: 568px)
+{
+  .service-intro .flip
+  {
+    width: 17%;
+  }
+}
+@media screen and (max-width: 480px)
+{
+  .service-intro .flip
+  {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 384px)
+{
+  .page-title
+  {
+    font-size: 30px;
+  }
+  .timeline .panel-container .slide-panel
+  {
+    width: 240px;
+  }
+  .service-intro .flip
+  {
+    width: 33%;
+  }
 }

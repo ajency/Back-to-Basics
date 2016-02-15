@@ -41,7 +41,7 @@
   font-weight: 200;
 }
 a {
-  color: #1a85a7;
+  color: #ff7f00;
 }
 a:hover {
   opacity: .6;
@@ -62,7 +62,7 @@ a:hover {
   padding-bottom: 30px;
   bottom: inherit;
   top: 25%;
-  background: rgba(255, 255, 255, 0.64);
+  background: rgba(255, 255, 255, 0.9);
   width: 40%;
   left: 0px;
   color: #000;
@@ -271,6 +271,12 @@ a:hover {
 }
 .contact-details [class*="col-"]:nth-of-type(2) {
   padding-top: 30px;
+}
+.send-email-outer {
+  padding-right: 0;
+}
+.send-email-outer a {
+  white-space: nowrap;
 }
 .black-btn {
   border-radius: 0;
@@ -825,6 +831,30 @@ figure.snip0019:hover figcaption::before {
   }
   figure.snip0019:hover figcaption::before {
     opacity: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-details-block .center-block {
+    padding: 20px 0 0 0;
+  }
+  .about-content .fade-txt {
+    font-size: 30px;
+  }
+  .about-content .read-more {
+    margin-bottom: 30px;
+  }
+  .item blockquote {
+    font-size: 14px;
+  }
+  .carousel-inner .carousel-caption {
+    padding: 10px;
+    font-size: 13px;
+  }
+  .carousel-inner .carousel-caption h3 {
+    font-size: 1.5em;
+  }
+  .carousel-inner .carousel-caption hr {
+    margin: 5px;
   }
 }
 @media screen and (max-width: 568px) {

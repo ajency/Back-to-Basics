@@ -59,7 +59,7 @@ a:hover {
   bottom: 20%;
   background: #fff;
   width: 40%;
-  left: initial;
+  left: auto;
   color: #000;
   text-shadow: none;
   text-align: left;
@@ -419,6 +419,7 @@ footer small {
   display: inline-block;
   position: absolute;
   left: 50%;
+  width: 60%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -467,6 +468,9 @@ footer small {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+.service-section {
+  padding-top: 0;
 }
 .service-intro {
   font-size: 1.6em;
@@ -875,6 +879,13 @@ h1 .flip span.down {
   .service-intro {
     text-align: center;
   }
+  .timeline .panel-container .slide-panel .panel-title,
+  .timeline .panel-container .slide-panel .time-label {
+    padding-left: 0;
+  }
+  .timeline .panel-container .slide-panel .panel-content {
+    padding-right: 24px;
+  }
 }
 @media screen and (max-width: 767px) {
   .flip-container {
@@ -884,6 +895,33 @@ h1 .flip span.down {
   }
   .back p {
     padding: 20px;
+  }
+  .tcb-quote-carousel blockquote {
+    font-size: 14px;
+  }
+  .timeline .panel-container .slide-panel .panel-content {
+    padding: 12px 24px 18px 24px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .service-intro .flip {
+    width: 17%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .service-intro .flip {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 384px) {
+  .page-title {
+    font-size: 30px;
+  }
+  .timeline .panel-container .slide-panel {
+    width: 240px;
+  }
+  .service-intro .flip {
+    width: 33%;
   }
 }
 /*# sourceMappingURL=home.css.map */
