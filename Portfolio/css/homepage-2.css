@@ -769,11 +769,6 @@ figure.snip0019:hover figcaption::before {
   float: left;
   margin-right: 10px;
 }
-.item blockquote p:after {
-  content: "\f10e";
-  font-family: 'Fontawesome';
-  margin-left: 20px;
-}
 .social-box {
   width: 30px;
   height: 30px;
@@ -852,6 +847,7 @@ figure.snip0019:hover figcaption::before {
   .carousel .item img {
     height: 410px;
     max-width: inherit;
+    width: auto;
   }
 }
 @media screen and (max-width: 767px) and (orientation: landscape) {
