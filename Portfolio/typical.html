@@ -173,7 +173,7 @@
                   <figure class="snip0019 grid-2">
                            <img class="img-responsive" src="http://images.nga.gov/?service=asset&action=show_preview&asset=34919" alt="Imitator of Vincent van Gogh"/>
                                <figcaption>
-                              <div><h2>Which <span>eccentric</span>  Dutch artist is known for chopping off part of his ear? </h2></div>
+                              <div class="grid2-left-title"><h2>Which <span>eccentric</span>  Dutch artist is known for chopping off part of his ear? </h2></div>
                               <div><p><span>Troubled by anxiety throughout his life, the magnificent Dutch painter Vincent van Gogh apparently cut off his ear with a razor in 1888</span></p></div>
                               <a href="#"></a>
                            </figcaption>        
@@ -183,7 +183,7 @@
                        <figure class="snip0019 grid-1">
                          <img class="img-responsive" src="http://images.nga.gov/?service=asset&action=show_preview&asset=45139" >
                            <figcaption>
-                              <div><h2>What <span>state</span> do you live in?</h2></div>
+                              <div class="grid1-left-title"><h2>What <span>state</span> do you live in?</h2></div>
                               <div><p><span>Denial. Miss Wormwood: I don't suppose I can argue with that.</span></p></div>
                               <a href="#"></a>
                            </figcaption>        
@@ -193,7 +193,7 @@
                     <figure class="snip0019 grid-2">
                             <img class="img-responsive" src="http://images.nga.gov/?service=asset&action=show_preview&asset=68903">
                            <figcaption>
-                              <div><h2>What <span>state</span> do you live in?</h2></div>
+                              <div class="grid2-left-title"><h2>What <span>state</span> do you live in?</h2></div>
                               <div><p><span>Denial. Miss Wormwood: I don't suppose I can argue with that.</span></p></div>
                               <a href="#"></a>
                            </figcaption> 
@@ -203,7 +203,7 @@
                       <figure class="snip0019 grid-2">
                        <img class="img-responsive" src="http://images.nga.gov/?service=asset&action=show_preview&asset=48426">
                            <figcaption>
-                              <div><h2>What <span>state</span> do you live in?</h2></div>
+                              <div class="grid1-left-title"><h2>What <span>state</span> do you live in?</h2></div>
                               <div><p><span>Denial. Miss Wormwood: I don't suppose I can argue with that.</span></p></div>
                               <a href="#"></a>
                            </figcaption>       
@@ -213,7 +213,7 @@
                                    <figure class="snip0019 grid-2">
                           <img class="img-responsive" src="http://images.nga.gov/?service=asset&action=show_preview&asset=73668">
                            <figcaption>
-                              <div><h2>What <span>state</span> do you live in?</h2></div>
+                              <div class="grid2-left-title"><h2>What <span>state</span> do you live in?</h2></div>
                               <div><p><span>Denial. Miss Wormwood: I don't suppose I can argue with that.</span></p></div>
                               <a href="#"></a>
                            </figcaption> 
@@ -224,7 +224,7 @@
                        <figure class="snip0019 grid-2">
                             <img class="img-responsive" src="http://images.nga.gov/?service=asset&action=show_preview&asset=134825">
                            <figcaption>
-                              <div><h2>What <span>state</span> do you live in?</h2></div>
+                              <div class="grid1-left-title"><h2>What <span>state</span> do you live in?</h2></div>
                               <div><p><span>Denial. Miss Wormwood: I don't suppose I can argue with that.</span></p></div>
                               <a href="#"></a>
                            </figcaption> 
@@ -235,7 +235,7 @@
                          <figure class="snip0019 grid-2">
                               <img class="img-responsive" src="http://images.nga.gov/?service=asset&action=show_preview&asset=71726">
                            <figcaption>
-                              <div><h2>What <span>state</span> do you live in?</h2></div>
+                              <div class="grid2-left-title"><h2>What <span>state</span> do you live in?</h2></div>
                               <div><p><span>Denial. Miss Wormwood: I don't suppose I can argue with that.</span></p></div>
                               <a href="#"></a>
                            </figcaption> 
@@ -246,7 +246,7 @@
                   <figure class="snip0019 grid-2">
                            <img class="img-responsive" src="http://images.nga.gov/?service=asset&action=show_preview&asset=134781">
                            <figcaption>
-                              <div><h2>What <span>state</span> do you live in?</h2></div>
+                              <div class="grid1-left-title"><h2>What <span>state</span> do you live in?</h2></div>
                               <div><p><span>Denial. Miss Wormwood: I don't suppose I can argue with that.</span></p></div>
                               <a href="#"></a>
                            </figcaption> 
@@ -256,7 +256,7 @@
                   <figure class="snip0019 grid-2">
                           <img class="img-responsive" src="http://images.nga.gov/?service=asset&action=show_preview&asset=50680">
                            <figcaption>
-                              <div><h2>What <span>state</span> do you live in?</h2></div>
+                              <div class="grid2-left-title"><h2>What <span>state</span> do you live in?</h2></div>
                               <div><p><span>Denial. Miss Wormwood: I don't suppose I can argue with that.</span></p></div>
                               <a href="#"></a>
                            </figcaption> 
@@ -446,4 +446,24 @@
    <!-- Custom Js -->
    <!-- Custom Js -->
    <script src="../assets/js/typical.js"></script>  
+   <script type="text/javascript">
+     
+jQuery(document).ready(function($){
+    $(".grid2-left-title h2").each(function(){
+          if ($(this).text().length > 60) {
+              $(this).text($(this).text().substr(0, 57));
+              $(this).append('...');
+          }
+      });
+});
+
+jQuery(document).ready(function($){
+    $(".grid1-left-title h2").each(function(){
+          if ($(this).text().length > 30) {
+              $(this).text($(this).text().substr(0, 27));
+              $(this).append('...');
+          }
+      });
+});
+   </script>
 </html>
