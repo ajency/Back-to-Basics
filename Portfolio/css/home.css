@@ -878,6 +878,7 @@ h1 .flip span.down {
   }
   .service-intro {
     text-align: center;
+    line-height: 32px;
   }
   .timeline .panel-container .slide-panel .panel-title,
   .timeline .panel-container .slide-panel .time-label {
@@ -911,6 +912,7 @@ h1 .flip span.down {
 @media screen and (max-width: 480px) {
   .service-intro .flip {
     width: 25%;
+    top: -24px;
   }
 }
 @media screen and (max-width: 384px) {
