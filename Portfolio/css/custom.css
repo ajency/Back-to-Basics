@@ -6,7 +6,7 @@
 @font-face {
   font-family: 'Open Sans';
   src: url('../fonts/opensans-regular-webfont.eot');
-  src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype')
+  src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype');
   
   /* IE9 Compat Modes */
   /* IE6-IE8 */
@@ -52,12 +52,14 @@ h5 small {
 a {
   text-shadow: none !important;
   color: #ff7f00;
-  -webkit-transition: color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.1s linear 0s !important;
-          transition: color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.1s linear 0s !important;
+  transition: color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.1s linear 0s !important;
 }
 a.icon:hover {
   text-decoration: none;
   -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   opacity: .4;
 }
@@ -337,13 +339,10 @@ h6.block {
   display: block;
   margin-left: 20px;
   margin-top: 12px;
-  -webkit-transition: all 0.5s ease;
-          transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .panel-group .panel.activePanel i {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   margin-top: 19px;
   margin-left: 14px;
 }
@@ -369,8 +368,7 @@ h6.block {
   background: #ff7f00;
   color: #ffffff;
   border: 1px solid #ff7f00;
-  -webkit-transition: all 1s ease;
-          transition: all 1s ease;
+  transition: all 1s ease;
 }
 .btn-primary:hover,
 .btn-primary:focus {
@@ -504,6 +502,7 @@ footer .footer-section .main-link a:hover {
 .navbar {
   padding: 20px 0;
   -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   background: #ffffff;
   border: 0px;
@@ -662,4 +661,3 @@ of those sections to manage the look and feel of the site. */
     padding-top: 50px;
   }
 }
-/*# sourceMappingURL=custom.css.map */
