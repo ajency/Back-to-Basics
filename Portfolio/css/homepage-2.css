@@ -831,18 +831,9 @@ figure.snip0019:hover figcaption::before {
   figure.snip0019 figcaption > div,
   figure.snip0019 figcaption > div h2,
   figure.snip0019 figcaption > div p {
-    opacity: 1;
     -webkit-transform: translate3d(0%, 0%, 0);
             transform: translate3d(0%, 0%, 0);
     text-align: center;
-  }
-  figure.snip0019 figcaption > div {
-    height: 50%;
-    width: 100%;
-  }
-  figure.snip0019 figcaption > div p {
-    background: none;
-    color: #ffffff;
   }
   figure.snip0019:hover figcaption::before {
     opacity: 0;
