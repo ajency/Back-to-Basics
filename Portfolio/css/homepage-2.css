@@ -907,7 +907,7 @@ figure.snip0019:hover figcaption::before {
 }
 @media screen and (max-width: 384px) {
   .carousel-inner .carousel-caption {
-    line-height: 1.1;
+    line-height: 1.5;
   }
   .carousel-indicators {
     bottom: -10px;
