@@ -10,6 +10,7 @@
 p{
   font-size: 1em;
 }
+
 .logo{
     h3{
           margin: 0px;
@@ -24,6 +25,21 @@ p{
                   margin-left: -2px;
     }
 }
+
+// Fixed hover and focused issue for navbar
+
+.navbar{
+  .navbar-nav{
+    .active{
+      a{
+        &:hover,&:active,&:focus{
+          background: none;
+        }
+      }
+    }
+  }
+}
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .logo-section{
