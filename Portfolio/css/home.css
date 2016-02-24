@@ -18,6 +18,9 @@ p {
 .navbar .navbar-nav .active a:focus {
   background: none;
 }
+.l-h-25 {
+  line-height: 25px;
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .logo-section {
   height: 500px;
