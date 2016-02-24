@@ -1,23 +1,37 @@
 
+
 // Gulp include call
 var gulp = require('gulp');
+
 // cssmin plugin
 var cssmin = require('gulp-cssmin');
+
 // concat to combine multiple files
 var concat = require('gulp-concat');
+
 // Autoprefixer for generated css files
 var autoprefixer = require('gulp-autoprefixer');
-// File rename auto
+
+// File rename 
 var rename = require('gulp-rename'); 
+
 // Minify Js files
 var uglify = require('gulp-uglify');
 
 
+
+// Tasks
+
 // 1) Minify Css file
 
+// CAll- gulp minify-css
+
+// Custom variable for changing css source(Please change here to minify css)
+var css_source = '../Portfolio/css/home.css';
+
 gulp.task('minify-css', function () {
-	// Please change the source to whatever required
-	gulp.src('../assets/less/Generic/jquery.fullpage.css')
+	// Source path
+	gulp.src(css_source)
 	// minify call
     .pipe(cssmin())
     // Renaming file when minifed(Default .min)
@@ -25,15 +39,21 @@ gulp.task('minify-css', function () {
     // Autoprefixer
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
 	// Provide destionation path
-    .pipe(gulp.dest('../assets/less/Generic/'));
+    .pipe(gulp.dest('../Portfolio/css/'));
 });
 
 
 // 2) Minify Js files
 
+// CALL- gulp uglify-css
+
+// Custom variable for changing css source(Please change here to minify css)
+var js_source = '../assets/js/jquery.easing.minn.js';
+
+
 gulp.task('uglify-js', function(){
     // Please change the source to whatever required
-    return gulp.src('../assets/js/jquery.easing.minn.js')
+    return gulp.src(js_source)
         // minify call
         .pipe(uglify())
         // Renaming file when minifed(Default .min)
