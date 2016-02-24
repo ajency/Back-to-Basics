@@ -24,10 +24,13 @@ var uglify = require('gulp-uglify');
 
 // 1) Minify Css file
 
-// CAll- gulp minify-css
+// Command- gulp minify-css
 
 // Custom variable for changing css source(Please change here to minify css)
-var css_source = '../Portfolio/css/home.css';
+var css_source = '';
+
+// Output destionation file
+var css_dest = '' ;
 
 gulp.task('minify-css', function () {
 	// Source path
@@ -39,17 +42,19 @@ gulp.task('minify-css', function () {
     // Autoprefixer
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
 	// Provide destionation path
-    .pipe(gulp.dest('../Portfolio/css/'));
+    .pipe(gulp.dest(css_dest));
 });
 
 
 // 2) Minify Js files
 
-// CALL- gulp uglify-css
+// Command- gulp uglify-css
 
-// Custom variable for changing css source(Please change here to minify css)
-var js_source = '../assets/js/jquery.easing.minn.js';
+// Custom variable for changing css source(Please change here to minify JS)
+var js_source = '';
 
+// Output destionation file
+var js_dest = '' ;
 
 gulp.task('uglify-js', function(){
     // Please change the source to whatever required
@@ -59,6 +64,6 @@ gulp.task('uglify-js', function(){
         // Renaming file when minifed(Default .min)
         .pipe(rename({suffix: '.min'}))
         //Provide destionation path
-        .pipe(gulp.dest('../assets/js/'));
+        .pipe(gulp.dest(js_dest));
 });
 
