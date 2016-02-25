@@ -27,10 +27,10 @@
 // Command- gulp minify-css
 
 // Custom variable for changing css source(Please change here to minify css)
-    var css_source = '../Portfolio/css/homepage-2.css';
+    var css_source = '';
 
 // Output destionation file
-    var css_dest = '../Portfolio/css/' ;
+    var css_dest = '' ;
 
     gulp.task('minify-css', function () {
     	// Source path
@@ -51,10 +51,10 @@
 // Command- gulp uglify-js
 
 // Custom variable for changing css source(Please change here to minify JS)
-    var js_source = '../assets/js/typical.js';
+    var js_source = '';
 
 // Output destionation file
-    var js_dest = '../assets/js/' ;
+    var js_dest = '' ;
 
     gulp.task('uglify-js', function(){
         // Please change the source to whatever required
@@ -77,7 +77,7 @@
     var js1_source = '';
 
 // Output destionation file
-    var js1_dest = '../assets/js/' ;
+    var js1_dest = '' ;
 
     gulp.task('combine-js', function(){
         // Please change the source to whatever required
