@@ -73,7 +73,7 @@
 
 // Command- gulp combine-js
 
-// Custom variable for changing css source(Please change here to minify JS)(If multiple files use array style[])
+// Custom variable for changing css source(Please change here to minify JS)(If multiple files, use array style[])
     var js1_source = '';
 
 // Output destionation file
