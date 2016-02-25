@@ -27,10 +27,10 @@
 // Command- gulp minify-css
 
 // Custom variable for changing css source(Please change here to minify css)
-    var css_source = '';
+    var css_source = '../Portfolio/css/homepage-2.css';
 
 // Output destionation file
-    var css_dest = '' ;
+    var css_dest = '../Portfolio/css/' ;
 
     gulp.task('minify-css', function () {
     	// Source path
