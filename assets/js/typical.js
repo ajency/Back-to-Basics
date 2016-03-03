@@ -98,4 +98,23 @@ $grid.imagesLoaded().progress( function() {
          
         });
 
+
+// Ellipsis style for masonary grids
+
+$(".grid2-left-title h2").each(function(){
+          if ($(this).text().length > 60) {
+              $(this).text($(this).text().substr(0, 57));
+              $(this).append('...');
+          }
+      });
+
+
+    $(".grid1-left-title h2").each(function(){
+          if ($(this).text().length > 30) {
+              $(this).text($(this).text().substr(0, 27));
+              $(this).append('...');
+          }
+      });
+
+
 });
