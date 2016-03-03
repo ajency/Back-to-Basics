@@ -1,0 +1,79 @@
+@fade-color: #f8f6ef;
+@white: #fff;
+@gray: #ccc;
+@dark-gray: #333;
+@primary-color: #ff7f00;
+@light-gray: #fafafa;
+@blue: #1A85A7;
+
+.logo{
+    h3{
+          margin: 0px;
+          font-size: 30px;
+    }
+    h2{
+                  font-weight: 800;
+                  margin: 0px;
+                  font-size: 60px;
+                  line-height: 44px;
+                  text-transform: uppercase;
+                  margin-left: -2px;
+    }
+}
+
+.site-wrapper{
+  padding: 100px 0px 50px 0px;
+  background: url(../img/artist-brush.jpg)no-repeat right @light-gray;
+  background-size: contain;
+}
+
+.flex-container {
+  padding: 0;
+  margin:  0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+.flex-item {
+  background: #ccc;
+  padding: 5px;
+  width: 300px;
+  height: 350px;
+  margin:10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+
+  span{
+        position: absolute;
+        z-index: 99;
+        color: #000;
+        text-align: center;
+        display: block;
+        width: 100%;
+        bottom: 0px;
+        background: #ccc;
+        height: 5px;
+        line-height: 50px;
+           -webkit-transition: all 0.5s ease;                  
+    -moz-transition: all 0.5s ease;                 
+    -o-transition: all 0.5s ease;   
+    -ms-transition: all 0.5s ease;          
+    transition: all 0.5s ease;
+  }
+  &:hover{
+    span{
+      height: 55px;
+      cursor: pointer;
+    }
+  }
+}
