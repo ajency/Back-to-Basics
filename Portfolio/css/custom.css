@@ -387,7 +387,7 @@ h6.block {
   }
 }
 .header .logo {
-  width: 140px;
+  width: 180px;
 }
 @media only screen and (min-width: 1920px) {
   .container {
@@ -605,59 +605,11 @@ footer .footer-section .main-link a:hover {
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
-.intro-section {
-  padding-top: 70px;
+section {
+  padding-top: 50px;
 }
 @media (max-width: 767px) {
-  .intro-section {
-    padding-top: 50px;
-  }
-}
-.about-section {
-  padding-top: 70px;
-}
-@media (max-width: 767px) {
-  .about-section {
-    padding-top: 50px;
-  }
-}
-.service-section {
-  padding-top: 70px;
-}
-@media (max-width: 767px) {
-  .service-section {
-    padding-top: 50px;
-  }
-}
-.client-section {
-  padding-top: 70px;
-}
-@media (max-width: 767px) {
-  .client-section {
-    padding-top: 50px;
-  }
-}
-.work-section {
-  padding-top: 70px;
-}
-@media (max-width: 767px) {
-  .work-section {
-    padding-top: 50px;
-  }
-}
-.contact-section {
-  padding-top: 70px;
-}
-@media (max-width: 767px) {
-  .contact-section {
-    padding-top: 50px;
-  }
-}
-.testimonials-section {
-  padding-top: 70px;
-}
-@media (max-width: 767px) {
-  .testimonials-section {
+  section {
     padding-top: 50px;
   }
 }

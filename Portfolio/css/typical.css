@@ -781,13 +781,12 @@ figure.snip0019:hover figcaption::before {
 .item blockquote p:before {
   content: "\f10d";
   font-family: 'Fontawesome';
-  float: left;
   margin-right: 10px;
 }
 .item blockquote p:after {
   content: "\f10e";
   font-family: 'Fontawesome';
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .social-box {
   width: 30px;
