@@ -240,7 +240,7 @@ h6.block {
   font-weight: 300;
 }
 .bold {
-  font-weight: 800;
+  font-weight: 700;
 }
 .semi-bold {
   font-weight: 500;
@@ -278,8 +278,14 @@ h6.block {
 .m-t-20 {
   margin-top: 20px;
 }
+.m-t-30 {
+  margin-top: 30px;
+}
 .m-t-40 {
   margin-top: 40px;
+}
+.m-t-50 {
+  margin-top: 50px;
 }
 .m-b-0 {
   margin-bottom: 0;
@@ -610,6 +616,14 @@ section {
 }
 @media (max-width: 767px) {
   section {
+    padding-top: 50px;
+  }
+}
+.intro-section {
+  padding-top: 70px;
+}
+@media (max-width: 767px) {
+  .intro-section {
     padding-top: 50px;
   }
 }
