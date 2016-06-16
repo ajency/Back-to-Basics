@@ -206,11 +206,11 @@ ul.icon-list li {
   }
 }
 .title-hr {
-  width: 160px;
+  width: 100px;
+  height: 3px;
+  background: #111;
   border: 0px;
-  background: url(../img/zizag.png) no-repeat;
-  height: 14px;
-  background-size: 100%;
+  margin: 0px auto;
 }
 .divider {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGUlEQVQIW2NM6fj/f04FIyMDEIAJGEDhAACOHQQEK+qzwwAAAABJRU5ErkJggg==) repeat;
@@ -518,7 +518,7 @@ footer .footer-section .main-link a:hover {
   color: #1b1e24 !important;
   padding: 14px 0px 4px;
   margin: 0px 15px;
-  font-size: .8em;
+  font-size: 1em;
 }
 .navbar .navbar-nav .active a {
   background: none;
@@ -544,7 +544,6 @@ footer .footer-section .main-link a:hover {
 @media (max-width: 967px) {
   .navbar {
     background: #ffffff;
-    padding: 0px;
   }
   .navbar .navbar-nav {
     width: 100%;

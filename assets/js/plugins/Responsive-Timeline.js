@@ -109,7 +109,7 @@
       methods.setLayout();
 
       var defaults = {
-        defaultPanel:$global.find(".slide-nav a:last").index(), //the last, begin from 0
+        defaultPanel:$global.find(".slide-nav a:nth-child(2)").index(), //the last, begin from 0
         panelAnimateSpeed:1000,
         backgroundAnimateSpeed:1000,
         breakpoint:648, //should be the same as css
@@ -124,7 +124,7 @@
       if(opt.defaultPanel<panelNumber) {
         currentPanel = opt.defaultPanel;
       } else {
-        currentPanel = $global.find(".slide-nav a:last").index(); //the last one  
+        currentPanel = $global.find(".slide-nav a:nth-child(2)").index(); //the last one  
       }
       
       methods.activateNavigation();
