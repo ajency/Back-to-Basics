@@ -213,13 +213,13 @@ ul.icon-list li {
   margin: 0px auto;
 }
 .divider {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGUlEQVQIW2NM6fj/f04FIyMDEIAJGEDhAACOHQQEK+qzwwAAAABJRU5ErkJggg==) repeat;
+  background: #ededed;
   text-indent: -9999rem;
   font-size: 0;
   line-height: 0;
   content: "pastel blue dot pattern";
   width: 100%;
-  height: 1.25rem;
+  height: .11rem;
 }
 .spacer {
   margin: 20px 0px 20px 0px;
@@ -241,6 +241,9 @@ h6.block {
 }
 .bold {
   font-weight: 700;
+}
+.semi-bolder {
+  font-weight: 600;
 }
 .semi-bold {
   font-weight: 500;
@@ -405,8 +408,8 @@ h6.block {
   margin-bottom: 30px;
 }
 .promo {
-  margin-top: 2.5em;
-  margin-bottom: 2.5em;
+  margin-top: 4.5em;
+  margin-bottom: 4.5em;
 }
 .promo h2 {
   font-size: 1.9em;
@@ -414,6 +417,10 @@ h6.block {
 .promo h2 .highlight {
   color: #ff7f00;
   text-decoration: underline;
+}
+.promo .slogan {
+  font-family: 'Arapey';
+  font-style: italic;
 }
 @media (max-width: 767px) {
   footer .footer-section .subscribe-form {

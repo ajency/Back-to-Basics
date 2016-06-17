@@ -18,6 +18,9 @@ p {
 .navbar .navbar-nav .active a:focus {
   background: none;
 }
+.bg-gray {
+  background: #eeeeee;
+}
 .l-h-25 {
   line-height: 25px;
 }
@@ -81,8 +84,12 @@ a:hover {
     right: 0%;
     left: 0%;
     margin: auto;
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.62);
     text-align: center;
+    font-size: .5em;
+  }
+  .carousel-inner .carousel-caption h4 {
+    font-size: 1.1em;
   }
 }
 .carousel-inner .carousel-caption hr {
@@ -426,40 +433,20 @@ footer small {
   }
 }
 /*polaroid effect*/
-.polaroid {
-  display: inline-block;
+.polaroid img {
+  width: 70%;
+}
+.polaroid .profile-data {
+  background: #ffffff;
+  width: 50%;
+  text-align: center;
+  margin: auto;
   position: absolute;
-  left: 50%;
-  width: 60%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-@media screen and (max-width: 967px) {
-  .polaroid {
-    position: relative;
-  }
-}
-.polaroid:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: transparent;
-  box-shadow: inset 0px 0px 0px 100vh #e7e7e7;
-  -webkit-transform: rotate(75deg);
-      -ms-transform: rotate(75deg);
-          transform: rotate(75deg);
-  z-index: -1;
-}
-@media screen and (max-width: 460px) {
-  .polaroid:before {
-    -webkit-transform: rotate(62deg);
-        -ms-transform: rotate(62deg);
-            transform: rotate(62deg);
-  }
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  color: black;
+  border-bottom: 2px solid;
 }
 /*navbar*/
 @media screen and (max-width: 768px) {
@@ -545,22 +532,34 @@ h1 .flip span.down {
   padding-top: 30px;
   margin-top: 40px;
 }
+@media screen and (max-width: 768px) {
+  .tcb-quote-carousel {
+    margin: 0px;
+    padding: 0px;
+  }
+  .tcb-quote-carousel i {
+    text-align: center !important;
+  }
+}
 .tcb-quote-carousel .quote {
   color: rgba(0, 0, 0, 0.1);
   text-align: center;
   margin-bottom: 30px;
 }
 .tcb-quote-carousel .carousel-inner {
-  background: white;
+  background: #eeeeee;
   height: 100%;
 }
 .tcb-quote-carousel .carousel {
   padding-bottom: 60px;
-  background: white;
+  background: #eeeeee;
 }
 .tcb-quote-carousel .carousel .carousel-indicators > li {
-  background-color: #ff7f00;
+  background-color: #999999;
   border: none;
+}
+.tcb-quote-carousel .carousel .carousel-indicators > li.active {
+  background-color: #ff7f00;
 }
 .tcb-quote-carousel blockquote {
   margin-top: 15px;
@@ -568,9 +567,9 @@ h1 .flip span.down {
   border: none;
 }
 .tcb-quote-carousel .profile-circle {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+  margin: 0 20px;
   overflow: hidden;
   border-radius: 100px;
 }
@@ -595,6 +594,18 @@ h1 .flip span.down {
   left: 0;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
+}
+.carousel-indicators {
+  right: 0% !important;
+  width: 10% !important;
+  left: initial;
+}
+@media screen and (max-width: 767px) {
+  .carousel-indicators {
+    left: 0% !important;
+    width: 40% !important;
+    margin: auto;
+  }
 }
 .timeline {
   width: 100%;
@@ -937,6 +948,55 @@ h1 .flip span.down {
   }
   .service-intro .flip {
     width: 33%;
+  }
+}
+.map-module {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin: 5% auto;
+  background: white;
+  border: thin solid #ccc;
+}
+@media (max-width: 767px) {
+  .map-module {
+    height: 500px;
+  }
+}
+.map-module .map-image {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 767px) {
+  .map-module .map-image {
+    position: relative;
+    width: 100%;
+    height: 500px;
+  }
+}
+.map-module .map-overlay {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: white;
+  width: 300px;
+  height: 230px;
+  padding: 15px;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .map-module .map-overlay {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
 }
 /*# sourceMappingURL=left-column.css.map */

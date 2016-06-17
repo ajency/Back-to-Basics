@@ -202,7 +202,7 @@ ul.icon-list li {
   margin: 0px auto;
 }
 .divider {
-  background: #dee9ed;
+  background: #ededed;
   text-indent: -9999rem;
   font-size: 0;
   line-height: 0;
@@ -663,7 +663,7 @@ footer .footer-section .main-link a:hover {
 }
 .navbar-inverse {
   border-radius: 0px !important;
-  background: #1b1e24;
+  background: #ededed;
   border: 0px;
   font-size: .9em;
 }
@@ -675,7 +675,7 @@ footer .footer-section .main-link a:hover {
 .navbar-inverse li a {
   color: #8b91a0 !important;
   padding: 10px 10px;
-  border-left: 1px solid #8b91a0;
+  border-left: 1px solid #ffffff;
   font-weight: 500;
   float: left;
   width: 100%;
@@ -705,7 +705,7 @@ footer .footer-section .main-link a:hover {
   color: #f6f7f8;
 }
 .navbar-inverse li:last-child a {
-  border-right: 1px solid #8b91a0;
+  border-right: 1px solid #ffffff;
 }
 .navbar-inverse .active a {
   background-color: #ff7f00 !important;
