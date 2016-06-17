@@ -269,6 +269,9 @@ h6.block {
 .center-text {
   text-align: center !important;
 }
+.text-italic {
+  font-style: italic;
+}
 .margin-none {
   margin: 0px;
 }
