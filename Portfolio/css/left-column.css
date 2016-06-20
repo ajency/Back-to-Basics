@@ -530,7 +530,6 @@ h1 .flip span.down {
 }
 .tcb-quote-carousel {
   padding-top: 30px;
-  margin-top: 40px;
 }
 @media screen and (max-width: 768px) {
   .tcb-quote-carousel {
@@ -598,7 +597,7 @@ h1 .flip span.down {
 .carousel-indicators {
   right: 0% !important;
   width: 10% !important;
-  left: initial;
+  left: auto;
 }
 @media screen and (max-width: 767px) {
   .carousel-indicators {

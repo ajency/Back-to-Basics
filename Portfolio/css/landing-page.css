@@ -54,6 +54,12 @@
   text-align: center;
   overflow: hidden;
   position: relative;
+  display: inline-block;
+}
+@media (max-width: 1024px) {
+  .flex-item {
+    width: 250px;
+  }
 }
 .flex-item span {
   position: absolute;
