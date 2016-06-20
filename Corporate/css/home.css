@@ -10,6 +10,10 @@ body {
   font-size: 40px;
   color: #ff7f00;
 }
+.question-tag {
+  font-size: 22px;
+  color: #cccccc;
+}
 /* Custom page header */
 .header {
   padding-bottom: 20px;

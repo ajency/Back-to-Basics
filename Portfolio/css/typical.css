@@ -149,7 +149,7 @@ a:hover {
 }
 @media (max-width: 768px) {
   .carousel-inner {
-    height: auto !important;
+    height: 400px !important;
   }
 }
 .carousel-indicators li {
