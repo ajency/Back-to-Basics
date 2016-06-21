@@ -107,6 +107,11 @@ a:hover {
     margin-bottom: 0;
   }
 }
+@media (max-width: 768px) {
+  .intro-section .carousel-inner {
+    height: 400px !important;
+  }
+}
 .carousel-inner {
   height: 500px;
 }
@@ -149,7 +154,7 @@ a:hover {
 }
 @media (max-width: 768px) {
   .carousel-inner {
-    height: 400px !important;
+    height: 270px !important;
   }
 }
 .carousel-indicators li {
@@ -793,6 +798,12 @@ figure.snip0019:hover figcaption::before {
   height: 100%;
   background-attachment: fixed !important;
   background-position: center !important;
+}
+@media (max-width: 767px) {
+  .carousel-inner .item {
+    background-size: cover !important;
+    background-attachment: inherit !important;
+  }
 }
 .social-box {
   width: 30px;

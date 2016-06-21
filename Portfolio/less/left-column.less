@@ -61,6 +61,15 @@ p{
               margin-bottom: 40px;
 
            }
+           @media only screen 
+              and (min-device-width : 768px) 
+              and (max-device-width : 1024px) 
+              and (orientation : portrait) {
+                      height: auto !important;
+                      text-align: center;
+                      margin-bottom: 40px;
+              }
+
       .contact-info{
        position: absolute;
        bottom: 0px;
@@ -71,7 +80,14 @@ p{
               position: relative;
               left: 0%;
            }
-      
+           @media only screen 
+                and (min-device-width : 768px) 
+                and (max-device-width : 1024px) 
+                and (orientation : portrait) { /* STYLES GO HERE */ 
+                    position: relative;
+                    left: 0%;
+
+                }
       }
   p{
     font-weight: 200;
@@ -91,6 +107,12 @@ p{
 
 .carousel-inner {
     height:500px;
+     @media only screen 
+              and (min-device-width : 768px) 
+              and (max-device-width : 1024px) 
+              and (orientation : portrait) {
+                      height: 100% !important;
+              }
     .carousel-caption {
         right: 0%;
         bottom: 20%;        
@@ -174,6 +196,12 @@ p{
       @media (max-width: 768px) {
             padding: 30px 0px;
      }
+     @media only screen 
+              and (min-device-width : 768px) 
+              and (max-device-width : 1024px) 
+              and (orientation : landscape)  {
+                     padding: 40px 0px !important;
+              }
 }
 .profile-box{
       width: 320px;
@@ -616,12 +644,22 @@ h1 .flip span.down {
         margin: 0 20px;
         overflow: hidden;
         border-radius: 100px;
+        @media screen and (max-width: 768px){
+        float: none !important;
+        margin: auto;
+      }
     }
 }
 .carousel-fade {
     .carousel-inner {
         .item {
             transition-property: opacity;
+           @media (max-width: 767px) {
+                h4{
+                  text-align: center!important;
+                  float: none !important;
+                }
+            }
         }
         .item,
         .active.left,

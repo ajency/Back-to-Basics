@@ -126,6 +126,15 @@
 
 // ***********    Body Layout   ***********  //
 // ***************************************** //
+.intro-section{
+    @media (max-width: 768px) { // Mobile device
+             .carousel-inner {
+                    height:400px !important;
+                  }
+           }
+}
+
+
 .carousel-inner {
     height:500px;
     img{
@@ -162,7 +171,7 @@
         }
     }
     @media (max-width: 768px) { // Mobile device
-             height: 400px !important;
+             height: 270px !important;
            }
        
 }
@@ -332,7 +341,7 @@
     text-align: right;
     margin-bottom: 0;
     @media (max-width:767px){
-    text-align: center;
+      text-align: center;
     }
   }
   [class*="col-"]:nth-of-type(2){
@@ -819,6 +828,11 @@ figure.snip0019:hover figcaption::before {
       height: 100%;
       background-attachment: fixed !important;
       background-position: center !important;
+
+    @media (max-width:767px){
+       background-size: cover !important;
+       background-attachment: inherit !important;
+    }
 }
 //Social Icons
 .social-box{

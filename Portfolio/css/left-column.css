@@ -37,6 +37,13 @@ p {
     margin-bottom: 40px;
   }
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .logo-section {
+    height: auto !important;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
 .logo-section .contact-info {
   position: absolute;
   bottom: 0px;
@@ -47,6 +54,13 @@ p {
 }
 @media (max-width: 768px) {
   .logo-section .contact-info {
+    position: relative;
+    left: 0%;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .logo-section .contact-info {
+    /* STYLES GO HERE */
     position: relative;
     left: 0%;
   }
@@ -64,6 +78,11 @@ a:hover {
 }
 .carousel-inner {
   height: 500px;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .carousel-inner {
+    height: 100% !important;
+  }
 }
 .carousel-inner .carousel-caption {
   right: 0%;
@@ -146,6 +165,11 @@ a:hover {
 @media (max-width: 768px) {
   .content-wrapper {
     padding: 30px 0px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .content-wrapper {
+    padding: 40px 0px !important;
   }
 }
 .profile-box {
@@ -572,9 +596,21 @@ h1 .flip span.down {
   overflow: hidden;
   border-radius: 100px;
 }
+@media screen and (max-width: 768px) {
+  .tcb-quote-carousel .profile-circle {
+    float: none !important;
+    margin: auto;
+  }
+}
 .carousel-fade .carousel-inner .item {
   -webkit-transition-property: opacity;
           transition-property: opacity;
+}
+@media (max-width: 767px) {
+  .carousel-fade .carousel-inner .item h4 {
+    text-align: center!important;
+    float: none !important;
+  }
 }
 .carousel-fade .carousel-inner .item,
 .carousel-fade .carousel-inner .active.left,
