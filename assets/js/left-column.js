@@ -104,54 +104,32 @@ $grid.imagesLoaded().progress( function() {
          
         });
 
-    (function() {
-  var Flip;
 
-  Flip = (function() {
-    function Flip(el) {
-      this.el = el;
-      this.el = $(this.el);
-      this.currentStep = 0;
-      
+
+});
+
+  $(document).ready(function(){
+  function add() {
+    if($(this).val() === ''){
+      $(this).val($(this).attr('placeholder')).addClass('placeholder');
     }
+  }
 
-    Flip.prototype.next = function(event) {
-      var currentStepEl, nextStepEl, nextStepNum;
-      if (event) {
-        event.preventDefault();
-      }
-      nextStepNum = this.currentStep + 1;
-      currentStepEl = this.el.find(".step" + this.currentStep);
-      nextStepEl = this.el.find(".step" + nextStepNum);
-      if (nextStepEl.length) {
-        currentStepEl.prev().removeClass('down');
-        currentStepEl.removeClass('set');
-        currentStepEl.addClass('down');
-        nextStepEl.addClass('set');
-        nextStepEl.removeClass('down');
-        nextStepEl.next().removeClass('down');
-        return this.currentStep++;
-      } else {
-        this.el.find(".step").removeClass('set');
-        this.el.find(".step" + this.currentStep).addClass('down');
-        this.el.find(".step").not(".step" + this.currentStep).removeClass('down');
-        this.currentStep = -1;
-        return this.next();
-      }
-    };
+  function remove() {
+    if($(this).val() === $(this).attr('placeholder')){
+      $(this).val('').removeClass('placeholder');
+    }
+  }
 
-    return Flip;
+  // Create a dummy element for feature detection
+  if (!('placeholder' in $('<input>')[0])) {
 
-  })();
+    // Select the elements that have a placeholder attribute
+    $('input[placeholder], textarea[placeholder]').blur(add).focus(remove).each(add);
 
-  $(function() {
-    var f;
-    f = new Flip(document.getElementById('flipper'));
-    return setInterval((function() {
-      return f.next();
-    }), 1500);
-  });
-
-}).call(this);
-
+    // Remove the placeholder text before the form is submitted
+    $('form').submit(function(){
+      $(this).find('input[placeholder], textarea[placeholder]').each(remove);
+    });
+  }
 });

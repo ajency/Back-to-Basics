@@ -258,6 +258,9 @@ h6.block {
 .center-text {
   text-align: center !important;
 }
+.text-italic {
+  font-style: italic;
+}
 .margin-none {
   margin: 0px;
 }
@@ -997,10 +1000,6 @@ input::-webkit-input-placeholder {
     margin-bottom: 20px;
   }
 }
-.career-item {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 .b-l {
   border-left: 1px solid #e6e6e6;
 }
@@ -1156,4 +1155,4 @@ blockquote.pull-right small:after {
     text-align: left !important;
   }
 }
-/*# sourceMappingURL=custom.css.map */
+/*# sourceMappingURL=main.css.map */

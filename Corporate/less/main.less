@@ -1,30 +1,34 @@
- //
+//
 // Main
 // @contribution amit (amit@ajency.in)
 // --------------------------------------------------
 
 
-// Fonts
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+// // Fonts
+// @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 
 
-//IE support for open sans
+// //IE support for open sans
 
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans-regular-webfont.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
-}
-
+// @font-face {
+//   font-family: 'Open Sans';
+//   src: url('../fonts/opensans-regular-webfont.eot'); /* IE9 Compat Modes */
+//   src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+// }
+// @font-face {
+//   font-family: 'Open Sans';
+//   src: url('../fonts/opensans-regular-webfont.eot'); /* IE9 Compat Modes */
+//   src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+// }
 
 
 
 //Settings : These are preprocessor variables for later use.
 
-@theme-name:"Portfolio";
+@theme-name:"Corporate";
 
 .theme {
-    @import "../../assets/less/Tools/@{theme-name}/theme";
+    @import "../../assets/less/Tools/variables/theme";
 }
 .theme();
 
@@ -33,12 +37,8 @@
 
 
 //Generic : This includes all the third-party CSS used throughout the site.
-@import "../../assets/less/Generic/bootstrap.min.css";
-@import "../../assets/less/Generic/jquery.fullpage.min.css";
-@import "../../assets/less/Generic/font-awesome.min.css";
-// @import "../../assets/less/Generic/swiper.min.css";
-@import "../../assets/less/Generic/lightgallery.min.css";
-// @import "../../assets/less/Generic/iconizr-svg-sprite.css";
+@import "../../assets/less/Generic/bootstrap.css";
+@import "../../assets/less/Generic/iconizr-svg-sprite.css";
 
 
 //Base : These are element styles — no classes or IDs. Base typography styles go here, as well as anything needed to style raw elements.
@@ -51,6 +51,8 @@
 @import "../../assets/less/Object/divider.less";
 @import "../../assets/less/Object/heading.less";
 @import "../../assets/less/Object/margin-spacing.less";
+@import "../../assets/less/Object/error.less";
+@import "../../assets/less/Object/blog.less";
 
 
 //Components : This is mostly a cosmetic layer — this is where I included more specific styling instructions for objects. Without the components layer, the site would still have its structure, but would look like a gray-box wireframe.
@@ -60,10 +62,16 @@
 @import "../../assets/less/Components/container.less";
 @import "../../assets/less/Components/content.less"; 
 @import "../../assets/less/Components/hero.less"; 
+@import "../../assets/less/Components/widget.less"; 
+@import "../../assets/less/Components/sidebar.less"; 
+@import "../../assets/less/Components/testimonials.less"; 
+@import "../../assets/less/Components/breadcrumb.less"; 
 @import "../../assets/less/Components/footer.less"; 
 
 //Trumps: (no relation). These are styles that override other styles, and should be used very sparingly. Color overrides, forced floats, and text alignment classes can go here. This is the only place in your CSS that the `!important` tag is acceptable.
-@import "../../assets/less/Trumps/@{theme-name}/icon.less";
+@import "../../assets/less/Trumps/@{theme-name}/header.less";
 @import "../../assets/less/Trumps/@{theme-name}/navbar.less";
-
+@import "../../assets/less/Trumps/@{theme-name}/contact.less";
+@import "../../assets/less/Trumps/@{theme-name}/team.less";
+@import "../../assets/less/Trumps/@{theme-name}/mix.less";
 

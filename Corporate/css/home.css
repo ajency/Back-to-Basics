@@ -6,6 +6,14 @@ body {
 .wrapper a {
   text-decoration: underline;
 }
+.icon-big {
+  font-size: 40px;
+  color: #ff7f00;
+}
+.question-tag {
+  font-size: 22px;
+  color: #cccccc;
+}
 /* Custom page header */
 .header {
   padding-bottom: 20px;
@@ -85,6 +93,11 @@ body {
   }
   .widget {
     padding: 7px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-logo img {
+    width: 200px;
   }
 }
 /*# sourceMappingURL=home.css.map */

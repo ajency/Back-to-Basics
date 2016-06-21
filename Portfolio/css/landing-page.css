@@ -18,6 +18,16 @@
     padding: 170px 0px 50px 0px;
   }
 }
+@media (max-width: 768px) {
+  .site-wrapper {
+    padding: 0px;
+    text-align: center;
+  }
+  .site-wrapper .logo img {
+    margin: 10px auto;
+    text-align: center;
+  }
+}
 .flex-container {
   padding: 0;
   margin: 0;
@@ -44,6 +54,12 @@
   text-align: center;
   overflow: hidden;
   position: relative;
+  display: inline-block;
+}
+@media (max-width: 1024px) {
+  .flex-item {
+    width: 250px;
+  }
 }
 .flex-item span {
   position: absolute;
@@ -62,5 +78,10 @@
 .flex-item:hover span {
   height: 55px;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .spacer {
+    margin: 0px;
+  }
 }
 /*# sourceMappingURL=landing-page.css.map */
