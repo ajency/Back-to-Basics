@@ -15,12 +15,14 @@
 
         <!-- BEGIN CUSTOM CSS TEMPLATE -->
       <link href="css/home.css" rel="stylesheet" type="text/css"/>
+      <link href="css/animsition.min.css" rel="stylesheet" type="text/css"><!--animation File -->
         <!-- END CUSTOM CSS TEMPLATE -->
    </head>
    <!-- END HEAD -->
    <!-- BEGIN BODY -->
    <body>
       <!-- /header -->
+      <div class="site-wrapper animsition" data-animsition-in="fade-in" data-animsition-out="fade-out">
       <div class="container">
          <div class="header clearfix">
             <div class="row">
@@ -346,18 +348,14 @@
         </footer>
       <!-- Footer -->
       <!-- /Body Content -->
+      </div>
    </body>
    <!-- END BODY -->
    <!-- BEGIN CORE JS FRAMEWORK--> 
    <script src="../assets/js/jquery-1.11.3.min.js" type="text/javascript"></script>
    <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+   <script src="../assets/js/plugins/plugins.min.js"> </script>
+    <script src="../assets/js/corporate.js"> </script>
    <!-- END CORE JS FRAMEWORK -->
-   <script type="text/javascript">
-      $(document).ready(function() {
-        //carousel options
-        $('#quote-carousel').carousel({
-          pause: true, interval: 10000,
-        });
-      });
-   </script>
+
 </html>

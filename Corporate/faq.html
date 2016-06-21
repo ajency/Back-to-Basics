@@ -15,12 +15,15 @@
 
         <!-- BEGIN CUSTOM CSS TEMPLATE -->
        <link href="css/home.css" rel="stylesheet" type="text/css"/>
+       <link href="css/animsition.min.css" rel="stylesheet" type="text/css"><!--animation File -->
         <!-- END CUSTOM CSS TEMPLATE -->
    </head>
    <!-- END HEAD -->
    <!-- BEGIN BODY -->
    <body>
+   <div class="site-wrapper animsition" data-animsition-in="fade-in" data-animsition-out="fade-out">
       <!-- /header -->
+    
       <div class="container">
          <div class="header clearfix">
             <div class="row">
@@ -454,25 +457,14 @@
         </footer>
       <!-- Footer -->
       <!-- /Body Content -->
+      </div>
    </body>
    <!-- END BODY -->
    <!-- BEGIN CORE JS FRAMEWORK--> 
    <script src="../assets/js/jquery-1.11.3.min.js" type="text/javascript"></script>
    <script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+   <script src="../assets/js/plugins/plugins.min.js"> </script>
+   <script src="../assets/js/corporate.js"> </script>
    <!-- END CORE JS FRAMEWORK -->
-   <script type="text/javascript">
-      $(document).ready(function() {             
-        //Accordion Active
-         $(".panel.panel-default").removeClass("activePanel");
-         $('.panel-collapse').on('show.bs.collapse', function () {
-           // alert("fkjdsf");
-           $(".panel.panel-default").removeClass("activePanel");
-           $(this).parents(".panel.panel-default").addClass("activePanel");
-         }) 
-         $('.panel-collapse').on('hidden.bs.collapse', function () {
-           // alert("fkjdsf");        
-           $(this).parents(".panel.panel-default").removeClass("activePanel");
-         })  
-      });
-   </script>
+   
 </html>
