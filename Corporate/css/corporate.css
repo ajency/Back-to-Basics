@@ -184,6 +184,7 @@ body .panel-default .panel-heading {
   .clients-logo {
     width: 50%;
     float: left;
+    height: 80px;
   }
 }
 .count-data {
