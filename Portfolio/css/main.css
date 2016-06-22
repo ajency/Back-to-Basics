@@ -30,6 +30,11 @@ h2 {
   line-height: 1.2em;
   font-size: 2.1em;
 }
+@media (max-width: 767px) {
+  h2 {
+    font-size: 1.8em;
+  }
+}
 h3 {
   line-height: 1.2em;
   font-size: 1.8em;
@@ -323,6 +328,8 @@ h6.block {
 .panel-group .panel-heading h3 {
   padding: 10px 45px 10px 10px;
   position: relative;
+  font-size: 14px;
+  opacity: .8;
 }
 @media (max-width: 768px) {
   .panel-group .panel-heading h3 {
@@ -400,6 +407,7 @@ h6.block {
 }
 .header .logo {
   width: 180px;
+  padding: 10px 0px 0px;
 }
 @media only screen and (min-width: 1920px) {
   .container {
@@ -407,12 +415,35 @@ h6.block {
   }
 }
 .content_wrapper .entry-content .page-title {
-  font-weight: 600;
+  font-weight: 200;
   margin-bottom: 30px;
 }
+@media (max-width: 767px) {
+  .content_wrapper .entry-content .page-title {
+    text-align: center;
+  }
+}
+.promo-bar {
+  margin: 5em 0 3.5em;
+  border-top: 0;
+  height: 6px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAH0lEQVQIW2NkQAX/GZH4/xkYGBhhAmAOSBJEwDkgAQCCrgQEqRgDDwAAAABJRU5ErkJggg==) repeat;
+  opacity: 0.2;
+}
+@media (max-width: 767px) {
+  .promo-bar {
+    margin: 3em 0 2em;
+  }
+}
 .promo {
-  margin-top: 4.5em;
-  margin-bottom: 4.5em;
+  margin-top: 0;
+  margin-bottom: 4.0em;
+  padding-top: 0;
+}
+@media (max-width: 767px) {
+  .promo {
+    margin-bottom: 2.0em;
+  }
 }
 .promo h2 {
   font-size: 1.9em;
