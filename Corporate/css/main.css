@@ -96,6 +96,10 @@ ul.bullet-list li:before {
 ul.icon-list li {
   padding: 5px 0px;
 }
+.bullet-list li {
+  padding: 0px 0 10px 14px;
+  text-indent: -1em;
+}
 .muted {
   color: #b6bfc5;
 }
