@@ -1,5 +1,22 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 @import "../../assets/less/Generic/bootstrap.css";
 @import "../../assets/less/Generic/iconizr-svg-sprite.css";
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-regular-webfont.eot');
+  src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype')
+  
+  /* IE9 Compat Modes */
+  /* IE6-IE8 */
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-regular-webfont.eot');
+  src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype')
+  
+  /* IE9 Compat Modes */
+  /* IE6-IE8 */
+}
 h1,
 h2,
 h3,
@@ -336,7 +353,13 @@ h6.block {
   color: #032457;
 }
 .blog-post .blog-listing {
-  padding: 30px 0px;
+  padding: 50px 0px 50px 0px;
+}
+@media (max-width: 767px) {
+  .blog-post .blog-listing {
+    margin: 0px 0px 50px 0px !important;
+    padding: 0px;
+  }
 }
 .blog-post .blog-listing .blogpost h2 a {
   font-weight: 500;
@@ -358,10 +381,17 @@ h6.block {
   background-position: center center;
   margin-top: 30px;
 }
+.blog-post .blog-listing .blogpost .single-page.featured-img {
+  background-size: cover;
+  min-height: 450px;
+  margin: 20px 0px;
+}
 .blog-post .blog-listing .content {
   padding: 20px 0px;
+  font-size: 1.2em;
 }
-article:nth-child(1) {
+article:nth-child(1),
+article:nth-child(4) {
   padding-top: 0px !important;
 }
 article:nth-child(3n-1) {
@@ -372,6 +402,13 @@ article:nth-child(3n-1) {
 }
 article:nth-child(3n-1) .blogpost {
   padding: 0px 10px;
+}
+@media (max-width: 767px) {
+  article:nth-child(3n-1) {
+    width: 100%;
+    float: none;
+    padding: 30px 0px !important;
+  }
 }
 #stickyBtn {
   font: 9px Verdana, Geneva, sans-serif;
