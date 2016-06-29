@@ -47,4 +47,11 @@ $(document).ready(function() {
            // alert("fkjdsf");        
            $(this).parents(".panel.panel-default").removeClass("activePanel");
          })  
+
+         $('#stickySocial').find('#stickyBtn').each(function(){
+  var $el = $(this);
+  var ssCount = $el.data("count");
+  var ssClass = $el.attr("class").split(' ')[0];
+  $('.'+ssClass+' .count').html(ssCount);
+});
 });

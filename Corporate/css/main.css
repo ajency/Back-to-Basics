@@ -1,5 +1,22 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 @import "../../assets/less/Generic/bootstrap.css";
 @import "../../assets/less/Generic/iconizr-svg-sprite.css";
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-regular-webfont.eot');
+  src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype')
+  
+  /* IE9 Compat Modes */
+  /* IE6-IE8 */
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-regular-webfont.eot');
+  src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype')
+  
+  /* IE9 Compat Modes */
+  /* IE6-IE8 */
+}
 h1,
 h2,
 h3,
@@ -95,6 +112,10 @@ ul.bullet-list li:before {
 }
 ul.icon-list li {
   padding: 5px 0px;
+}
+.bullet-list li {
+  padding: 0px 0 10px 14px;
+  text-indent: -1em;
 }
 .muted {
   color: #b6bfc5;
@@ -331,8 +352,22 @@ h6.block {
   font-size: 120px;
   color: #032457;
 }
+.blog-post .blog-listing {
+  padding: 50px 0px 50px 0px;
+}
+@media (max-width: 767px) {
+  .blog-post .blog-listing {
+    margin: 0px 0px 50px 0px !important;
+    padding: 0px;
+  }
+}
 .blog-post .blog-listing .blogpost h2 a {
-  font-weight: 700;
+  font-weight: 500;
+  text-decoration: none;
+  color: #1b1e24;
+}
+.blog-post .blog-listing .blogpost h3 a {
+  font-weight: 500;
   text-decoration: none;
   color: #1b1e24;
 }
@@ -345,6 +380,106 @@ h6.block {
   min-height: 250px;
   background-position: center center;
   margin-top: 30px;
+}
+.blog-post .blog-listing .blogpost .single-page.featured-img {
+  background-size: cover;
+  min-height: 450px;
+  margin: 20px 0px;
+}
+.blog-post .blog-listing .content {
+  padding: 20px 0px;
+  font-size: 1.2em;
+}
+article:nth-child(1),
+article:nth-child(4) {
+  padding-top: 0px !important;
+}
+article:nth-child(3n-1) {
+  width: 48%;
+  float: left;
+  margin-right: 2.5em;
+  background: #f2f2f2;
+}
+article:nth-child(3n-1) .blogpost {
+  padding: 0px 10px;
+}
+@media (max-width: 767px) {
+  article:nth-child(3n-1) {
+    width: 100%;
+    float: none;
+    padding: 30px 0px !important;
+  }
+}
+#stickyBtn {
+  font: 9px Verdana, Geneva, sans-serif;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  float: left;
+  margin-right: 20px;
+}
+#stickyBtn span {
+  float: left;
+  padding: 5px 3px;
+  border-color: #e2e2e2;
+  border-style: solid;
+}
+#stickyBtn .button {
+  width: 55px;
+  display: block;
+  border-width: 1px 0 1px 1px;
+  opacity: .85;
+}
+#stickyBtn .button:hover {
+  opacity: 1;
+}
+#stickyBtn .button:active {
+  opacity: .95;
+}
+#stickyBtn .count {
+  width: auto;
+  display: block;
+  background-color: #fff;
+  color: #000;
+  border-width: 1px 1px 1px 0;
+  position: relative;
+  min-width: 15px;
+}
+#stickyBtn .count:after {
+  border: solid transparent;
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-color: transparent;
+  border-right-color: white;
+  border-width: 5px;
+  left: -8px;
+  top: 6px;
+}
+#stickyBtn.fbShare .button {
+  background-color: #6279a3;
+}
+#stickyBtn.tweet .button {
+  background-color: #71a2d3;
+}
+#stickyBtn.pinIt .button {
+  background-color: #d77980;
+}
+#stickyBtn.comment .button {
+  background-color: #999;
+}
+.tags .label-default {
+  background-color: #ffffff;
+  border: 1px solid #dfe1e5;
+  color: #a7acb7;
+  padding: 1em;
+  line-height: 4em;
+  cursor: pointer;
+}
+.tags .label-default:hover {
+  background-color: #ff7f00;
+  color: #ffffff;
 }
 .blog-section .b-r {
   border-right: 1px solid #e9ecee;
@@ -589,6 +724,14 @@ h6.block {
 .widget_contact_box a {
   text-decoration: none;
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .alert h4 {
+    font-size: 15px;
+  }
+  .alert h3 {
+    font-size: 1.3em;
+  }
+}
 /* carousel */
 .carousel-testimonials {
   background: #f3f3f3;
@@ -600,7 +743,7 @@ h6.block {
 }
 @media (max-width: 767px) {
   .carousel-testimonials {
-    margin: 3em 0px 0px;
+    margin: 3em 0px ;
   }
 }
 .carousel-testimonials #quote-carousel {
@@ -795,6 +938,11 @@ footer .footer-section .main-link a:hover {
   font-weight: 500;
   float: left;
   width: 100%;
+}
+@media (max-width: 767px) {
+  .navbar-inverse li a {
+    border: 0px;
+  }
 }
 .navbar-inverse li a span {
   color: #a7acb7;
@@ -1201,6 +1349,12 @@ blockquote.pull-right small:after {
     float: none !important;
     display: block;
     margin-top: 10px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .alert-default {
+    font-size: 17px;
+    line-height: 38px;
   }
 }
 .clearfix {
