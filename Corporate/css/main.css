@@ -570,50 +570,10 @@ article:nth-child(3n-1) .blogpost {
   font-size: 24px;
   line-height: 26px;
 }
-.market-news .divider {
-  margin-top: 0;
-}
-.market-news .blog-meta {
-  opacity: 0.6;
-}
-.social-share {
-  position: absolute;
-  right: 15px;
-  top: 13px;
-  text-align: center;
-}
-.social-share .social {
-  display: block;
-  padding: 13px 20px;
-  opacity: 0.6;
-  margin-bottom: -48px;
-  z-index: 0;
-}
-.social-share .share {
-  position: relative;
-  display: block;
-  margin-top: -25px;
-  opacity: 0;
-  padding: 13px 20px;
-  background: #fff;
-  border-bottom: 1px solid #ededed;
-  z-index: 1;
-  -webkit-transition: all 0.5s !important;
-          transition: all 0.5s !important;
-}
-.social-share .share:first-child {
-  border-radius: 3px 3px 0 0;
-}
-.social-share .share:last-child {
-  border-radius: 0 0 3px 3px;
-  border-bottom: 0;
-}
-.social-share:hover {
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-}
-.social-share:hover .share {
-  margin-top: 0;
-  opacity: 1;
+@media screen and (max-width: 991px) {
+  .latest-section .latest-link.high {
+    height: 250px;
+  }
 }
 .panel-group .panel {
   border-radius: 0;

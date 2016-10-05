@@ -1,7 +1,8 @@
-@primary-color: #ff4e53;
+@primary-color: #ff7f00;
 @light-gray: #ccc;
 @color-dark: #292929;
 @color-info-dark: #333;
+@color-info-light: #bbb;
 
 body {
   padding-top: 20px;
@@ -62,8 +63,17 @@ body {
   }
 }
 
-.divider{
-    margin: 20px 0px;
+// .divider{
+//     margin: 20px 0px;
+// }
+
+.market-news {
+  .divider {
+    margin-bottom: 20px;
+  }
+  .blog-meta {
+    opacity: 0.6;
+  }
 }
 
 .cover-promotion{
@@ -149,7 +159,63 @@ body {
       width:200px;
     }
 }
-   
+
+.proms {
+  .img-full {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .blog-section .blog-sm .blog-title {
   height: 100px;
+}
+
+.show-type {
+  .the-icon {
+    float: left;
+    opacity: 0.5;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin-right: 8px;
+    border: 1px solid @color-info-light;
+    border-radius: 50%;
+  }
+}
+
+.single-editor {
+  display: block;
+  padding: 30px 25px;
+  border-left: 1px solid #ddd;
+  color: @color-info-dark;
+  &:hover {
+    background: #fafafa;
+    .blog-title {
+      color: @primary-color;
+    }
+  }
+  .editor-img-wrap {
+    width: 85px;
+    height: 85px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-right: 20px;
+  }
+  .editor-img {
+    width: 100%;
+  }
+  .editor-name {
+    display: block;
+  }
+  .blog-title {
+    font-size: 1em;
+    line-height: 24px;
+  }
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
 }
