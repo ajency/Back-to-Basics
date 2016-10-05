@@ -236,6 +236,10 @@ ul.icon-list li {
   width: 100%;
   height: .11rem;
 }
+.divider.dashed {
+  background: none;
+  border-top: 1px dashed #d1dade;
+}
 .spacer {
   margin: 20px 0px 20px 0px;
   display: inline-block;
@@ -481,6 +485,12 @@ article:nth-child(3n-1) .blogpost {
   background-color: #ff7f00;
   color: #ffffff;
 }
+.blog-link {
+  color: #333333;
+}
+.blog-link:hover {
+  color: #ff7f00;
+}
 .blog-section .b-r {
   border-right: 1px solid #e9ecee;
 }
@@ -500,14 +510,16 @@ article:nth-child(3n-1) .blogpost {
 .blog-section .blog-sm .blog-title {
   margin: 0px 0px 20px 0px;
   word-break: break-word;
-  height: 66px;
+  height: 62px;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
 }
-.blog-section .blog-sm .blog-link {
-  color: #333;
+@media screen and (max-width: 991px) {
+  .blog-section .featured-blog {
+    margin-bottom: 15px;
+  }
 }
 .latest-section .latest-link {
   margin-bottom: 30px;
@@ -557,6 +569,51 @@ article:nth-child(3n-1) .blogpost {
 .latest-section .latest-title {
   font-size: 24px;
   line-height: 26px;
+}
+.market-news .divider {
+  margin-top: 0;
+}
+.market-news .blog-meta {
+  opacity: 0.6;
+}
+.social-share {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  text-align: center;
+}
+.social-share .social {
+  display: block;
+  padding: 13px 20px;
+  opacity: 0.6;
+  margin-bottom: -48px;
+  z-index: 0;
+}
+.social-share .share {
+  position: relative;
+  display: block;
+  margin-top: -25px;
+  opacity: 0;
+  padding: 13px 20px;
+  background: #fff;
+  border-bottom: 1px solid #ededed;
+  z-index: 1;
+  -webkit-transition: all 0.5s !important;
+          transition: all 0.5s !important;
+}
+.social-share .share:first-child {
+  border-radius: 3px 3px 0 0;
+}
+.social-share .share:last-child {
+  border-radius: 0 0 3px 3px;
+  border-bottom: 0;
+}
+.social-share:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+.social-share:hover .share {
+  margin-top: 0;
+  opacity: 1;
 }
 .panel-group .panel {
   border-radius: 0;

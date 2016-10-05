@@ -1,6 +1,7 @@
 @primary-color: #ff4e53;
 @light-gray: #ccc;
 @color-dark: #292929;
+@color-info-dark: #333;
 
 body {
   padding-top: 20px;
@@ -66,44 +67,54 @@ body {
 }
 
 .cover-promotion{
-        background: url(../img/banner.jpg) no-repeat;
-        background-size: cover;
-        position: relative;
-        .cover-content{
-            background: rgba(255, 255, 255, 0.8);
-            width: 90%;
-            margin: 20px auto;
-            left: 0%;
-            right: 0%;
-            padding: 20px;
-           h2{
-                line-height: 1.2em
-            }
-        }
-        .cover-info{
-            margin-top: 30px;
-            .cover-icon{
-                  display: inline-block;
-                  color: #ff0052;
-                  font-weight: 400;
-                  margin: 0 5px 0 0;
-                  width: 40px;  
-                  i
-                  {
-                    transform: scale(2);
-                    margin-top: 17px;
-                    margin-left: 10px;
-                    display: block;
-                  }
+  background: url(../img/banner.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 360px;
+  .cover-content{
+    background: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    margin: 20px auto;
+    left: 0%;
+    right: 0%;
+    padding: 20px;
+    h2{
+      line-height: 1.2em
+    }
+  }
+  .cover-info{
+    margin-top: 30px;
+    .cover-icon{
+      display: inline-block;
+      color: #ff0052;
+      font-weight: 400;
+      margin: 0 5px 0 0;
+      width: 40px;  
+      i
+      {
+        transform: scale(2);
+        margin-top: 12px;
+        margin-left: 10px;
+        display: block;
+      }
 
-            }
-            .cover-label{
-                  display: inline-block;
-                  width: 70%;
-                  vertical-align: top;
-                  line-height: 1.2;
-            }
-        }
+    }
+    .cover-label{
+      display: inline-block;
+      width: 70%;
+      vertical-align: top;
+      line-height: 1.2;
+    }
+  }
+  .meta {
+    padding-top: 26px;
+  }
+  .social-share {
+    right: 0;
+  }
+  a {
+    color: @color-info-dark;
+  }
 }
 
 //* Blog/News Container *///////////////////////////////////////
@@ -139,3 +150,6 @@ body {
     }
 }
    
+.blog-section .blog-sm .blog-title {
+  height: 100px;
+}

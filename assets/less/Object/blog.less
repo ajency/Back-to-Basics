@@ -143,6 +143,12 @@ article:nth-child(3n-1) {
 }
 
 //Blog Section /////////////////////////////////////////////////
+.blog-link {
+	color: @color-info-dark;
+	&:hover {
+		color: @color-primary;
+	}
+}
 .blog-section{
     .b-r{
         border-right: 1px solid @base-light-four;
@@ -152,30 +158,31 @@ article:nth-child(3n-1) {
         margin-top: 20px;
     }
     .featured-blog-excerpt{
-        margin-bottom: 20px;
+    	margin-bottom: 20px;
     }
     .blog-sm{
-        .blog-meta{
-            opacity: .6;
-            display: block;
-            margin-top: 10px;
-            font-size: .7em;
-        }
-        .blog-title{
-            margin:0px 0px 20px 0px;
-            word-break: break-word;
+    	.blog-meta{
+    		opacity: .6;
+    		display: block;
+    		margin-top: 10px;
+    		font-size: .7em;
+    	}
+    	.blog-title{
+    		margin:0px 0px 20px 0px;
+    		word-break: break-word;
 
-            height: 66px;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;  
-        }
-        .blog-link {
-        	color: #333;
-        }
+    		height: 62px;
+    		overflow: hidden;
+    		display: -webkit-box;
+    		-webkit-line-clamp: 5;
+    		-webkit-box-orient: vertical;  
+    	}
     }
-
+    @media screen and (max-width: 991px) {
+    	.featured-blog {
+    		margin-bottom: 15px;
+    	}
+    }
 }
 
 //Latest Blog Section /////////////////////////////////////////////////
@@ -224,5 +231,54 @@ article:nth-child(3n-1) {
 	.latest-title {
 		font-size: 24px;
 		line-height: 26px;
+	}
+}
+
+//Latest Blog Section /////////////////////////////////////////////////
+.market-news {
+	.divider {
+		margin-top: 0;
+	}
+	.blog-meta {
+		opacity: 0.6;
+	}
+}
+.social-share {
+	position: absolute;
+	right: 15px;
+	top: 13px;
+	text-align: center;
+	.social {
+		display: block;
+		padding: 13px 20px;
+		opacity: 0.6;
+		margin-bottom: -48px;
+		z-index: 0;
+	}
+	.share {
+		// position: absolute;
+		position: relative;
+		display: block;
+		margin-top: -25px;
+		opacity: 0;
+		padding: 13px 20px;
+		background: #fff;
+		border-bottom: 1px solid @color-pale-grey;
+		z-index: 1;
+		transition: all 0.5s !important;
+		&:first-child {
+			border-radius: 3px 3px 0 0;
+		}
+		&:last-child {
+			border-radius: 0 0 3px 3px;
+			border-bottom: 0;
+		}
+	}
+	&:hover {
+		box-shadow: 0 0 12px rgba(0,0,0,0.1);
+		.share {
+			margin-top: 0;
+			opacity: 1;
+		}
 	}
 }
