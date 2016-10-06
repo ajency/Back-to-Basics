@@ -26,10 +26,9 @@
             <div class="container">
                 <div class="header clearfix">
                     <div class="row">
-                        <div class="col-sm-4 col-xs-6 col-md-6">
-                            <a href="index.html"><img src="img/magazine_logo.jpg"  class="img-responsive logo pull-left" alt="Back to Basics Logo" title="Back to Basics logo" /></a>
-                        </div>
-                        <div class="col-sm-8 col-xs-6 col-md-6">
+                        <div class="col-xs-10">
+                            <a href="index.html"><img src="img/logo.png"  class="img-responsive logo pull-left" alt="Back to Basics Logo" title="Back to Basics logo" /></a>
+
                             <!-- /nav-bar -->
                             <nav class="navbar">
                                 <div class="nw">
@@ -45,26 +44,18 @@
                                         <ul class="nav navbar-nav">
                                             <li class="active">
                                                 <a href="index.html">
-                                                    NEWS
-                                                    <!-- <span class="center-block"><span class="pull-left">Trusted Partner</span>
-                                                        <i class="icon icon-circle-right icon-circle-right-dims"></i>
-                                                    </span> -->
+                                                    News
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="service.html">
-                                                    MARKETS
-                                                    <!-- <span class=" center-block"><span class="pull-left">Unique Finanacial Plans</span>
-                                                        <i class="icon icon-circle-right icon-circle-right-dims"></i>   
-                                                    </span> -->
+                                                    Markets
                                                 </a>
                                             </li>
                                             <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                                    INSIGHTS
-                                                    <!-- <span class="center-block"><span class="pull-left">Trusted Clients</span>
-                                                        <i class="icon icon-circle-right icon-circle-right-dims"></i>
-                                                    </span> -->
+                                                    Insights
+                                                    <i class="fa fa-angle-down"></i>
                                                 </a>
                                                 <!-- Sub Menu -->
                                                 <ul class="dropdown-menu">
@@ -80,46 +71,35 @@
                                             </li>
                                             <li>
                                                 <a href="career.html">
-                                                    SPACE
-                                                    <!-- <span class=" center-block"><span class="pull-left">We are hiring!</span>
-                                                        <i class="icon icon-circle-right icon-circle-right-dims"></i>
-                                                    </span> -->
+                                                    Space
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="contact.html">
-                                                    VIDEO 
-                                                    <!-- <span class="center-block"><span class="pull-left">Get in touch</span>
-                                                        <i class="icon icon-circle-right icon-circle-right-dims"></i>
-                                                    </span> -->
+                                                    Video
                                                 </a>
                                             </li>
                                         </ul>
-                                        <form id="demo-2" class="navbar-form navbar-right">
-                                            <input type="search" placeholder="Search">
-                                        </form>
                                     </div>
                                 </div>
                             </nav>
                             <!-- /nav-bar -->
-                            <div class="header-contacts hidden">
-                                <span class="header-contacts__item">
-                                    <a href="tel:33380012345" class="notify-xs-click"><i class="contact-icon"></i></a>
-                                    <span class="header-contacts__inner hidden-xs">
-                                        <span class="header-contacts__title">call us 24/7</span>
-                                        <span class="header-contacts__info"><a href="tel:33380012345">+33 (800) 12345</a></span>
-                                    </span>
-                                </span>
-                                <span class="header-contacts__item">
-                                    <a href="mailto:info@ajency.in" class="notify-xs-click"><i class="mail-icon"></i></a>
-                                    <span class="header-contacts__inner hidden-xs">
-                                        <span class="header-contacts__title">EMAIL US</span>
-                                        <span class="header-contacts__info"><a href="mailto:info@ajency.in">mail [at] domain.com</a></span>
-                                    </span>
-                                </span>
-                            </div>
+                        </div>
+                        <div class="col-xs-2 text-right">
+                            <a href="#" class="top-actions show-search">
+                                <img src="img/search.png" height="25" width="25" alt="">
+                            </a>
+                            <!-- <a href="#" class="top-actions profile">
+                                <img src="img/user.png" height="25" width="25" alt="">
+                            </a> -->
                         </div>
                     </div>
+                    <form id="search-input-w" class="is-hidden search-above-all" style="display: none;">
+                        <div class="container posrel">
+                            <input type="search" class="search-input" placeholder="Type and hit enter to search...">
+                            <i class="close-search">&times;</i>
+                        </div>
+                    </form>
                 </div>
             </div>
             <!-- /header -->
@@ -461,6 +441,14 @@
             // $('#quote-carousel').carousel({
             // pause: true, interval: 10000,
             // });
+            $('.show-search').click(function(e) {
+                e.preventDefault();
+                $('#search-input-w').removeClass('is-hidden').fadeIn('fast').find('input').focus();
+            });
+            $('.close-search').click(function(e) {
+                e.preventDefault();
+                $(this).parents('.search-above-all').addClass('is-hidden').fadeOut('fast');
+            });
         });
     </script>
 </html>

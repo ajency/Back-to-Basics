@@ -4,10 +4,10 @@
 @color-info-dark: #333;
 @color-info-light: #bbb;
 
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+// body {
+//   padding-top: 20px;
+//   padding-bottom: 20px;
+// }
 
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -17,6 +17,12 @@ body {
 //   padding-right: 15px;
 //   padding-left: 15px;
 // }
+
+.site-wrapper {
+  padding-top: 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
 .wrapper{
     a{
       text-decoration: underline;
@@ -25,7 +31,7 @@ body {
 
 .featured-section {
   padding: 35px 0;
-  background: @color-dark;
+  // background: @color-dark;
 }
 
 .icon-big{
@@ -40,6 +46,41 @@ body {
 .header {
   padding-bottom: 20px;
   
+}
+.search-above-all {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 99px;
+  background: #fff;
+  box-shadow: 0 0 55px 25px rgba(0,0,0,0.2);
+  z-index: 999999;
+  .container {
+    height: 99px;
+  }
+  .search-input {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 32px;
+    border: 0;
+    padding: 8px 12px;
+    font-weight: 300;
+    outline: 0;
+  }
+  .close-search {
+    font-size: 32px;
+    font-weight: 300;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    padding: 18px;
+    cursor: pointer;
+  }
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
