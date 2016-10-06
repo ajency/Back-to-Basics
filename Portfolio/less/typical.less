@@ -598,7 +598,8 @@ footer{
       max-height: 500px;
       }
  }
-figure.snip0019 {
+.snip0019 {
+  display: block;
       color: #fff;
       position: relative;
       overflow: hidden;
@@ -606,17 +607,17 @@ figure.snip0019 {
       background: #000000;
       text-align: center;
 }
-figure.snip0019 * {
+.snip0019 * {
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
 }
-figure.snip0019 img {
+.snip0019 img {
       opacity: 1;
       width: 100%;
       -webkit-transition: opacity 0.35s;
       transition: opacity 0.35s;
 }
-figure.snip0019 figcaption {
+.snip0019 figcaption {
       position: absolute;
       top: 0;
       left: 0;
@@ -624,7 +625,7 @@ figure.snip0019 figcaption {
       height: 100%;
       text-align: left;
 }
-figure.snip0019 figcaption > div {
+.snip0019 figcaption > div {
       float: left;
       height: 100%;
       overflow: hidden;
@@ -633,7 +634,7 @@ figure.snip0019 figcaption > div {
       opacity: 0;
       background: rgba(0, 0, 0, 0.5);
 }
-figure.snip0019 figcaption::before {
+.snip0019 figcaption::before {
       position: absolute;
       top: 50%;
       bottom: 50%;
@@ -647,8 +648,8 @@ figure.snip0019 figcaption::before {
       -webkit-transition-delay: 0.6s;
       transition-delay: 0.6s;
 }
-figure.snip0019 h2,
-figure.snip0019 p {
+.snip0019 h2,
+.snip0019 p {
       margin: 0;
       padding: 20px;
       opacity: 0;
@@ -660,7 +661,7 @@ figure.snip0019 p {
       transition: opacity 0.45s,-webkit-transform 0.45s,-moz-transform 0.45s,-o-transform 0.45s,transform 0.45s;
     
 }
-figure.snip0019 h2 {
+.snip0019 h2 {
       text-align: right;
       display: inline-block;
       word-spacing: -0.1em;
@@ -679,7 +680,7 @@ figure.snip0019 h2 {
       -webkit-box-orient: vertical;
       word-break:break-all;
 }
-figure.snip0019 p span
+.snip0019 p span
 {
       display: block;
       display: -webkit-box;
@@ -689,25 +690,25 @@ figure.snip0019 p span
       text-overflow: ellipsis;
       word-break:break-all;
 }
-figure.snip0019.grid-1 h2
+.snip0019.grid-1 h2
 {
        max-height: 150px;
       -webkit-line-clamp: 5;
 }
-figure.snip0019.grid-2 p span
+.snip0019.grid-2 p span
 {
       max-height: 335px;
       -webkit-line-clamp: 17;
 }
-figure.snip0019.grid-1 p span
+.snip0019.grid-1 p span
 {
       max-height: 150px;
       -webkit-line-clamp: 9;
 }
-figure.snip0019 h2 span {
+.snip0019 h2 span {
       font-weight: 800;
 }
-figure.snip0019 p {
+.snip0019 p {
       display: block;
       bottom: 0;
       text-align: left;
@@ -720,7 +721,7 @@ figure.snip0019 p {
       -webkit-transition-delay: 0s;
       transition-delay: 0s;
 }
-figure.snip0019 a {
+.snip0019 .overlay {
       left: 0;
       right: 0;
       top: 0;
@@ -728,26 +729,26 @@ figure.snip0019 a {
       position: absolute;
       color: #ffffff;
 }
-figure.snip0019:hover img {
+.snip0019:hover img {
       opacity: 0.7;
 }
-figure.snip0019:hover figcaption h2,
-figure.snip0019:hover figcaption p {
+.snip0019:hover figcaption h2,
+.snip0019:hover figcaption p {
       -webkit-transform: translate3d(0%, 0%, 0);
       transform: translate3d(0%, 0%, 0);
       -webkit-transition-delay: 0.3s;
       transition-delay: 0.3s;
 }
-figure.snip0019:hover figcaption h2 {
+.snip0019:hover figcaption h2 {
       opacity: 1;
 }
-figure.snip0019:hover figcaption p {
+.snip0019:hover figcaption p {
       opacity: 1;
 }
-figure.snip0019:hover figcaption > div {
+.snip0019:hover figcaption > div {
       opacity: 1;
 }
-figure.snip0019:hover figcaption::before {
+.snip0019:hover figcaption::before {
       background: #ffffff;
       top: 0px;
       bottom: 0px;
@@ -896,12 +897,12 @@ figure.snip0019:hover figcaption::before {
   {
      height: auto !important;
   }
-  figure.snip0019 figcaption > div, figure.snip0019 figcaption > div h2, figure.snip0019 figcaption > div p
+  .snip0019 figcaption > div, .snip0019 figcaption > div h2, .snip0019 figcaption > div p
   {
      transform: translate3d(0%, 0%, 0); 
      text-align: center;
   }
-  figure.snip0019:hover figcaption::before
+  .snip0019:hover figcaption::before
   {
      opacity: 0;
   }
@@ -995,7 +996,7 @@ figure.snip0019:hover figcaption::before {
     font-size:29px;
     width: 100%;
   }
-  figure.snip0019
+  .snip0019
   {
     margin: auto;
     float: none;
@@ -1028,3 +1029,18 @@ figure.snip0019:hover figcaption::before {
   }
 }
 
+// Some overerites for the lighbox
+.pswp__button.pswp__button--share {
+  display: none;
+}
+.pswp__caption__center {
+  text-align: center;
+}
+.pswp__caption__center {
+  h4 {
+    color: #fff;
+    margin: 10px 0 0;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

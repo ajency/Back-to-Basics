@@ -36,7 +36,16 @@
 
 
 // Custom variable for combining all JS assests and combining it into one.
-    var js_source1 = ['../assets/js/plugins/jquery.easing.min.js','../assets/js/plugins/masonry.pkgd.min.js','../assets/js/plugins/imagesloaded.pkgd.js','../assets/js/plugins/animsition.min.js','../assets/js/plugins/jquery.mousewheel.min.js','../assets/js/plugins/lightgallery.js','../assets/js/plugins/lg-fullscreen.js','../assets/js/plugins/lg-thumbnail.js','../assets/js/plugins/lg-video.js','../assets/js/plugins/lg-autoplay.js','../assets/js/plugins/lg-zoom.js','../assets/js/plugins/lg-pager.js','../assets/js/plugins/Responsive-Timeline.js'];
+    var js_source1 = [
+        '../assets/js/plugins/jquery.easing.min.js',
+        '../assets/js/plugins/masonry.pkgd.min.js',
+        '../assets/js/plugins/imagesloaded.pkgd.js',
+        '../assets/js/plugins/animsition.min.js',
+        '../assets/js/plugins/jquery.mousewheel.min.js',
+        '../assets/js/plugins/photoswipe.min.js',
+        '../assets/js/plugins/photoswipe-ui-default.min.js',
+        '../assets/js/plugins/Responsive-Timeline.js'
+    ];
 
 // Output destionation file
     var js_dest1 = '../assets/js/plugins';

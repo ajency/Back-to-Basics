@@ -1038,4 +1038,16 @@ h1 .flip span.down {
   -webkit-transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
 }
+.pswp__button.pswp__button--share {
+  display: none;
+}
+.pswp__caption__center {
+  text-align: center;
+}
+.pswp__caption__center h4 {
+  color: #fff;
+  margin: 10px 0 0;
+  font-size: 16px;
+  font-weight: 400;
+}
 /*# sourceMappingURL=left-column.css.map */

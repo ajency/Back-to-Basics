@@ -2,7 +2,8 @@
 @import "../../assets/less/Generic/bootstrap.min.css";
 @import "../../assets/less/Generic/jquery.fullpage.min.css";
 @import "../../assets/less/Generic/font-awesome.min.css";
-@import "../../assets/less/Generic/lightgallery.min.css";
+@import "../../assets/less/Generic/photoswipe.css";
+@import "../../assets/less/Generic/default-skin/default-skin.css";
 @font-face {
   font-family: 'Open Sans';
   src: url('../fonts/opensans-regular-webfont.eot');
