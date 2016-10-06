@@ -10,77 +10,76 @@
 
 $(document).ready(function() {
 
-      // Masonry Image
- // external js: masonry.pkgd.js, imagesloaded.pkgd.js
-// $("#lightgallery").lightGallery(); 
-// init Masonry
-var $grid = $('.grid').masonry({
-  itemSelector: '.grid-item',
-  percentPosition: true,
-  columnWidth: '.grid-sizer'
-});
-// layout Isotope after each image loads
-$grid.imagesLoaded().progress( function() {
-  $grid.masonry();
-});  
+  // Masonry Image
+  // external js: masonry.pkgd.js, imagesloaded.pkgd.js
+  // $("#lightgallery").lightGallery(); 
+  
+  // init Masonry
+  var $grid = $('.grid').masonry({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    columnWidth: '.grid-sizer'
+  });
+  // layout Isotope after each image loads
+  $grid.imagesLoaded().progress( function() {
+    $grid.masonry();
+  });  
 
-      
-      // Footer Heart 
-          $('.click-heart').on('click', function(){
-            $(this).toggleClass('animated-heart');
-          });
-      
-      // responsive menu  
-         $("ul#menu li a").click(function(event) {
-          $(".navbar-collapse").collapse('hide');
-        });
+  // Footer Heart 
+  $('.click-heart').on('click', function(){
+    $(this).toggleClass('animated-heart');
+  });
+  
+  // responsive menu  
+  $("ul#menu li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
 
-      // jQuery to collapse the navbar on scroll
-      $(window).scroll(function() {
-          if ($(".navbar").offset().top > 50) {
-              $(".navbar-fixed-top").addClass("top-nav-collapse");
-          } else {
-              $(".navbar-fixed-top").removeClass("top-nav-collapse");
-          }
-      });
-      
-      // jQuery for page scrolling feature - requires jQuery Easing plugin
-      $(function() {
-          $('a.page-scroll').bind('click', function(event) {
-              var $anchor = $(this);
-              $('html, body').stop().animate({
-                  scrollTop: $($anchor.attr('href')).offset().top
-              }, 1500, 'easeInOutExpo');
-              event.preventDefault();
-          });
-      });
+  // jQuery to collapse the navbar on scroll
+  $(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+      $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+      $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+  });
+  
+  // jQuery for page scrolling feature - requires jQuery Easing plugin
+  $(function() {
+    $('a.page-scroll').bind('click', function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top
+      }, 1500, 'easeInOutExpo');
+      event.preventDefault();
+    });
+  });
 
+  //Resize 
+  function resize() {
+     var heights = window.innerHeight - 100;
+     document.getElementById("window-right").style.height = heights + "px";
+     document.getElementById("window-left").style.height = heights + "px";
+  }
+  resize();
+  window.onresize = function() {
+     resize();
+  };
 
-      //Resize 
-        function resize()
-      {
-         var heights = window.innerHeight - 100;
-         document.getElementById("window-right").style.height = heights + "px";
-         document.getElementById("window-left").style.height = heights + "px";
-      }
-      resize();
-      window.onresize = function() {
-         resize();
-      };
-
-      //Scroll Top Function
-      $(window).scroll(function () {
-          if ($(this).scrollTop() > 100) {
-          $('.scrollup').fadeIn();
-          } else {
-          $('.scrollup').fadeOut();
-          }
-      });
+  //Scroll Top Function
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('.scrollup').fadeIn();
+    } else {
+      $('.scrollup').fadeOut();
+    }
+  });
 
   $(".scrollup").click(function() {
      $("html, body").animate({ scrollTop: 0 }, "slow");
      return false;
   });
+
   //Loader Animation
   $(".animsition").animsition({
     inClass: 'fade-in',
@@ -114,9 +113,7 @@ $grid.imagesLoaded().progress( function() {
   });
 
 
-  ////////////////////////////////////////////////
   // for the lightbox gallery ///////////////////
-  //////////////////////////////////////////////
   $("#lightgallery").each(function() {
     $(this).find('a').each(function() {
       $(this).attr('data-size', $(this).find('img').get(0).naturalWidth + 'x' + $(this).find('img').get(0).naturalHeight);
@@ -360,12 +357,10 @@ $grid.imagesLoaded().progress( function() {
   // execute above function
   initPhotoSwipeFromDOM('.grid');
   // end for the lightbox gallery /////////////////
-  ////////////////////////////////////////////////
-  ///////////////////////////////////////////////
 
 });
 
-  $(document).ready(function(){
+$(document).ready(function(){
   function add() {
     if($(this).val() === ''){
       $(this).val($(this).attr('placeholder')).addClass('placeholder');
@@ -380,10 +375,8 @@ $grid.imagesLoaded().progress( function() {
 
   // Create a dummy element for feature detection
   if (!('placeholder' in $('<input>')[0])) {
-
     // Select the elements that have a placeholder attribute
     $('input[placeholder], textarea[placeholder]').blur(add).focus(remove).each(add);
-
     // Remove the placeholder text before the form is submitted
     $('form').submit(function(){
       $(this).find('input[placeholder], textarea[placeholder]').each(remove);

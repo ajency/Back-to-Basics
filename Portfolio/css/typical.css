@@ -1,3 +1,19 @@
+/***************************************************************/
+/*******************  TABLE OF CONTENTS  ***********************/
+/***************************************************************/
+/* 1. Variable Declaration          ///////////////////////////*/
+/* 2. Header and Navbar styles      ///////////////////////////*/
+/* 3. Body styles                   ///////////////////////////*/
+/* 4. Contact Form                  ///////////////////////////*/
+/* 5. Footer                        ///////////////////////////*/
+/* 6. Polaroid Effects              ///////////////////////////*/
+/* 7. Overall Center Content        ///////////////////////////*/
+/* 8. Scroll to top transition      ///////////////////////////*/
+/* 9. Testimonials                  ///////////////////////////*/
+/* 10. Misc                         ///////////////////////////*/
+/***************************************************************/
+/* 1. Variable Declaration          ///////////////////////////*/
+/* 3. Header and Navbar styles      ///////////////////////////*/
 .logo h3 {
   margin: 0px;
   font-size: 30px;
@@ -107,6 +123,7 @@ a:hover {
     margin-bottom: 0;
   }
 }
+/* 3. Body styles                   ///////////////////////////*/
 @media (max-width: 768px) {
   .intro-section .carousel-inner {
     height: 400px !important;
@@ -290,7 +307,7 @@ a:hover {
   text-align: center;
   padding: 12px;
 }
-/*contact*/
+/* 4. Contact Form                  ///////////////////////////*/
 .contact-form .form-group {
   margin-bottom: 50px;
 }
@@ -344,6 +361,11 @@ a:hover {
   background: #ff7f00;
   color: #ffffff;
 }
+.contact-form {
+  border: 4px double #eeeeee;
+  padding: 32px 32px 0px;
+}
+/* 5. Footer                        ///////////////////////////*/
 footer {
   padding: 50px 0 15px 0;
   background: #f2f2f2;
@@ -445,7 +467,7 @@ footer small {
 .click-heart {
   cursor: pointer;
 }
-/*polaroid effect*/
+/* 6. Polaroid Effects              ///////////////////////////*/
 .polaroid {
   display: inline-block;
   position: absolute;
@@ -480,11 +502,10 @@ footer small {
             transform: rotate(62deg);
   }
 }
-/* About Us Content */
 .img-border {
   border: 20px solid #f8f6ef;
 }
-/* Overall Center Content */
+/* 7. Overall Center Content       ///////////////////////////*/
 @media screen and (max-width: 991px) {
   .about-content {
     bottom: 10px;
@@ -532,6 +553,7 @@ footer small {
     margin: auto;
   }
 }
+/* 8. Scroll to top transition     ///////////////////////////*/
 .scrollup {
   width: 40px;
   height: 40px;
@@ -726,10 +748,7 @@ footer small {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
-.contact-form {
-  border: 4px double #eeeeee;
-  padding: 32px 32px 0px;
-}
+/* 9. Testimonials                 ///////////////////////////*/
 #quote-carousel {
   padding: 0 10px 30px 10px;
   margin-top: 60px;
@@ -958,6 +977,7 @@ footer small {
 .social-links a {
   color: #111111;
 }
+/* 10. Misc                         ///////////////////////////*/
 .pswp__button.pswp__button--share {
   display: none;
 }
