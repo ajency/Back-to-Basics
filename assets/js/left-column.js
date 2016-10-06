@@ -7,6 +7,18 @@
 * Date: Nov 26, 2015
 */
 
+// TABLE OF CONTENTS
+// 1. init Masonry
+// 2. layout Isotope after each image loads
+// 3. Footer Heart 
+// 4. responsive menu  
+// 5. jQuery to collapse the navbar on scroll
+// 6. jQuery for page scrolling feature - requires jQuery Easing plugin
+// 7. Resize 
+// 8. Scroll Top Function
+// 9. Loader Animation
+// 10. for the lightbox gallery
+// 11. Create a dummy element for feature detection
 
 $(document).ready(function() {
 
@@ -14,29 +26,29 @@ $(document).ready(function() {
   // external js: masonry.pkgd.js, imagesloaded.pkgd.js
   // $("#lightgallery").lightGallery(); 
 
-  // init Masonry
+  // 1. init Masonry
   var $grid = $('.grid').masonry({
     itemSelector: '.grid-item',
     percentPosition: true,
     columnWidth: '.grid-sizer'
   });
 
-  // layout Isotope after each image loads
+  // 2. layout Isotope after each image loads
   $grid.imagesLoaded().progress( function() {
     $grid.masonry();
   });
 
-  // Footer Heart 
+  // 3. Footer Heart 
   $('.click-heart').on('click', function(){
     $(this).toggleClass('animated-heart');
   });
 
-  // responsive menu  
+  // 4. responsive menu  
   $("ul#menu li a").click(function(event) {
     $(".navbar-collapse").collapse('hide');
   });
 
-  // jQuery to collapse the navbar on scroll
+  // 5. jQuery to collapse the navbar on scroll
   if ($(window).width() > 961) {
     $(window).scroll(function() {
       if ($(".navbar").offset().top > 50) {
@@ -50,7 +62,7 @@ $(document).ready(function() {
     $(".navbar-fixed-top").addClass("top-nav-collapse");
   }
       
-  // jQuery for page scrolling feature - requires jQuery Easing plugin
+  // 6. jQuery for page scrolling feature - requires jQuery Easing plugin
   $(function() {
     $('a.page-scroll').bind('click', function(event) {
       var $anchor = $(this);
@@ -61,7 +73,7 @@ $(document).ready(function() {
     });
   });
 
-  //Resize 
+  // 7. Resize 
   function resize() {
     var heights = window.innerHeight - 100;
     document.getElementById("window-right").style.height = heights + "px";
@@ -72,7 +84,7 @@ $(document).ready(function() {
     resize();
   };
 
-  //Scroll Top Function
+  // 8. Scroll Top Function
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('.scrollup').fadeIn();
@@ -86,7 +98,7 @@ $(document).ready(function() {
     return false;
   });
 
-  //Loader Animation
+  // 9. Loader Animation
   $(".animsition").animsition({
     inClass: 'fade-in',
     outClass: 'fade-out',
@@ -103,7 +115,7 @@ $(document).ready(function() {
   });
 
 
-  // for the lightbox gallery ///////////////////
+  // 10 for the lightbox gallery
   $("#lightgallery").each(function() {
     $(this).find('a').each(function() {
       $(this).attr('data-size', $(this).find('img').get(0).naturalWidth + 'x' + $(this).find('img').get(0).naturalHeight);
@@ -361,7 +373,7 @@ $(document).ready(function(){
     }
   }
 
-  // Create a dummy element for feature detection
+  // 11. Create a dummy element for feature detection
   if (!('placeholder' in $('<input>')[0])) {
     // Select the elements that have a placeholder attribute
     $('input[placeholder], textarea[placeholder]').blur(add).focus(remove).each(add);
