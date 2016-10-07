@@ -1,0 +1,315 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.wrapper a {
+  text-decoration: underline;
+}
+.icon-big {
+  font-size: 40px;
+  color: #ff7f00;
+}
+.question-title {
+  width: 90%;
+  margin-left: 30px;
+}
+.question-title .question-tag {
+  font-size: 22px;
+  color: #cccccc;
+  position: absolute;
+  left: 5px;
+}
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+/* Customize container */
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+.divider {
+  margin: 20px 0px;
+}
+.cover-promotion {
+  background: url(../img/banner.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.cover-promotion .cover-content {
+  background: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  margin: 20px auto;
+  left: 0%;
+  right: 0%;
+  padding: 20px;
+}
+.cover-promotion .cover-content h2 {
+  line-height: 1.2em;
+}
+.cover-promotion .cover-info {
+  margin-top: 30px;
+}
+.cover-promotion .cover-info .cover-icon {
+  display: inline-block;
+  color: #ff0052;
+  font-weight: 400;
+  margin: 0 5px 0 0;
+  width: 40px;
+}
+.cover-promotion .cover-info .cover-icon i {
+  -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
+  margin-top: 17px;
+  margin-left: 10px;
+  display: block;
+}
+.cover-promotion .cover-info .cover-label {
+  display: inline-block;
+  width: 70%;
+  vertical-align: top;
+  line-height: 1.2;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 780px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .cover-promotion {
+    width: 360px;
+    height: 260px;
+    margin: 20px auto;
+  }
+}
+.blog-section .divider {
+  margin: 0px;
+}
+@media (max-width: 767px) {
+  .blog-section .divider {
+    margin: 20px 0px;
+  }
+}
+@media (max-width: 991px) {
+  .cover-promotion .cover-content {
+    padding: 10px;
+  }
+  .widget {
+    padding: 7px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-logo img {
+    width: 200px;
+  }
+}
+.counter-container .counter {
+  font-size: 48px;
+}
+.team-container img.desaturate {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+body .panel-default .panel-heading {
+  background: #f2f2f2 ;
+  overflow: hidden;
+}
+.nf-header {
+  background: #012C3D;
+}
+.nf-header h1 {
+  color: #fff;
+  font-weight: bold;
+}
+.nf-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  text-align: center;
+  background: #fff;
+}
+.nf-container h1,
+.nf-container h3 {
+  font-size: 3.5em;
+  margin: 20px;
+}
+.nf-container h3 {
+  color: #A9A5A5;
+  font-size: 1.6em;
+}
+.clients-container {
+  background: url('../img/greyLines.jpg');
+  padding: 20px;
+}
+.clients-logo .helper {
+  display: inline-block;
+}
+.clients-logo img {
+  vertical-align: middle;
+  max-height: 50px;
+  max-width: 100%;
+}
+.service-container img.image {
+  height: 100px;
+}
+.service-middle-section {
+  text-align: center;
+}
+.service-middle-section .logo {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.service-para {
+  display: -webkit-box;
+  max-width: 100%;
+  max-height: 103px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 767px) {
+  .service-middle-section {
+    text-align: left;
+  }
+  .clients-logo {
+    width: 50%;
+    float: left;
+    height: 80px;
+  }
+}
+.count-data {
+  text-align: center;
+}
+.count-data h1 {
+  font-size: 60px;
+  font-weight: 400;
+}
+.count-data h1 span {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 100;
+}
+.pages-featured-link {
+  margin: 20px 0;
+  text-decoration: none;
+}
+.pages-featured-link .pages-featured-link__icon {
+  width: 30px;
+  height: 30px;
+  line-height: 31px;
+  font-size: 30px;
+  color: #E62B1E;
+  margin-right: 10px;
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+}
+.pages-featured-link .media__message {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  zoom: 1;
+}
+.pages-featured-link .media__message p {
+  margin: 5px 0px;
+}
+@media (max-width: 568px) {
+  .count-data {
+    padding-left: 7.5px;
+  }
+  .count-data:first-child {
+    padding-left: 15px;
+  }
+  .count-data h1 {
+    font-size: 30px;
+  }
+  .count-data h5 {
+    font-size: 11px;
+  }
+}
+.social-sharing {
+  text-align: center;
+}
+.social-sharing img {
+  display: inline-block;
+}
+.image-container {
+  position: relative;
+}
+.image-container img.profile {
+  height: 100px;
+}
+.image-container .social-sharing-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 100%;
+  width: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 30px 0px;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+          transition: all 1s ease;
+}
+.image-container .social-sharing-overlay img {
+  display: inline-block;
+}
+.single-member {
+  text-align: center;
+}
+.single-member h4 {
+  -webkit-transition: color 1s ease;
+          transition: color 1s ease;
+}
+.single-member a {
+  text-decoration: none;
+}
+.single-member:hover .social-sharing-overlay {
+  opacity: 1;
+}
+.single-member:hover h4 {
+  color: #ff7f00;
+}
+.work-with-us {
+  background-color: #f2f2f2;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.work-with-us .container {
+  padding: 30px;
+}
+@media (max-width: 767px) {
+  .social-sharing {
+    text-align: left;
+  }
+}
+@media (max-width: 414px) {
+  .single-member,
+  .intern-member {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=corporate.css.map */
