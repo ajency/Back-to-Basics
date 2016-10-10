@@ -20,6 +20,7 @@
 // 10. for the lightbox gallery
 // 11. Create a dummy element for feature detection
 // 12. Portfolio lightbox init code
+// 13. Fix for IE10 - responsive timeline
 
 $(document).ready(function() {
 
@@ -449,4 +450,15 @@ $(document).ready(function(){
 
   })();
 
-  
+
+// 13. Fix for IE10 - responsive timeline
+$(document).ready(function() {
+  if (Function('/*@cc_on return document.documentMode===10@*/') ()) {
+    $('.panel-container').each(function() {
+      $(this).find(".slide-panel").each(function(i) {
+        n = $(this).width(),
+        $(this).css("left", n * i)
+      });
+    });
+  }
+});
