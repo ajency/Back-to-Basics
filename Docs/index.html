@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Back to Basics Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h1 class="title">
+			<img src="assets/images/logo.png" height="35" alt="Back to Basics">
+			<span class="subhead">Back to Basics v1.0 by Ajency.in</span>
+		</h1>
+		
+		<div class="clearfix"></div>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 10/10/2016<br>
+					<!-- By: <br> -->
+					Email: <a href="mailto:talktous@ajency.in">talktous@ajency.in</a><br>&nbsp;
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing this theme. If you have any further questions, please get in touch with us at the Themeforest "Item Discussion" section.</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li>
+				<a href="#javascript">Plugins and JavaScript</a>
+				<ol>
+					<li><a href="#photoswipe">Portfolio Lightbox - Photoswipe.js</a></li>
+				</ol>
+			</li>
+			<!-- <li><a href="#psdFiles">PSD Files</a></li> -->
+			<li><a href="#credits">Sources and Credits</a></li>
+			
+			<!-- <li><a href="#">PHP Code Explanation</a> <em class="quiet small">(If your theme uses PHP)</em></li> -->
+			<!-- <li><a href="#">Flash</a>  <em class="quiet small">(If your theme uses Flash)</em></li> -->
+			<!-- <li><a href="#">API Usage</a> <em class="quiet small">(If your theme uses an API)</em></li> -->
+			<!-- <li><a href="#">Any additional unique features that need an overview</a></li> -->
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme has 2 variations, but the HTML structure is similar. All of the information is nested within a div with class <code>site-wrapper</code>.</p>
+
+		<p>The content is broken into <code>&lt;section&gt;</code>s. Each section has an <code>ID</code> that helps in the one page navigation.</p>
+		
+		<img src="assets/images/htmlstructure.png" alt="HTML Structure" />
+
+		<p></p>
+		
+		<p>You can use the LESS files if you are comfortable with LESS, or you can directly edit the CSS files. Below is the list of CSS files and LESS files and their locations</p>
+
+<code class="block">	LESS/CSS Files specific for Portfolio:
+	- Portfolio
+		- LESS
+			- main.less
+			  (includes the @import to the required LESS files from the assets/ folder)
+			- landing-page.less
+			- left-column.less
+			- typical.less
+		- CSS
+			- main.css
+			- landing-page.css
+			- left-column.css
+			- typical.css
+</code>
+
+		<hr>
+		
+		<h3 id="javascript"><strong>B) Plugins and JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme uses these Javascript files. JS location <code>assets/js</code></p>
+		
+		<ol>
+			<li>jQuery</li>
+			<li>Photoswipe.js</li>
+			<li>Imagesloaded.js</li>
+			<li>Masonry.js</li>
+			<li>jQuery easing</li>
+			<li>jQuery mousewheel</li>
+			<li>Animstion.min.js </li>
+			<li>
+				Custom JS files
+				<ul>
+					<li>left-column.js</li>
+					<li>typical.js</li>
+				</ul>
+			</li>
+		</ol>
+		  
+		<p>All the plugins are combined into <code>plugins.min.js</code> using Gulp. If you want to change any of the plugins then paste the required files into <code>assets/js/plugins</code>, edit the file <code>Gulp/gulpfile.js</code> and add or remove the plugin's js files between <strong>line 40</strong> and <strong>line 47</strong></p>
+		<p>Navigate to the Gulp folder in Terminal and run the command <code>gulp</code></p>
+
+		<p>The plugins will be combined and minified into plugins.min.js and also the 2 custom js files will be minified.</p>
+
+		<hr>
+
+		<p>If you are new to Gulp, please checkout <a href="http://gulpjs.com/" target="_blank">their site</a> on instructions to download and use Gulp.</p>
+		
+		<hr>
+
+		<h4 id="photoswipe"><strong>Portfolio Lightbox - Photoswipe.js</strong></h4>
+
+		<p>The lightbox Photoswipe.js is a powerful plugin. The div <code>pswp</code> right outside the <code>site-wrapper</code> is for the lightbox. You can customise the 'div's present in that set of code but please do not remove any classes/HTML or change the structure. You can add your own DIV there though. The code that runs the plugin is present in the respective js files (it'll show up in the table of contents)<br>
+			<img src="assets/images/toc.png" height="41" width="338" alt="">
+		</p>
+
+		<p>The <code>data-size</code> attribute has to be set right after the images load. Thats the reason for the below code, if the data-size attribute hasn't been set then you'll get a blank screen with the popup controls when you click on a portfolio item.
+			<img src="assets/images/natural.png" height="165" width="1017" alt="">
+		</p>
+
+		<p>The HTML structure for the portfolio must be as the following. Change the structure only if you're comfortable in editing the JS file where the portfolio lightbox has been intialised.<br>
+		The <code>&lt;a class="grid-item " data-sub-html="Caption text goes here"&gt;</code> holds the text/HTML for the caption in the popup
+			<img src="assets/images/html-st-port,png.png" height="363" width="801" alt="">
+		</p>
+
+		<hr>
+		<p>The HTML structure for Photoswipe is slightly different in each of the HTML files, please keep it same unless you are comfortable in editing JS files</p>
+		<hr>
+		
+		<h3 id="credits"><strong>C) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following images, icons or other files as listed.
+		
+		<ul>
+			<li>Bootstrap 3.3.6</li>
+			<li>FontAwesome 4.5.0</li>
+			<li>Photoswipe.js</li>
+			<li>Animstion.js</li>
+			<li>Images used in the demo are from https://images.nga.gov/ and Flickr</li>
+			<li>Google Fonts - Open Sans and Arapey</li>
+		</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As said at the beginning, We'd be glad to help you if you have any questions relating to this theme. No guarantees, but We'll do our best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><img src="http://1z3o6ca02l43rp0zb3y1b2e1.wpengine.netdna-cdn.com/wp-content/themes/ajency/library/images/ajency-logo.png" alt="" height="35"></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
