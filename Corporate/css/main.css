@@ -600,6 +600,9 @@ article:nth-child(3n-1) .blogpost {
     margin: 3em 0 2em;
   }
 }
+.promo-bar.less-t-m {
+  margin-top: 2em;
+}
 .promo {
   margin-top: 0;
   margin-bottom: 4.0em;
