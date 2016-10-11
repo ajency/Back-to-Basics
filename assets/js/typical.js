@@ -169,8 +169,10 @@ $(document).ready(function(){
   var initPhotoSwipeFromDOM = function(gallerySelector) {
 
     var parseThumbnailElements = function(el) {
-      var thumbElements = el.childNodes,
-      numNodes = thumbElements.length,
+      // el = the <ul> - #lightgallery
+      var allChildren = $(el).children();
+      var thumbElements = allChildren,
+      numNodes = $(thumbElements).siblings().length, // gives count of li
       items = [],
       el,
       childElements,
@@ -178,21 +180,18 @@ $(document).ready(function(){
       size,
       item;
 
+      var currentLi = $(el);
+      var lisinblings = currentLi.siblings().length;
+
       for(var i = 0; i < numNodes; i++) {
         el = thumbElements[i];
+              childElements = $(el).children();
 
-              // include only element nodes 
-              if(el.nodeType !== 1) {
-                continue;
-              }
-
-              childElements = el.children;
-
-              size = el.getAttribute('data-size').split('x');
+              size = childElements.attr('data-size').split('x');
 
               // create slide object
               item = {
-                src: el.getAttribute('href'),
+                src: childElements.attr('href'),
                 w: parseInt(size[0], 10),
                 h: parseInt(size[1], 10),
             author: ''//el.getAttribute('data-author')
@@ -200,10 +199,10 @@ $(document).ready(function(){
 
               item.el = el; // save link to element for getThumbBoundsFn
 
-              if(childElements.length > 0) {
-                item.msrc = childElements[0].getAttribute('src'); // thumbnail url
-                if(childElements.length > 1) {
-                    item.title = $(thumbElements[i]).attr('data-sub-html') //childElements[1].innerHTML; // caption (contents of figure)
+              if(childElements.children().length > 0) {
+                item.msrc = childElements.children()[0].getAttribute('src'); // thumbnail url
+                if(childElements.children().length > 1) {
+                    item.title = childElements.attr('data-sub-html') // caption (contents of figure)
                   }
                 }
 
@@ -250,9 +249,11 @@ $(document).ready(function(){
           return;
         }
 
-        var clickedGallery = clickedListItem.parentNode;
+        // var clickedGallery = clickedListItem.parentNode;
+        var clickedGallery = $(clickedListItem).parent().parent();
 
-        var childNodes = clickedListItem.parentNode.childNodes,
+        // var childNodes = clickedListItem.parentNode.childNodes,
+        var childNodes = $(clickedListItem).parent().parent().children(),
         numChildNodes = childNodes.length,
         nodeIndex = 0,
         index;
@@ -262,7 +263,7 @@ $(document).ready(function(){
             continue; 
           }
 
-          if(childNodes[i] === clickedListItem) {
+          if(childNodes[i] === $(clickedListItem).parent().get(0)) {
             index = nodeIndex;
             break;
           }
@@ -313,7 +314,7 @@ $(document).ready(function(){
           // define options (if needed)
           options = {
 
-            galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+            galleryUID: galleryElement.get(0).getAttribute('data-pswp-uid'),
 
             getThumbBoundsFn: function(index) {
                   // See Options->getThumbBoundsFn section of docs for more info
@@ -334,7 +335,8 @@ $(document).ready(function(){
             return true;
           },
 
-          closeOnScroll: false
+          closeOnScroll: false,
+          clickToCloseNonZoomable: false
           
         };
 
