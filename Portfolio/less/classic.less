@@ -7,10 +7,11 @@
 /* 4. Contact Form                  ///////////////////////////*/
 /* 5. Footer                        ///////////////////////////*/
 /* 6. Polaroid Effects              ///////////////////////////*/
-/* 7. Overall Center Content        ///////////////////////////*/
-/* 8. Scroll to top transition      ///////////////////////////*/
-/* 9. Testimonials                  ///////////////////////////*/
-/* 10. Misc                         ///////////////////////////*/
+/* 7. Timeline section              ///////////////////////////*/
+/* 8. Overall Center Content        ///////////////////////////*/
+/* 9. Scroll to top transition      ///////////////////////////*/
+/* 10. Testimonials                 ///////////////////////////*/
+/* 11. Misc                         ///////////////////////////*/
 /***************************************************************/
 
 
@@ -24,7 +25,7 @@
 @light-gray: #eee;
 @blue: #1A85A7;
 
-/* 3. Header and Navbar styles      ///////////////////////////*/
+/* 2. Header and Navbar styles      ///////////////////////////*/
 .logo{
   h3{
     margin: 0px;
@@ -342,7 +343,7 @@ a{
 }
 .contact-us-text
 {
-  text-align: right;
+  text-align: center;
 }
 
 .contact-details{
@@ -502,8 +503,165 @@ footer{
   border: 20px solid rgb(248, 246, 239);
 }
 
+/* 7. Timeline section ///////////////////////////*/
+.service-section {
+  // padding-top: 0;
+}
+.timeline {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 450px;
+  border-bottom: 1px solid #F0F3F0;
+  .timeline-title {
+    margin: 0;
+    padding: 24px;
+    text-align: center;
+    border-bottom: 1px solid rgba(138, 154, 168, 0.7);
+    color: #8A9AA8;
+  }
+  .slide-bg {
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    height: 500px;
+    width: 100%;
+  }
+  .panel-container {
+    margin-top: 36px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .slide-panel {
+    width: 340px;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    position: absolute;
+  }
+  .time-label {
+    padding: 0 0 0 24px;
+    &.fade-txt{
+      color:@fade-color;
+      font-size: 70px;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+  }
+  .panel-selected .time-label {
+    color:#888;
+  }
+  .panel-title {
+    padding: 0px 0 12px 24px;
+    margin: 0;
+    color: #29333D;
+  }
+  .panel-content {
+    padding: 12px 64px 18px 24px;
+    color: #29333D;
+    font-size: 14px;
+  }
+  .slide-nav {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .slide-nav a {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 16px;
+    border-left: 4px solid #F0F3F0;
+    border-top: 4px solid #F0F3F0;
+    color: #C2C2C2;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .slide-nav a:last-child {
+    border-right: 4px solid #F0F3F0;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .slide-nav a:first-child {
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+  .slide-nav a:hover {
+    background: #F0F3F0;
+    color: #60768B;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+}
+@media screen and (max-width: 648px) {
+  .timeline {
+    height: auto;
+  }
 
-/* 7. Overall Center Content       ///////////////////////////*/
+  .panel-container {
+    position: static !important;
+  }
+
+  .slide-panel {
+    position: static !important;
+    border-bottom: 1px solid rgba(138, 154, 168, 0.7);
+    margin: auto;
+  }
+
+  .panel-title {
+    padding: 0 12px !important;
+    color: #29333D !important;
+  }
+
+  .panel-content {
+    padding: 18px 12px !important;
+    color: #29333D !important;
+  }
+
+  .time-label {
+    text-align: right;
+  }
+
+  .slide-bg {
+    background-position: center center !important;
+    height: 100% !important;
+    width: 100% !important;
+    left: 0 !important;
+  }
+
+  .slide-nav {
+    display: none;
+  }
+}
+.nav-selected {
+  background: #F0F3F0;
+  color: #60768B !important;
+}
+
+@media screen and (min-width: 648px) {
+  .panel-selected {
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+}
+
+
+
+/* 8. Overall Center Content       ///////////////////////////*/
 @media screen and (max-width:991px)
 {
   .about-content
@@ -568,7 +726,7 @@ footer{
   } 
 }
 
-/* 8. Scroll to top transition     ///////////////////////////*/
+/* 9. Scroll to top transition     ///////////////////////////*/
 .scrollup {
   width: 40px;
   height: 40px;
@@ -771,7 +929,7 @@ footer{
 }
 
 
-/* 9. Testimonials                 ///////////////////////////*/
+/* 10. Testimonials                 ///////////////////////////*/
 #quote-carousel {
   padding: 0 10px 30px 10px;
   margin-top: 60px;
@@ -1039,7 +1197,7 @@ footer{
   }
 }
 
-/* 10. Misc                         ///////////////////////////*/
+/* 11. Misc                         ///////////////////////////*/
 // Some overerites for the lighbox
 .pswp__button.pswp__button--share {
   display: none;

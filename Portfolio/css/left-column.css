@@ -54,7 +54,7 @@ p {
   height: 500px;
   text-align: left;
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .logo-section {
     height: 100%;
     text-align: center;
@@ -77,7 +77,7 @@ p {
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .logo-section .contact-info {
     position: relative;
     left: 0%;
@@ -688,24 +688,24 @@ h1 .flip span.down {
   width: 100%;
   position: relative;
 }
-.timeline .panel-container .slide-panel {
+.timeline .slide-panel {
   width: 340px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   position: absolute;
 }
-.timeline .panel-container .slide-panel .time-label {
+.timeline .time-label {
   padding: 0 0 0 24px;
 }
-.panel-selected h1 {
+.timeline .panel-selected h1 {
   color: #888;
 }
-.timeline .panel-container .slide-panel .panel-title {
+.timeline .panel-title {
   padding: 0px 0 12px 24px;
   margin: 0;
   color: #29333D;
 }
-.timeline .panel-container .slide-panel .panel-content {
+.timeline .panel-content {
   padding: 12px 64px 18px 24px;
   color: #29333D;
 }

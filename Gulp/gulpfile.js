@@ -19,7 +19,7 @@
 // Minify Js files
 
 // Custom variable for theme JS file path
-    var js_source = ['../assets/js/typical.js','../assets/js/left-column.js'];
+    var js_source = ['../assets/js/classic.js','../assets/js/left-column.js'];
 
 // Output destionation file
     var js_dest = '../assets/js' ;
