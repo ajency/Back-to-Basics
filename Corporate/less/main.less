@@ -1,15 +1,13 @@
-	//
+//
 // Main
 // @contribution amit (amit@ajency.in)
 // --------------------------------------------------
-
 
 // Fonts
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 
 
 //IE support for open sans
-
 @font-face {
   font-family: 'Open Sans';
   src: url('../fonts/opensans-regular-webfont.eot'); /* IE9 Compat Modes */
@@ -20,11 +18,8 @@
   src: url('../fonts/opensans-regular-webfont.eot'); /* IE9 Compat Modes */
   src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
 }
-
-
 
 //Settings : These are preprocessor variables for later use.
-
 @theme-name:"Corporate";
 
 .theme {
@@ -33,8 +28,6 @@
 .theme();
 
 //Tools : These include all the mixins and functions.
-
-
 
 //Generic : This includes all the third-party CSS used throughout the site.
 @import "../../assets/less/Generic/bootstrap.css";
@@ -45,6 +38,7 @@
 @import "../../assets/less/base/typo.less";
 @import "../../assets/less/base/links.less";
 @import "../../assets/less/base/body.less";
+
 //Objects : This layer is mostly layout-driven, and doesn’t include anything cosmetic. I included structural objects such as `.inner` and `.container` here, as well as some oft-repeated constructs such as `.post`s and `.hero`.
 @import "../../assets/less/Object/bullet.less";
 @import "../../assets/less/Object/color.less";
@@ -53,7 +47,6 @@
 @import "../../assets/less/Object/margin-spacing.less";
 @import "../../assets/less/Object/error.less";
 @import "../../assets/less/Object/blog.less";
-
 
 //Components : This is mostly a cosmetic layer — this is where I included more specific styling instructions for objects. Without the components layer, the site would still have its structure, but would look like a gray-box wireframe.
 @import "../../assets/less/Components/accordion.less";
@@ -74,4 +67,3 @@
 @import "../../assets/less/Trumps/@{theme-name}/contact.less";
 @import "../../assets/less/Trumps/@{theme-name}/team.less";
 @import "../../assets/less/Trumps/@{theme-name}/mix.less";
-
