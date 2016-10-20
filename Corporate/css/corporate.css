@@ -1,8 +1,24 @@
+/* TABLE OF CONTENTS //////////////////////////////////////*/
+/* Variables //////////////////////////////////////////////*/
+/* Basic Styles ///////////////////////////////////////////*/
+/* custom page header /////////////////////////////////////*/
+/* masthead same size as navigation ///////////////////////*/
+/* Custom Page Footer /////////////////////////////////////*/
+/* Customise Container ////////////////////////////////////*/
+/* Blog/News Container ////////////////////////////////////*/
+/* About Page Styles //////////////////////////////////////*/
+/* 404 page styles ////////////////////////////////////////*/
+/* 404 message container //////////////////////////////////*/
+/* Service page styles ////////////////////////////////////*/
+/* count-data /////////////////////////////////////////////*/
+/* lg-sidebar /////////////////////////////////////////////*/
+/* Team Page styles ///////////////////////////////////////*/
+/* Variables //////////////////////////////////////////////*/
+/* Basic Styles ///////////////////////////////////////////*/
 body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* Everything but the jumbotron gets side spacing for mobile first views */
 .wrapper a {
   text-decoration: underline;
 }
@@ -20,23 +36,23 @@ body {
   position: absolute;
   left: 5px;
 }
-/* Custom page header */
+/* custom page header /////////////////////////////////////*/
 .header {
   padding-bottom: 20px;
 }
-/* Make the masthead heading the same height as the navigation */
+/* masthead same size as navigation ///////////////////////*/
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
 }
-/* Custom page footer */
+/* Custom Page Footer /////////////////////////////////////*/
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
-/* Customize container */
+/* Customise Container ////////////////////////////////////*/
 @media (max-width: 1024px) {
   .container {
     width: 100%;
@@ -92,6 +108,7 @@ body {
     margin: 20px auto;
   }
 }
+/* Blog/News Container ////////////////////////////////////*/
 .blog-section .divider {
   margin: 0px;
 }
@@ -113,6 +130,7 @@ body {
     width: 200px;
   }
 }
+/* About Page Styles //////////////////////////////////////*/
 .counter-container .counter {
   font-size: 48px;
 }
@@ -124,6 +142,7 @@ body .panel-default .panel-heading {
   background: #f2f2f2 ;
   overflow: hidden;
 }
+/* 404 page styles ////////////////////////////////////////*/
 .nf-header {
   background: #012C3D;
 }
@@ -131,6 +150,7 @@ body .panel-default .panel-heading {
   color: #fff;
   font-weight: bold;
 }
+/* 404 message container //////////////////////////////////*/
 .nf-container {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -156,6 +176,7 @@ body .panel-default .panel-heading {
   color: #A9A5A5;
   font-size: 1.6em;
 }
+/* Service page styles ////////////////////////////////////*/
 .clients-container {
   background: url('../img/greyLines.jpg');
   padding: 20px;
@@ -197,6 +218,7 @@ body .panel-default .panel-heading {
     height: 80px;
   }
 }
+/* count-data /////////////////////////////////////////////*/
 .count-data {
   text-align: center;
 }
@@ -209,6 +231,7 @@ body .panel-default .panel-heading {
   line-height: 30px;
   font-weight: 100;
 }
+/* lg-sidebar /////////////////////////////////////////////*/
 .pages-featured-link {
   margin: 20px 0;
   text-decoration: none;
@@ -247,6 +270,7 @@ body .panel-default .panel-heading {
     font-size: 11px;
   }
 }
+/* Team Page styles ///////////////////////////////////////*/
 .social-sharing {
   text-align: center;
 }
