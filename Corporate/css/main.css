@@ -541,6 +541,7 @@ article:nth-child(3n-1) .blogpost {
   left: 0;
   right: 0;
   padding: 15px;
+  padding-bottom: 20px;
 }
 .latest-section .overlay {
   display: block;
@@ -557,7 +558,7 @@ article:nth-child(3n-1) .blogpost {
   left: 0;
   right: 0;
   height: 95px;
-  opacity: 0.3;
+  opacity: 0.8;
   -webkit-transition: all 0.5s;
           transition: all 0.5s;
 }
@@ -568,7 +569,7 @@ article:nth-child(3n-1) .blogpost {
 }
 .latest-section .latest-title {
   font-size: 24px;
-  line-height: 26px;
+  line-height: 30px;
 }
 @media screen and (max-width: 991px) {
   .latest-section .latest-link.high {

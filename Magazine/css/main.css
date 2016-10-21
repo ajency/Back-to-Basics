@@ -524,6 +524,7 @@ article:nth-child(3n-1) .blogpost {
   left: 0;
   right: 0;
   padding: 15px;
+  padding-bottom: 20px;
 }
 .latest-section .overlay {
   display: block;
@@ -540,7 +541,7 @@ article:nth-child(3n-1) .blogpost {
   left: 0;
   right: 0;
   height: 95px;
-  opacity: 0.3;
+  opacity: 0.8;
   -webkit-transition: all 0.5s;
           transition: all 0.5s;
 }
@@ -551,7 +552,7 @@ article:nth-child(3n-1) .blogpost {
 }
 .latest-section .latest-title {
   font-size: 24px;
-  line-height: 26px;
+  line-height: 30px;
 }
 @media screen and (max-width: 991px) {
   .latest-section .latest-link.high {
@@ -904,7 +905,9 @@ footer .footer-section .main-link a:hover {
 .header .logo {
   width: auto;
   padding-top: 22px;
+  padding-bottom: 22px;
   margin-right: 40px;
+  height: 60px;
 }
 .top-actions {
   display: inline-block;
@@ -914,10 +917,10 @@ footer .footer-section .main-link a:hover {
   height: auto;
   min-height: 0;
   margin-bottom: 0;
-  margin-top: 7px;
+  margin-top: 2px;
 }
 .navbar-nav > li > a {
-  font-size: 1em;
+  font-size: 0.9em;
   color: #333333;
 }
 /*# sourceMappingURL=main.css.map */
